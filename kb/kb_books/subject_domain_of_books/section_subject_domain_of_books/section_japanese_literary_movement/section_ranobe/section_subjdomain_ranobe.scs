@@ -1,0 +1,42 @@
+section_subject_domain_of_ranobe
+    => nrel_main_idtf: [Раздел. Предметная область ранобе] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Section. Subject domain of ranobe] (* <- lang_en;; *);
+
+	<= nrel_section_decomposition:
+	{
+		section_ranobe_authors;
+		section_ranobe_illustrators;
+        section_ranobe_genres;
+        section_ranobes
+	};
+
+	-> rrel_key_sc_element:
+		concept_ranobe;
+
+	<- non_atomic_section;;		
+
+section_subject_domain_of_ranobe = [*
+
+	subject_domain_of_ranobe
+		=> nrel_main_idtf: [Предметная область ранобе] (* <- lang_ru;; *);
+		=> nrel_main_idtf: [Subject domain of ranobe] (* <- lang_en;; *);
+
+		-> rrel_maximum_studied_object_class:
+			concept_ranobe_industry;
+
+		-> rrel_not_maximum_studied_object_class:
+			concept_ranobe;
+			writer;
+
+		-> rrel_explored_relation:
+			nrel_author;
+			nrel_character;
+			nrel_conflict;
+            nrel_illustrator;
+
+		<= nrel_private_subject_domain:
+			subject_domain_of_japanese_literary_movement;
+
+		<- subject_domain;;
+
+*];;

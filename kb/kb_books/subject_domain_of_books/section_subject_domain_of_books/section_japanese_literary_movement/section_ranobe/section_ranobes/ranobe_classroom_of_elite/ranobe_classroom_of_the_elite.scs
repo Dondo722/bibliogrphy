@@ -4,8 +4,13 @@ ranobe_classroom_of_the_elite
             (* <- lang_ru;; *);
     <- book;
     <- concept_ranobe;
+    <- genre_psychological;
+    <- genre_thriller;
+    <- genre_school;
     => nrel_author:
         person_Shogo_Kinugasa;
+    => nrel_illustrator:
+        person_Shunsaku_Tomose;
     <= nrel_original_language:
         lang_jp;
     => nrel_publication_date:

@@ -3,10 +3,10 @@ section_ranobe_authors
 	[Раздел. Авторы ранобе.] (* <- lang_ru;; *);
 	[Section. Ranobe authors.] (* <- lang_en;; *);
 
-->rrel_key_sc_element:
+-> rrel_key_sc_element:
 	person_Shogo_Kinugasa;;
 
-section_foreign_authors = [*
+section_ranobe_authors = [*
 	person_Shogo_Kinugasa
     <- person;
     <- male;
@@ -26,8 +26,8 @@ section_foreign_authors = [*
 
     <= nrel_genres: ...
         (*
-            -> concept_psychological;;
-			-> concept_thriller;;
+            -> genre_thriller;;
+            -> genre_psychological;;
 			-> concept_ranobe;;
         *);;
 *];;

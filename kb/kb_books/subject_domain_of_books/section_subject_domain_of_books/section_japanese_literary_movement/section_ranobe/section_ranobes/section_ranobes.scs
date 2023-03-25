@@ -1,0 +1,7 @@
+section_ranobes
+    => nrel_main_idtf:
+        [Раздел. Ранобе] (* <- lang_ru;; *);
+        [Section. Ranobes] (* <- lang_en;; *);
+
+    -> rrel_key_sc_element:
+        ranobe_classroom_of_the_elite;;
