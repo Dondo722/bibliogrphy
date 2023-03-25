@@ -22,7 +22,6 @@ ranobe_classroom_of_the_elite
                     *);;
             *);;
 
-
 ranobe_classroom_of_the_elite
     <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
     <= nrel_characters:
@@ -135,6 +134,16 @@ char_Arisu_Sakayanagi
             ...
             (*
                 => nrel_main_idtf:
+                    [Изображение персонажа(Арису Сакаянаги)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Arisu_Sakayanagi.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
                     [Описание персонажа(Арису Сакаянаги)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: 
                     ...
@@ -150,6 +159,16 @@ char_Honami_Ichinose
         <- person;
         <- female;
         <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Хонами Ичиносе)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Honami_Ichinose.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
             ...
             (*
                 => nrel_main_idtf:
@@ -171,6 +190,16 @@ char_Airi_Sakura
             ...
             (*
                 => nrel_main_idtf:
+                    [Изображение персонажа(Айри Сакура)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Airi_Sakura.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
                     [Описание персонажа(Айри Сакура)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: 
                     ...
@@ -181,11 +210,21 @@ char_Airi_Sakura
 
 char_Kakeru_Ryuuen
     => nrel_main_idtf: 
-            [Какеру Рюен] (* <-lang_ru;; *);
+            [Какеру Рюэн] (* <-lang_ru;; *);
             [Kakeru Ryuuen] (* <- lang_en;; *);
         <- person;
         <- male;
         <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Какеру Рюэн)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kakeru_Ryuuen.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
             ...
             (*
                 => nrel_main_idtf:
@@ -204,6 +243,16 @@ char_Sae_Chabashira
         <- person;
         <- female;
         <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Саэ Чабашира)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Sae_Chabashira.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
             ...
             (*
                 => nrel_main_idtf:
@@ -226,6 +275,16 @@ char_Kikyou_Kushida
             ...
             (*
                 => nrel_main_idtf:
+                    [Изображение персонажа(Кикё Кушида)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kikyou_Kushida.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
                     [Описание персонажа(Кёко Кушида)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: 
                     ...
@@ -239,8 +298,18 @@ char_Rokusuke_Kouenji
             [Рокусуке Коэнджи] (* <-lang_ru;; *);
             [Rokusuke Kouenji] (* <- lang_en;; *);
         <- person;
-        <- female;
+        <- male;
         <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Рокусуке Коэнджи)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Rokusuke_Kouenji.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
             ...
             (*
                 => nrel_main_idtf:
