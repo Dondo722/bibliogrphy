@@ -4,4 +4,5 @@ section_ranobes
         [Section. Ranobes] (* <- lang_en;; *);
 
     -> rrel_key_sc_element:
-        ranobe_classroom_of_the_elite;;
+        ranobe_classroom_of_the_elite;
+        ranobe_kumo_desu_ga_nani_ka;;

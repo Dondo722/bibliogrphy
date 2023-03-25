@@ -1,0 +1,14 @@
+concept_demon_king
+    => nrel_main_idtf:
+        [Король демонов] (* <- lang_ru;; *);
+        [Demon king] (* <- lang_en;; *);
+
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf: [Опр.(Король демонов)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/concept_demon_king.html" (* <- lang_ru;; => nrel_format: format_html;; *);;
+            *);;
+        *);;

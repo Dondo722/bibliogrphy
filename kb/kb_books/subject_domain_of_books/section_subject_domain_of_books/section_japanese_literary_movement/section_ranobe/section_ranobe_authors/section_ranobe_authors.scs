@@ -9,8 +9,7 @@ section_ranobe_authors
 section_ranobe_authors = [*
 	person_Shogo_Kinugasa
     <- person;
-    <- male;
-    <- concept_writer;
+    <- writer;
 
     => nrel_main_idtf:
         [Сёго Кинугаса] (* <- lang_ru;; *);
@@ -30,4 +29,29 @@ section_ranobe_authors = [*
             -> genre_psychological;;
 			-> concept_ranobe;;
         *);;
+
+    person_Okina_Baba
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Окина Баба] (* <- lang_ru;; *);
+        [Okina Baba] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_adventure;;
+            -> genre_comedy;;
+            -> genre_fantasy;;
+			-> concept_ranobe;;
+        *);;
+
 *];;

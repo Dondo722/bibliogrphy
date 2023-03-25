@@ -5,7 +5,7 @@ ranobe_classroom_of_the_elite
     <- book;
     <- concept_ranobe;
     <- genre_psychological;
-    <- genre_thriller;
+    <- genre_thriller;  
     <- genre_school;
     => nrel_author:
         person_Shogo_Kinugasa;

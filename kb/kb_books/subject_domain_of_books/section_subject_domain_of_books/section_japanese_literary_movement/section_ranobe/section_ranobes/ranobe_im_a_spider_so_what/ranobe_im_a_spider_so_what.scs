@@ -1,0 +1,383 @@
+ranobe_kumo_desu_ga_nani_ka
+    => nrel_main_idtf:
+        ["Да, я паук, и что с того?"] (* <- lang_ru;; *);
+        ["So, I'm a spider, so what?"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_adventure;
+    <- genre_comedy;
+    <- genre_fantasy;
+
+    => nrel_author:
+        person_Okina_Baba;
+    => nrel_illustrator:
+        person_Tsukasa_Kiryuu;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2015;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Да, я паук, и что с того?)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_kumo_desu_ga_nani_ka
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_kumo_desu_ga_nani_ka_characters
+        (*
+            -> rrel_main_character:
+                char_Kumoko;;
+            -> char_kumo_Ariel;;
+            -> char_kumo_Feirune;;
+            -> char_kumo_Sophia_Keren;;
+            -> char_kumo_Wrath;;
+            -> char_kumo_D;;
+            -> char_kumo_Karnatia_Seri_Anabald;;
+            -> char_kumo_Filimos_Harrifenas;;
+            -> char_kumo_Potimas_Harrifenas;;
+        *);;
+
+concept_kumo_administrator
+    => nrel_main_idtf:
+        [Администратор (Да, я паук, и что с того?)] (* <- lang_ru;; *);
+        [Administrator (So, I'm a spider, so what?)] (* <- lang_en;; *);
+
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf: [Опр.(Администратор (Да, я паук, и что с того?))] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/concept_kumo_administrator.html" (* <- lang_ru;; => nrel_format: format_html;; *);;
+            *);;
+        *);;
+
+concept_arachna
+    => nrel_main_idtf:
+        [Арахна] (* <- lang_ru;; *);
+        [Arachna] (* <- lang_en;; *);
+
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf: [Опр.(Арахна)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/concept_arachna.html" (* <- lang_ru;; => nrel_format: format_html;; *);;
+            *);;
+        *);;
+
+char_Kumoko
+    => nrel_main_idtf: 
+        [Кумоко] (* <- lang_ru;; *);
+        [Kumoko] (* <- lang_en;; *);
+    => nrel_idtf:
+        [Шираори] (* <- lang_ru;; *);
+        [Shiraori] (* <- lang_ru;; *);
+
+    <- concept_kumo_administrator;
+    <- concept_arachna;
+
+    <- female;
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(Кумоко)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_Kumoko.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(Шираори)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_Shiraori.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Описание персонажа(Кумоко)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> "file://content/char_Kumoko.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;
+
+concept_taratect
+    => nrel_main_idtf:
+        [Таратект] (* <- lang_ru;; *);
+        [Taratect] (* <- lang_en;; *);
+
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf: [Опр.(Таратект)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/concept_taratect.html" (* <- lang_ru;; => nrel_format: format_html;; *);;
+            *);;
+        *);;
+
+char_kumo_Ariel
+    => nrel_main_idtf: 
+        [Ариэль] (* <- lang_ru;; *);
+        [Ariel] (* <- lang_en;; *);
+
+    <- concept_demon_king;
+    <- concept_taratect;
+
+    <- female;
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(Ариэль (Да, я паук, и что с того?))] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_Ariel.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Описание персонажа(Ариэль (Да, я паук, и что с того?))] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> "file://content/char_Ariel.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;
+
+char_kumo_Feirune
+    => nrel_main_idtf: 
+        [Фейрун] (* <- lang_ru;; *);
+        [Feirune] (* <- lang_en;; *);
+
+    <- concept_Dragon;
+
+    <- female;
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(Фейрун)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_Feirune.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Описание персонажа(Фейрун)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> "file://content/char_Feirune.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;
+
+char_kumo_Sophia_Keren
+    => nrel_main_idtf: 
+        [София Керен] (* <- lang_ru;; *);
+        [Sophia Keren] (* <- lang_en;; *);
+
+    <- concept_Vampire;
+
+    <- female;
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(София Керен)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_Sophia_Keren.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Описание персонажа(София Керен)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> "file://content/char_Sophia_Keren.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;
+
+char_kumo_Wrath
+    => nrel_main_idtf: 
+        [Вратх] (* <- lang_ru;; *);
+        [Wrath] (* <- lang_en;; *);
+
+    <- person;
+
+    <- male;
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(Вратх)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_Wrath.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Описание персонажа(Вратх)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> "file://content/char_Wrath.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;
+
+char_kumo_D
+    => nrel_main_idtf: 
+        [D] (* <- lang_ru;; *);
+        [D] (* <- lang_en;; *);
+
+    => nrel_idtf:
+        [Хииро Вакаба]  (* <- lang_ru;; *);
+        [Hiiro Wakaba] (* <- lang_en;; *);
+
+    <- concept_kumo_administrator;
+
+    <- female;
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(D)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_D.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Описание персонажа(D)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> "file://content/char_D.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;
+
+char_kumo_Karnatia_Seri_Anabald
+    => nrel_main_idtf: 
+        [Карнатия Сери Анабальд] (* <- lang_ru;; *);
+        [Karnatia Seri Anabald] (* <- lang_en;; *);
+
+    <- person;
+    <- female;
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(Карнатия Сери Анабальд)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_Karnatia_Seri_Anabald.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Описание персонажа(Карнатия Сери Анабальд)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> "file://content/char_Karnatia_Seri_Anabald.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;
+
+char_kumo_Filimos_Harrifenas
+    => nrel_main_idtf: 
+        [Филимос Харрифенас] (* <- lang_ru;; *);
+        [Filimos Harrifenas] (* <- lang_en;; *);
+
+    <- concept_Elf;
+
+    <- female;
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(Филимос Харрифенас)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_Filimos_Harrifenas.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Описание персонажа(Филимос Харрифенас)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> "file://content/char_Filimos_Harrifenas.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;
+
+char_kumo_Potimas_Harrifenas
+    => nrel_main_idtf: 
+        [Потимас Харрифенас] (* <- lang_ru;; *);
+        [Potimas Harrifenas] (* <- lang_en;; *);
+
+    <- concept_Elf;
+
+    <- male;
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf:
+                [Изображение персонажа(Потимас Харрифенас)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> "file://images/char_Potimas_Harrifenas.jpg" (* => nrel_format: format_jpg;; *);;
+                *);;
+        *);
+        ...
+        (*
+            => nrel_main_idtf:
+                [Описание персонажа(Потимас Харрифенас)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> "file://content/char_Potimas_Harrifenas.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                *);;
+        *);;

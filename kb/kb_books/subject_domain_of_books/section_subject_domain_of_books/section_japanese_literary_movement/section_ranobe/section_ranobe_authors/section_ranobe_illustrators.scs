@@ -7,10 +7,10 @@ section_ranobe_illustrators
 	person_Shunsaku_Tomose;;
 
 section_ranobe_illustrators = [*
+
 	person_Shunsaku_Tomose
     <- person;
-    <- male;
-    <- concept_writer;
+    <- illustrator;
 
     => nrel_main_idtf:
         [Шунсаку Томосэ] (* <- lang_ru;; *);
@@ -30,4 +30,29 @@ section_ranobe_illustrators = [*
             -> genre_psychological;;
 			-> concept_ranobe;;
         *);;
+
+    person_Tsukasa_Kiryuu
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Цукаса Кирю] (* <- lang_ru;; *);
+        [Tsukasa Kiryuu] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_adventure;;
+            -> genre_comedy;;
+            -> genre_fantasy;;
+			-> concept_ranobe;;
+        *);;
+
 *];;
