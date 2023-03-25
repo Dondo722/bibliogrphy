@@ -55,4 +55,28 @@ section_ranobe_illustrators = [*
 			-> concept_ranobe;;
         *);;
 
+    person_Ponkan8
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Ponkan8] (* <- lang_ru;; *);
+        [Ponkan8] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_romance;;
+            -> genre_comedy;;
+            -> genre_school;;
+			-> concept_ranobe;;
+        *);;
+
 *];;
