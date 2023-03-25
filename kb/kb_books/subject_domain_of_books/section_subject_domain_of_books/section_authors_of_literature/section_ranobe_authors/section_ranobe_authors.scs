@@ -1,0 +1,33 @@
+section_ranobe_authors
+=> nrel_main_idtf:
+	[Раздел. Авторы ранобе.] (* <- lang_ru;; *);
+	[Section. Ranobe authors.] (* <- lang_en;; *);
+
+->rrel_key_sc_element:
+	person_Shogo_Kinugasa;;
+
+section_foreign_authors = [*
+	person_Shogo_Kinugasa
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Сёго Кинугаса] (* <- lang_ru;; *);
+		[Shogo Kinugasa] (* <- lang_en;; *);
+            
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_psychological;;
+			-> concept_thriller;;
+			-> concept_ranobe;;
+        *);;
+*];;
