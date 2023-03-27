@@ -4,7 +4,9 @@ section_ranobe_authors
 	[Section. Ranobe authors.] (* <- lang_en;; *);
 
 -> rrel_key_sc_element:
-	person_Shogo_Kinugasa;;
+	person_Shogo_Kinugasa;
+    person_Okina_Baba;
+    person_Wataru_Watari;;
 
 section_ranobe_authors = [*
 	person_Shogo_Kinugasa
@@ -76,6 +78,29 @@ section_ranobe_authors = [*
             -> genre_comedy;;
             -> genre_school;;
 			-> concept_ranobe;;
+        *);;
+
+    person_Kugane_Maruyama
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Куганэ Маруяма] (* <- lang_ru;; *);
+        [Kugane Maruyama] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+            -> genre_comedy;;
+            -> genre_military;;
         *);;
 
 *];;

@@ -4,7 +4,9 @@ section_ranobe_illustrators
 	[Section. Ranobe illustrators.] (* <- lang_en;; *);
 
 -> rrel_key_sc_element:
-	person_Shunsaku_Tomose;;
+	person_Shunsaku_Tomose;
+    person_Tsukasa_Kiryuu;
+    person_Ponkan8;;
 
 section_ranobe_illustrators = [*
 
@@ -77,6 +79,29 @@ section_ranobe_illustrators = [*
             -> genre_comedy;;
             -> genre_school;;
 			-> concept_ranobe;;
+        *);;
+
+    person_so_bin
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [so-bin] (* <- lang_ru;; *);
+        [so-bin] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+            -> genre_comedy;;
+            -> genre_military;;
         *);;
 
 *];;

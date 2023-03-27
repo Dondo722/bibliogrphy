@@ -1,0 +1,261 @@
+ranobe_overlord
+    => nrel_main_idtf:
+        ["Повелитель"] (* <- lang_ru;; *);
+        ["Overlord"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_fantasy;
+    <- genre_military;
+    <- genre_adventure;
+
+    => nrel_author:
+        person_Kugane_Maruyama;
+    => nrel_illustrator:
+        person_so_bin;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2012;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Повелитель)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_overlord
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_overlord_characters
+        (*
+            -> rrel_main_character:
+                char_Ainz_Ooal_Gown;;
+            -> char_overlord_Albedo;;
+            -> char_overlord_Shalltear_Bloodfallen;;
+            -> char_overlord_Narberal_Gamma;;
+            -> char_overlord_Demiurge;;
+            -> char_overlord_Sebas_Tian;;
+            -> char_overlord_Pandoras_Actor;;
+        *);;
+
+char_Ainz_Ooal_Gown
+        => nrel_main_idtf: 
+            [Айнз Оал Гоун] (* <-lang_ru;; *);
+            [Ainz Ooal Gown] (* <- lang_en;; *);
+        => nrel_idtf:
+            [Момонга] (* <- lang_ru;; *);
+            [Momonga] (* <- lang_en;; *);
+
+        <- concept_lich;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Айнз Оал Гоун)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Ainz_Ooal_Gown.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Айнз Оал Гоун)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Ainz_Ooal_Gown.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_overlord_Albedo
+        => nrel_main_idtf: 
+            [Альбедо] (* <-lang_ru;; *);
+            [Albedo] (* <- lang_en;; *);
+
+        <- concept_succubus;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Альбедо)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Albedo.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Альбедо)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Albedo.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_overlord_Shalltear_Bloodfallen
+        => nrel_main_idtf: 
+            [Шалтир Бладфолен] (* <-lang_ru;; *);
+            [Shalltear Bloodfallen] (* <- lang_en;; *);
+
+        <- concept_Vampire;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Шалтир Бладфолен)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Shalltear_Bloodfallen.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Шалтир Бладфолен)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Shalltear_Bloodfallen.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_overlord_Narberal_Gamma
+        => nrel_main_idtf: 
+            [Нарберал Гамма] (* <-lang_ru;; *);
+            [Narberal Gamma] (* <- lang_en;; *);
+
+        <- concept_doppelganger;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Нарберал Гамма)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Narberal_Gamma.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Нарберал Гамма)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Narberal_Gamma.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_overlord_Demiurge
+        => nrel_main_idtf: 
+            [Демиург] (* <-lang_ru;; *);
+            [Demiurge] (* <- lang_en;; *);
+
+        <- concept_demon;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Демиург)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Demiurge.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Демиург)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Demiurge.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_overlord_Sebas_Tian
+        => nrel_main_idtf: 
+            [Себас Тиан] (* <-lang_ru;; *);
+            [Sebas Tian] (* <- lang_en;; *);
+
+        <- concept_dragonoid;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Себас Тиан)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Sebas_Tian.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Себас Тиан)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Sebas_Tian.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_overlord_Pandoras_Actor
+        => nrel_main_idtf: 
+            [Актёр Пандоры] (* <-lang_ru;; *);
+            [Pandora's Actor] (* <- lang_en;; *);
+
+        <- concept_doppelganger;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Актёр Пандоры)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Pandoras_Actor.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Актёр Пандоры)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Pandoras_Actor.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

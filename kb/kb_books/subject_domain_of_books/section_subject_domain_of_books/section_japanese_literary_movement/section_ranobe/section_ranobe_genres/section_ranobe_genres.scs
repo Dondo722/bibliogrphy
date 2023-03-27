@@ -18,7 +18,7 @@ section_ranobe_genres = [*
         (*
             => nrel_main_idtf:
                 [Опр.(психологическое)] (* <- lang_ru;; *);
-                [Def.(psychological)] (* <- lang_ru;; *);;
+                [Def.(psychological)] (* <- lang_en;; *);;
             <- definition;;
             <= nrel_sc_text_translation: ...
             (*
@@ -41,7 +41,7 @@ section_ranobe_genres = [*
         (*
             => nrel_main_idtf:
                 [Опр.(школа (жанр))] (* <- lang_ru;; *);
-                [Def.(school (genre))] (* <- lang_ru;; *);;
+                [Def.(school (genre))] (* <- lang_en;; *);;
             <- definition;;
             <= nrel_sc_text_translation: ...
             (*

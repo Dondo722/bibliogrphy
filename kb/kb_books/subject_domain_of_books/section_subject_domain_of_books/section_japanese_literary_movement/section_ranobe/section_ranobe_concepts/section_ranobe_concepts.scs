@@ -1,3 +1,11 @@
+section_ranobe_concepts
+=> nrel_main_idtf:
+	[Раздел. Концепции, популярные в ранобе.] (* <- lang_ru;; *);
+	[Section. Popular concepts in ranobe.] (* <- lang_en;; *);
+
+-> rrel_key_sc_element:
+    concept_demon_king;;
+
 concept_demon_king
     => nrel_main_idtf:
         [Король демонов] (* <- lang_ru;; *);
