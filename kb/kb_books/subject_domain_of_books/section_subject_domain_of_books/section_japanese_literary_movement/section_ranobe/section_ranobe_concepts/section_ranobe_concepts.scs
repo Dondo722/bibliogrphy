@@ -4,7 +4,8 @@ section_ranobe_concepts
 	[Section. Popular concepts in ranobe.] (* <- lang_en;; *);
 
 -> rrel_key_sc_element:
-    concept_demon_king;;
+    concept_demon_king;
+    magical_girl;;
 
 concept_demon_king
     => nrel_main_idtf:
@@ -18,5 +19,20 @@ concept_demon_king
             <= nrel_sc_text_translation: ...
             (*
                 -> "file://content/concept_demon_king.html" (* <- lang_ru;; => nrel_format: format_html;; *);;
+            *);;
+        *);;
+
+magical_girl
+    => nrel_main_idtf:
+        [девочка-волшебница] (* <- lang_ru;; *);
+        [magical girl] (* <- lang_en;; *);
+
+    <- rrel_key_sc_element:
+        ...
+        (*
+            => nrel_main_idtf: [Опр.(девочка-волшебница)] (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/concept_magical_girl.html" (* <- lang_ru;; => nrel_format: format_html;; *);;
             *);;
         *);;

@@ -103,4 +103,28 @@ section_ranobe_authors = [*
             -> genre_military;;
         *);;
 
+    person_Hajime_Ninomae
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Хаджиме Ниномаэ] (* <- lang_ru;; *);
+        [Hajime Ninomae] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_seinen;;
+            -> genre_drama;;
+            -> genre_fantasy;;
+        *);;
+
+
 *];;

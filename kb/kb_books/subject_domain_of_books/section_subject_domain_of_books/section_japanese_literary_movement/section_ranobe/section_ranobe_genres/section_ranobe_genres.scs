@@ -54,4 +54,26 @@ section_ranobe_genres = [*
             *);;
         *);;
 
+    genre_seinen
+        => nrel_main_idtf:
+            [сейнен] (* <- lang_ru;; *);
+            [seinen] (* <- lang_en;; *);
+        <- genre;
+
+        <- rrel_key_sc_element: ...
+        (*
+            => nrel_main_idtf:
+                [Опр.(сейнен)] (* <- lang_ru;; *);
+                [Def.(seinen)] (* <- lang_en;; *);;
+            <- definition;;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/genre_seinen.html" (* => nrel_format: format_html;; <- lang_ru;; *);;
+            *);;
+            <= nrel_using_constants: ...
+            (*
+                -> concept_ranobe;;
+            *);;
+        *);;
+
 *];;
