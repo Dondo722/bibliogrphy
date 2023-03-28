@@ -24,4 +24,5 @@ section_of_literary_genres
 		genre_postapokalipsis;
 		genre_science_fiction;
 		genre_military;
-		genre_criminal_prose;;
+		genre_criminal_prose;
+		genre_detective;;
