@@ -476,3 +476,30 @@ genre_thriller <- rrel_key_sc_element: Definition_genre_thriller
         -> reader;;
 		*);;
 	*);;
+
+
+sc_node_not_relation -> genre_computer_literature;;
+genre -> genre_computer_literature;;
+
+genre_computer_literature => nrel_main_idtf:
+        [компьютерная литература](*<-lang_ru;;*);;
+
+Definition_genre_computer_literature
+    => nrel_main_idtf:
+        [Опр.(компьютерная литература)]  (* <- lang_ru;; *);;
+
+genre_computer_literature <- rrel_key_sc_element: Definition_genre_computer_literature
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_computer_literature.html";;
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+        -> literary_work;;
+        -> reader;;
+		*);;
+	*);;
