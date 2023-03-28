@@ -1,0 +1,142 @@
+book_frankenstein
+    => nrel_main_idtf:
+        ["Франкенштейн"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_narrative;
+
+    => nrel_author:
+        person_Mary_Shelley;        //уточнить
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1818;;
+
+book_frankenstein
+    <= nrel_characters:
+        .book_frankenstein_characters
+        (*
+            -> rrel_main_character:
+                    char_Victor_Frankenstein;
+                    char_Creature;
+                    char_Elizabeth_Lavenca;;
+            -> char_De_Leisy;
+               char_Agatha;
+               char_Felix;
+               char_Bofor;
+               char_capitan_Robert_Walton;
+               char_Margareth_Sevill;
+               char_Genry_Klerval;;
+        *);;    
+
+char_Victor_Frankenstein
+        => nrel_main_idtf: 
+            [Виктор Франкенштейн] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Виктор Франкенштейн)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Victor_Frankenstein.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Creature
+        => nrel_main_idtf: 
+            [Существо] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Существо)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Creature.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+        
+char_capitan_Robert_Walton
+        => nrel_main_idtf: 
+            [капитан Роберт Уолтон] (* <-lang_ru;; *);
+        <- lit_person;
+        <-background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(капитан Роберт Уолтон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_capitan_Robert_Walton.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;   
+
+
+char_Margareth_Sevill
+        => nrel_main_idtf: 
+            [Маргарет Сэвилл] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Маргарет Сэвилл)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Margareth_Sevill.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Elizabeth_Lavenca
+        => nrel_main_idtf: 
+            [Элизабет Лавеница] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Анна Фриессе)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Elizabeth_Lavenca.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+char_Genry_Klerval
+        => nrel_main_idtf: 
+            [Генри Клервал] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Генри Клервал)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Genry_Klerval.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
