@@ -9,6 +9,7 @@ ranobe_overlord
     <- genre_fantasy;
     <- genre_military;
     <- genre_adventure;
+    <- genre_isekai;
 
     => nrel_author:
         person_Kugane_Maruyama;

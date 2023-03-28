@@ -9,6 +9,7 @@ ranobe_kumo_desu_ga_nani_ka
     <- genre_adventure;
     <- genre_comedy;
     <- genre_fantasy;
+    <- genre_isekai;
 
     => nrel_author:
         person_Okina_Baba;
