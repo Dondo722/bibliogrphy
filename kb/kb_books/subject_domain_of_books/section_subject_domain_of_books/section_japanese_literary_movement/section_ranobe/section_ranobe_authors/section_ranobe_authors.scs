@@ -126,5 +126,48 @@ section_ranobe_authors = [*
             -> genre_fantasy;;
         *);;
 
+    person_Hajime_Kamoshida
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Хадзимэ Камосида] (* <- lang_ru;; *);
+		[Hajime Kamoshida] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_comedy;;
+            -> genre_romance;;
+            -> genre_school;;
+        *);;
+
+    person_Fuse
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [] (* <- lang_ru;; *);
+		[Fuse] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+        *);;
 
 *];;

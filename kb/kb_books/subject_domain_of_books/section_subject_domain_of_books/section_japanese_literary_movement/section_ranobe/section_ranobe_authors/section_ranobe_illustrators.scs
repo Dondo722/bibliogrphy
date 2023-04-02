@@ -104,4 +104,48 @@ section_ranobe_illustrators = [*
             -> genre_military;;
         *);;
 
+    person_Keiji_Mizoguchi
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Кэйдзи Мидзогути] (* <- lang_ru;; *);
+		[Keiji Mizoguchi] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_comedy;;
+            -> genre_romance;;
+            -> genre_school;;
+        *);;
+
+    person_Mitz_Vah
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Миц Ва] (* <- lang_ru;; *);
+		[Mitz Vah] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+        *);;
+
 *];;
