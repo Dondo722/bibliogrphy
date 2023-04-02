@@ -15,9 +15,33 @@ section_ranobe_illustrators
     person_Sui_Ishida;
     person_Seira_Minami;
     person_Daisuke_Izuka;
-    person_VOFAN;;
+    person_VOFAN;
+    person_Eight_Shimotsuki;;
 
 section_ranobe_illustrators = [*
+
+    person_Eight_Shimotsuki
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Эйто Симоцуки] (* <- lang_ru;; *);
+		[Eight Shimotsuki] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_comedy;;
+            -> genre_ecchi;;
+            -> genre_school;;
+        *);;
 
     person_VOFAN
     <- person;

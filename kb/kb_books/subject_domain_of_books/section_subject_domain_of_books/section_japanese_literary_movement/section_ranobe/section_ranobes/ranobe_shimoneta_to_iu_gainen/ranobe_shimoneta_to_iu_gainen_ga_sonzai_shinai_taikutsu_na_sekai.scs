@@ -1,0 +1,49 @@
+ranobe_shimoneta_to_iu_gainen_ga_sonzai_shinai_taikutsu_na_sekai
+    => nrel_main_idtf:
+        ["Скучный мир, где не существует самой идеи похабных шуток"] (* <- lang_ru;; *);
+        ["Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_comedy;
+    <- genre_ecchi;
+    <- genre_school;
+
+    => nrel_author:
+        person_Hirotaka_Akagi;
+    => nrel_illustrator:
+        person_Eight_Shimotsuki;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2012;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Скучный мир, где не существует самой идеи похабных шуток)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_shimoneta_to_iu_gainen_ga_sonzai_shinai_taikutsu_na_sekai
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_shimoneta_to_iu_gainen_ga_sonzai_shinai_taikutsu_na_sekai_characters
+        (*
+            -> rrel_main_character: char_Otome_Saotome;;
+            -> rrel_main_character: char_Kosuri_Onigashira;;
+            -> rrel_main_character: char_Tanukichi_Okuma;;
+            -> rrel_main_character: char_Ayame_Kajou;;
+            -> char_Oboro_Tsukimigusa;;
+            -> char_Rabu_Machine;;
+            -> char_Keisuke_Onigashira;;
+            -> char_Ranko_Okuma;;
+            -> char_Yutori_Nuregoromo;;
+        *);;

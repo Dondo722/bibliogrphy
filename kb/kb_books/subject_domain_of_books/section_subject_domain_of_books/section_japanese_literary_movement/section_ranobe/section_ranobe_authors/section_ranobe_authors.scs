@@ -16,9 +16,33 @@ section_ranobe_authors
     person_Yusagi_Aneko;
     person_Kumo_Kagyuu;
     person_Takumi_Yanai;
-    person_ISIN_NISIO;;
+    person_ISIN_NISIO;
+    person_Hirotaka_Akagi;;
 
 section_ranobe_authors = [*
+
+    person_Hirotaka_Akagi
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Хиротака Акаги] (* <- lang_ru;; *);
+		[Hirotaka Akagi] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_comedy;;
+            -> genre_ecchi;;
+            -> genre_school;;
+        *);;
 
     person_ISIN_NISIO
     <- person;
