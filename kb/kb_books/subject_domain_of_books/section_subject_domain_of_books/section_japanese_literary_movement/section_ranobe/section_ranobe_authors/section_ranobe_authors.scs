@@ -11,7 +11,8 @@ section_ranobe_authors
     person_Carlo_Zen;
     person_Mamare_Touno;
     person_Hajime_Kamoshida;
-    person_Hajime_Ninomae;;
+    person_Hajime_Ninomae;
+    person_Shin_Towada;;
 
 section_ranobe_authors = [*
 	person_Shogo_Kinugasa
@@ -218,6 +219,31 @@ section_ranobe_authors = [*
             -> genre_adventure;;
             -> genre_fantasy;;
             -> genre_scifi;;
+        *);;
+
+    person_Shin_Towada
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Син Товада] (* <- lang_ru;; *);
+		[Shin Towada] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_fantasy;;
+            -> genre_horror;;
+            -> genre_supernatural;;
+            -> genre_psychological;;
         *);;
 
 *];;

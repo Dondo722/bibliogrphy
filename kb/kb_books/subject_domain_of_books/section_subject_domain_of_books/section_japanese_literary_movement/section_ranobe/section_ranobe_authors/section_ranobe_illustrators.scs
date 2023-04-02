@@ -11,7 +11,8 @@ section_ranobe_illustrators
     person_Shinobu_Shinotsuki;
     person_Mitz_Vah;
     person_Keiji_Mizoguchi;
-    person_so_bin;;
+    person_so_bin;
+    person_Sui_Ishida;;
 
 section_ranobe_illustrators = [*
 
@@ -196,6 +197,31 @@ section_ranobe_illustrators = [*
             -> genre_adventure;;
             -> genre_fantasy;;
             -> genre_scifi;;
+        *);;
+
+    person_Sui_Ishida
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Суи Исида] (* <- lang_ru;; *);
+		[Sui Ishida] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_fantasy;;
+            -> genre_horror;;
+            -> genre_supernatural;;
+            -> genre_psychological;;
         *);;
 
 *];;

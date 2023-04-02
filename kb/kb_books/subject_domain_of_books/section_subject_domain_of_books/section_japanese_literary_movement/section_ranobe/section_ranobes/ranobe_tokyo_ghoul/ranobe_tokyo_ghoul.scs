@@ -1,0 +1,53 @@
+ranobe_tokyo_ghoul
+    => nrel_main_idtf:
+        ["Токийский гуль"] (* <- lang_ru;; *);
+        ["Tokyo Ghoul"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_action;
+    <- genre_fantasy;
+    <- genre_horror;
+    <- genre_supernatural;
+    <- genre_psychological;
+
+    => nrel_author:
+        person_Shin_Towada;
+    => nrel_illustrator:
+        person_Sui_Ishida;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2013;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Токийский гуль)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_tokyo_ghoul
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_tokyo_ghoul_characters
+        (*
+            -> rrel_main_character: char_Shuu_Tsukiyama;;
+            -> rrel_main_character: char_Hideyoshi_Nagachika;;
+            -> rrel_main_character: char_Ayato_Kirishima;;
+            -> rrel_main_character: char_Touka_Kirishima;;
+            -> rrel_main_character: char_Ken_Kaneki;;
+            -> rrel_main_character: char_Chie_Hori;;
+            -> char_Kazuo_Yoshida;;
+            -> char_Tatara;;
+            -> char_Yukinori_Shinohara;;
+            -> char_Nurse;;
+            -> char_Nico;;
+        *);;
