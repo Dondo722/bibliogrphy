@@ -14,9 +14,31 @@ section_ranobe_illustrators
     person_so_bin;
     person_Sui_Ishida;
     person_Seira_Minami;
-    person_Daisuke_Izuka;;
+    person_Daisuke_Izuka;
+    person_VOFAN;;
 
 section_ranobe_illustrators = [*
+
+    person_VOFAN
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [] (* <- lang_ru;; *);
+		[VOFAN] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_mystery;;
+        *);;
 
     person_Daisuke_Izuka
     <- person;

@@ -15,9 +15,31 @@ section_ranobe_authors
     person_Shin_Towada;
     person_Yusagi_Aneko;
     person_Kumo_Kagyuu;
-    person_Takumi_Yanai;;
+    person_Takumi_Yanai;
+    person_ISIN_NISIO;;
 
 section_ranobe_authors = [*
+
+    person_ISIN_NISIO
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Исин Нисио] (* <- lang_ru;; *);
+		[ISIN NISIO] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_mystery;;
+        *);;
 
     person_Takumi_Yanai
     <- person;
