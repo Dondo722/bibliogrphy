@@ -1,0 +1,119 @@
+char_Raphtalia
+        => nrel_main_idtf:
+            [Рафталия] (* <-lang_ru;; *);
+            [Raphtalia] (* <- lang_en;; *);
+
+        <- concept_beastman;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Рафталия)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Raphtalia.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Рафталия)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Raphtalia.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Naofumi_Iwatani
+        => nrel_main_idtf:
+            [Наофуми Иватани] (* <-lang_ru;; *);
+            [Naofumi Iwatani] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Наофуми Иватани)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Naofumi_Iwatani.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Наофуми Иватани)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Naofumi_Iwatani.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Filo
+        => nrel_main_idtf:
+            [Фило] (* <-lang_ru;; *);
+            [Filo] (* <- lang_en;; *);
+
+        <- concept_beastman;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Фило)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Filo.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Фило)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Filo.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Wyndia
+        => nrel_main_idtf:
+            [Виндия] (* <-lang_ru;; *);
+            [Wyndia] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Виндия)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Wyndia.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Виндия)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Wyndia.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

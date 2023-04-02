@@ -12,9 +12,53 @@ section_ranobe_illustrators
     person_Mitz_Vah;
     person_Keiji_Mizoguchi;
     person_so_bin;
-    person_Sui_Ishida;;
+    person_Sui_Ishida;
+    person_Seira_Minami;;
 
 section_ranobe_illustrators = [*
+
+    person_Noboru_Kannatsuki
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Нобору Каннацуки] (* <- lang_ru;; *);
+		[Noboru Kannatsuki] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_fantasy;;
+        *);;
+
+    person_Seira_Minami
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Сэйра Минами] (* <- lang_ru;; *);
+		[Seira Minami] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+        *);;
 
 	person_Shunsaku_Tomose
     <- person;

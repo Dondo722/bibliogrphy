@@ -12,9 +12,55 @@ section_ranobe_authors
     person_Mamare_Touno;
     person_Hajime_Kamoshida;
     person_Hajime_Ninomae;
-    person_Shin_Towada;;
+    person_Shin_Towada;
+    person_Yusagi_Aneko;
+    person_Kumo_Kagyuu;;
 
 section_ranobe_authors = [*
+
+    person_Kumo_Kagyuu
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Кумо Кагю] (* <- lang_ru;; *);
+		[Kumo Kagyuu] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_fantasy;;
+        *);;
+
+    person_Yusagi_Aneko
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Юсаги Анэко] (* <- lang_ru;; *);
+		[Yusagi Aneko] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+        *);;
+
 	person_Shogo_Kinugasa
     <- person;
     <- writer;
