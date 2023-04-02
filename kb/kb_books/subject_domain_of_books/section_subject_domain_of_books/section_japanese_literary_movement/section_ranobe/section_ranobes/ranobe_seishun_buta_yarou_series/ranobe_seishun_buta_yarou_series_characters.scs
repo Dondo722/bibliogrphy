@@ -4,7 +4,7 @@ char_Mai_Sakurajima
             [Mai Sakurajima] (* <- lang_en;; *);
 
         <- person;
-        <- male;
+        <- female;
 
         <- rrel_key_sc_element:
             ...
@@ -64,7 +64,7 @@ char_Nodoka_Toyohama
             [Nodoka Toyohama] (* <- lang_en;; *);
 
         <- person;
-        <- male;
+        <- female;
 
         <- rrel_key_sc_element:
             ...
@@ -124,7 +124,7 @@ char_Shoukos_Mother
             [Shouko's Mother] (* <- lang_en;; *);
 
         <- person;
-        <- male;
+        <- female;
 
         <- rrel_key_sc_element:
             ...
@@ -184,7 +184,7 @@ char_Sakutas_Mother
             [Sakuta's Mother] (* <- lang_en;; *);
 
         <- person;
-        <- male;
+        <- female;
 
         <- rrel_key_sc_element:
             ...
@@ -207,4 +207,3 @@ char_Sakutas_Mother
                         -> "file://content/char_Sakutas_Mother.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
             *);;
-

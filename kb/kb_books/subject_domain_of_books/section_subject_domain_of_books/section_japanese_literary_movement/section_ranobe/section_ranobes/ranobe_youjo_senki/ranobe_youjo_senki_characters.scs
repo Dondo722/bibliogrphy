@@ -34,7 +34,7 @@ char_Viktoriya_Ivanovna_Serebryakova
             [Viktoriya Ivanovna Serebryakova] (* <- lang_en;; *);
 
         <- person;
-        <- male;
+        <- female;
 
         <- rrel_key_sc_element:
             ...
@@ -64,7 +64,7 @@ char_Tanya_Degurechaff
             [Tanya Degurechaff] (* <- lang_en;; *);
 
         <- person;
-        <- male;
+        <- female;
 
         <- rrel_key_sc_element:
             ...

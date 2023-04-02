@@ -6,7 +6,12 @@ section_ranobe_authors
 -> rrel_key_sc_element:
 	person_Shogo_Kinugasa;
     person_Okina_Baba;
-    person_Wataru_Watari;;
+    person_Wataru_Watari;
+    person_Fuse;
+    person_Carlo_Zen;
+    person_Mamare_Touno;
+    person_Hajime_Kamoshida;
+    person_Hajime_Ninomae;;
 
 section_ranobe_authors = [*
 	person_Shogo_Kinugasa
@@ -189,6 +194,30 @@ section_ranobe_authors = [*
     <= nrel_genres: ...
         (*
             -> genre_military;;
+        *);;
+
+    person_Mamare_Touno
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Мамарэ Тоно] (* <- lang_ru;; *);
+		[Mamare Touno] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_adventure;;
+            -> genre_fantasy;;
+            -> genre_scifi;;
         *);;
 
 *];;

@@ -6,7 +6,12 @@ section_ranobe_illustrators
 -> rrel_key_sc_element:
 	person_Shunsaku_Tomose;
     person_Tsukasa_Kiryuu;
-    person_Ponkan8;;
+    person_Ponkan8;
+    person_Kazuhiro_Hara;
+    person_Shinobu_Shinotsuki;
+    person_Mitz_Vah;
+    person_Keiji_Mizoguchi;
+    person_so_bin;;
 
 section_ranobe_illustrators = [*
 
@@ -167,6 +172,30 @@ section_ranobe_illustrators = [*
     <= nrel_genres: ...
         (*
             -> genre_military;;
+        *);;
+
+    person_Kazuhiro_Hara
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Кадзухиро Хара] (* <- lang_ru;; *);
+		[Kazuhiro Hara] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_adventure;;
+            -> genre_fantasy;;
+            -> genre_scifi;;
         *);;
 
 *];;

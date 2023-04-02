@@ -3,8 +3,7 @@ char_Rimuru_Tempest
             [Римуру Темпест] (* <-lang_ru;; *);
             [Rimuru Tempest] (* <- lang_en;; *);
 
-        <- person;
-        <- male;
+        <- concept_slime;
 
         <- rrel_key_sc_element:
             ...
@@ -37,16 +36,6 @@ char_Zonda
         <- male;
 
         <- rrel_key_sc_element:
-            ...
-            (*
-                => nrel_main_idtf:
-                    [Изображение персонажа(Зонда)] (* <- lang_ru;; *);;
-                <= nrel_sc_text_translation:
-                    ...
-                    (*
-                        -> "file://images/char_Zonda.jpg" (* => nrel_format: format_jpg;; *);;
-                    *);;
-            *);
             ...
             (*
                 => nrel_main_idtf:
