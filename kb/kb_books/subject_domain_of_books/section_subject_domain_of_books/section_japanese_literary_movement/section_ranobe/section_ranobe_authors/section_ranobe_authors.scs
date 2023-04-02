@@ -14,9 +14,34 @@ section_ranobe_authors
     person_Hajime_Ninomae;
     person_Shin_Towada;
     person_Yusagi_Aneko;
-    person_Kumo_Kagyuu;;
+    person_Kumo_Kagyuu;
+    person_Takumi_Yanai;;
 
 section_ranobe_authors = [*
+
+    person_Takumi_Yanai
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Такуми Янай] (* <- lang_ru;; *);
+		[Takumi Yanai] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_adventure;;
+            -> genre_fantasy;;
+            -> genre_military;;
+        *);;
 
     person_Kumo_Kagyuu
     <- person;
