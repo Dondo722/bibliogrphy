@@ -1,0 +1,180 @@
+char_Rimuru_Tempest
+        => nrel_main_idtf:
+            [Римуру Темпест] (* <-lang_ru;; *);
+            [Rimuru Tempest] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Римуру Темпест)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Rimuru_Tempest.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Римуру Темпест)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Rimuru_Tempest.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Zonda
+        => nrel_main_idtf:
+            [Зонда] (* <-lang_ru;; *);
+            [Zonda] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Зонда)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Zonda.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Зонда)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Zonda.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Yamza
+        => nrel_main_idtf:
+            [Ямза] (* <-lang_ru;; *);
+            [Yamza] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Ямза)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Yamza.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ямза)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Yamza.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Violet
+        => nrel_main_idtf:
+            [Ультима] (* <-lang_ru;; *);
+            [Violet] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Ультима)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Violet.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ультима)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Violet.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Veyron
+        => nrel_main_idtf:
+            [Вейрон] (* <-lang_ru;; *);
+            [Veyron] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Вейрон)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Veyron.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Вейрон)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Veyron.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Vesta
+        => nrel_main_idtf:
+            [Бестер] (* <-lang_ru;; *);
+            [Vesta] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Бестер)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Vesta.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Бестер)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Vesta.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
