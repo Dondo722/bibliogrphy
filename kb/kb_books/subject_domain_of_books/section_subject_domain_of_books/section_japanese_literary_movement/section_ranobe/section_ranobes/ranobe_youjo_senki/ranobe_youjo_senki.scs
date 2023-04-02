@@ -1,0 +1,46 @@
+ranobe_youjo_senki
+    => nrel_main_idtf:
+        ["Военная хроника маленькой девочки"] (* <- lang_ru;; *);
+        ["Youjo Senki"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_military;
+
+    => nrel_author:
+        person_Carlo_Zen;
+    => nrel_illustrator:
+        person_Shinobu_Shinotsuki;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2013;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Военная хроника маленькой девочки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_youjo_senki
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_youjo_senki_characters
+        (*
+            -> rrel_main_character: char_Erich_von_Lergen;;
+            -> rrel_main_character: char_Viktoriya_Ivanovna_Serebryakova;;
+            -> rrel_main_character: char_Tanya_Degurechaff;;
+            -> char_Hans_von_Zettour;;
+            -> char_Kurst_von_Walhorf;;
+            -> char_Harald_von_Vist;;
+            -> char_Maximilian_Johann_von_Ugar;;
+            -> char_Adelheid_von_Schugel;;
+        *);;

@@ -154,7 +154,7 @@ section_ranobe_authors = [*
     <- writer;
 
     => nrel_main_idtf:
-        [] (* <- lang_ru;; *);
+        [Fuse] (* <- lang_ru;; *);
 		[Fuse] (* <- lang_en;; *);
 
     => nrel_place_of_birth:
@@ -168,6 +168,27 @@ section_ranobe_authors = [*
     <= nrel_genres: ...
         (*
             -> genre_fantasy;;
+        *);;
+
+    person_Carlo_Zen
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Карло Дзен] (* <- lang_ru;; *);
+		[Carlo Zen] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_military;;
         *);;
 
 *];;
