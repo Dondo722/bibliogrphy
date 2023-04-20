@@ -19,6 +19,7 @@ section_of_literary_genres
 		genre_docudrama;
 		genre_romantic_prose;
 		genre_fantasy;
+		genre_fantastic;
 		genre_thriller;
 		genre_gotic;
 		genre_postapokalipsis;
