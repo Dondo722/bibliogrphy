@@ -1,0 +1,190 @@
+book_1984 
+    => nrel_main_idtf:
+        ["1984"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_fantastic;
+    => nrel_author:
+        person_George_Orwell;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1949;;
+
+
+book_1984
+    <= nrel_characters:
+        .book_1984_characters
+        (*
+            -> rrel_main_character:
+                    char_Winston_Smith;
+                    char_Julia;;
+                -> char_OBrien;
+                   char_Mr_Charrington;
+                   char_Syme;;
+        *);;
+
+book_1984
+=> nrel_location:
+    .book_1984_location
+    (*
+        -> London;;
+        -> country_England;;
+    *);;
+
+
+char_Winston_Smith
+        => nrel_main_idtf: 
+            [Уинстон Смит] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Уинстон Смит)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Winston_Smith.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Julia
+        => nrel_main_idtf: 
+            [Джулия] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джулия)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Julia.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_OBrien
+        => nrel_main_idtf: 
+            [О’Брайен] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- background_character;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(О’Брайен)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_OBrien.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Mr_Charrington
+        => nrel_main_idtf: 
+            [Мистер Чаррингтон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- background_character;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мистер Чаррингтон)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mr_Charrington.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Syme
+        => nrel_main_idtf: 
+            [Джеймс Вэйн] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- background_character;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джеймс Вэйн)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Syme.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_1984 => nrel_plot: 
+    .book_1984_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "1984"] (* <-lang_ru;; *);;
+        -> .book_1984_event_1
+            (*
+                => nrel_main_idtf: [Событие №1.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_1984_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dorian_Gray;
+                           char_Basil_Hallward;
+                           char_Lord_Henry;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_1984_event_2;;      
+            *);;
+
+        -> .book_1984_event_2
+            (*
+                => nrel_main_idtf: [Событие №2.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_1984_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dorian_Gray;
+                           char_Sibyl_Vane;
+                           char_James_Vane;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_1984_event_3;;      
+            *);;
+
+        -> .book_1984_event_3
+            (*
+                => nrel_main_idtf: [Событие №3.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_1984_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dorian_Gray;
+                           char_Basil_Hallward;
+                           char_Lord_Henry;
+                           char_Sibyl_Vane;;
+                    *);;           
+            *);;    
+
+    *);;
