@@ -301,7 +301,7 @@ genre_fantasy <- rrel_key_sc_element: Definition_genre_fantasy
 
 
 sc_node_not_relation -> genre_fantastic;;
-genre -> genre_fantasy;;
+genre -> genre_fantastic;;
 
 genre_fantasic => nrel_main_idtf:
         [фэнтастика](*<-lang_ru;;*);;
