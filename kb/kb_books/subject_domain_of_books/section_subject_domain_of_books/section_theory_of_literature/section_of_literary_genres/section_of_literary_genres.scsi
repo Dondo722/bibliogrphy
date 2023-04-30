@@ -524,3 +524,24 @@ genre_religion <- rrel_key_sc_element: Definition_genre_religion
 		-> genre_of_literature;;
 		*);;
 	*);;
+
+genre_novel => nrel_main_idtf:
+        [роман](*<-lang_ru;;*);;
+
+Definition_genre_novel
+    => nrel_main_idtf:
+        [Опр.(роман)]  (* <- lang_ru;; *);;
+
+genre_novel <- rrel_key_sc_element: Definition_genre_novel
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_novel.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;

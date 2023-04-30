@@ -26,4 +26,5 @@ section_of_literary_genres
 		genre_military;
 		genre_criminal_prose;
 		genre_religion;
+		genre_novel;
 		genre_detective;;
