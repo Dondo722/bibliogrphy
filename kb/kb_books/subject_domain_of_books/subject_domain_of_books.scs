@@ -53,6 +53,11 @@ section_role_of_lit_person
 section_belarussian_literary_movements;;
 *);
 section_belarussian_literary_movements
+(*
+=> nrel_section_base_order:
+section_detective_literary_movement;;
+*);
+section_detective_literary_movement
 
 
 };;

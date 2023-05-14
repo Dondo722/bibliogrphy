@@ -1,0 +1,8 @@
+section_detective_books
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Детективные книги] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Book authors] (* <- lang_en;; *);;
+
+    -> rrel_key_sc_element:
+        book_Murders_in_the_Rue_Morgue;
+        ranobe_shimoneta_to_iu_gainen_ga_sonzai_shinai_taikutsu_na_sekai;;

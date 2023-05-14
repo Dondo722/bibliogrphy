@@ -54,7 +54,7 @@ char_Nameless
         <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/concept_htmls/characters/char_Nameless.html" (* <-lang_ru;; *);;
+                        -> "file://content/concept_htmls/characters/char_Nameless.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
             *);;
 
@@ -73,7 +73,7 @@ char_Auguste_Dupin
         <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/concept_htmls/characters/char_Auguste_Dupin.html" (* <-lang_ru;; *);;
+                        -> "file://content/concept_htmls/characters/char_Auguste_Dupin.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
             *);;
 
@@ -92,7 +92,7 @@ char_L_Espanaye
         <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/concept_htmls/characters/char_L_Espanaye.html" (* <-lang_ru;; *);;
+                        -> "file://content/concept_htmls/characters/char_L_Espanaye.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
             *);; 
 
@@ -111,7 +111,7 @@ char_Camille_L_Espanaye
         <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/concept_htmls/characters/char_Camille_L_Espanaye.html" (* <-lang_ru;; *);;
+                        -> "file://content/concept_htmls/characters/char_Camille_L_Espanaye.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
             *);;
 
@@ -128,7 +128,7 @@ book_Murders_in_the_Rue_Morgue=> nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Murders_in_the_Rue_Morgue_event_1.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/concept_htmls/events/book_Murders_in_the_Rue_Morgue_event_1.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
                     <- event_acquaintance;;
                     <- event_memories;;
@@ -148,7 +148,7 @@ book_Murders_in_the_Rue_Morgue=> nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Murders_in_the_Rue_Morgue_event_2.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/concept_htmls/events/book_Murders_in_the_Rue_Morgue_event_2.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
                     <- event_memories;;
                     <- event_murder;;
@@ -171,7 +171,7 @@ book_Murders_in_the_Rue_Morgue=> nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Murders_in_the_Rue_Morgue_event_3.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/concept_htmls/events/book_Murders_in_the_Rue_Morgue_event_3.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
                     <- event_memories;;
                     <- event_investigation;;
@@ -192,7 +192,7 @@ book_Murders_in_the_Rue_Morgue=> nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Murders_in_the_Rue_Morgue_event_4.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/concept_htmls/events/book_Murders_in_the_Rue_Morgue_event_4.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
                     <- event_memories;;
                     <- event_investigation;;
@@ -212,7 +212,7 @@ book_Murders_in_the_Rue_Morgue=> nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Murders_in_the_Rue_Morgue_event_5.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/concept_htmls/events/book_Murders_in_the_Rue_Morgue_event_5.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
                     <- event_memories;;
                     <- event_investigation;;
@@ -232,7 +232,7 @@ book_Murders_in_the_Rue_Morgue=> nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Murders_in_the_Rue_Morgue_event_6.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/concept_htmls/events/book_Murders_in_the_Rue_Morgue_event_6.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
                      <= nrel_main_participants: ... 
                     (*
