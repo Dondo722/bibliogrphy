@@ -39,7 +39,7 @@ char_Victor_Frankenstein
                 <= sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Victor_Frankenstein.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Victor_Frankenstein.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -56,7 +56,7 @@ char_Creature
                 <= sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Creature.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Creature.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
             *);;
         
@@ -74,7 +74,7 @@ char_capitan_Robert_Walton
                 <= sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_capitan_Robert_Walton.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_capitan_Robert_Walton.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
             *);;   
 
@@ -95,7 +95,7 @@ char_Justine_Moritz
                 <= sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Justine_Moritz.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Justine_Moritz.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -113,7 +113,7 @@ char_Elizabeth_Lavenca
                 <= sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Elizabeth_Lavenca.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Elizabeth_Lavenca.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -133,7 +133,7 @@ char_Genry_Klerval
                 <= sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Genry_Klerval.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Genry_Klerval.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -146,7 +146,7 @@ book_frankenstein => nrel_plot:.book_frankenstein_events
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_frankenstein_event_1.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_frankenstein_event_1.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
                     <- event_acquaintance;;
                     <= nrel_participants:... 
@@ -164,7 +164,7 @@ book_frankenstein => nrel_plot:.book_frankenstein_events
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_frankenstein_event_2.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_frankenstein_event_2.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
                     <- event_acquaintance;;
                     <= nrel_participants:... 
@@ -184,7 +184,7 @@ book_frankenstein => nrel_plot:.book_frankenstein_events
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_frankenstein_event_3.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_frankenstein_event_3.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
                     <-event_dialog;;
                     <= nrel_participants:... 
@@ -204,7 +204,7 @@ book_frankenstein => nrel_plot:.book_frankenstein_events
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_frankenstein_event_4.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_frankenstein_event_4.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);; 
                     <-event_duel;;
                     <= nrel_participants:... 
@@ -224,7 +224,7 @@ book_frankenstein => nrel_plot:.book_frankenstein_events
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_frankenstein_event_5.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_frankenstein_event_5.html" (* <-lang_ru;; => nrel_format: format_html;;*);;
                     *);;
                     <- event_finality;;
                     <= nrel_participants:... 
