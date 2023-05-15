@@ -82,7 +82,6 @@ subject_domain_of_literary_genres = [*
 
 		=> nrel_private_subject_domain:
 			subject_domain_of_fantastic;
-			subject_domain_of_literary_genres;
 			
 		<= nrel_private_subject_domain:
 			subject_domain_of_literature;
@@ -95,8 +94,3 @@ subject_domain_of_literature
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: [Предметная область литературы] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [Subject domain of literature] (* <- lang_en;; *);;
-
-subject_domain_of_fantastic
-	<- sc_node_not_relation;
-	=> nrel_main_idtf: [Предметная область фантастики] (* <- lang_ru;; *);
-	=> nrel_main_idtf: [Subject domain of fantastic] (* <- lang_en;; *);;
