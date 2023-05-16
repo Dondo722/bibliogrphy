@@ -1,0 +1,33 @@
+section_computer_literature_genres
+=> nrel_main_idtf:
+	[Раздел. Жанры компьютерной литературы.] (* <- lang_ru;; *);
+	[Section. Computer literature genres.] (* <- lang_en;; *);
+
+-> rrel_key_sc_element:
+	genre_tech_docs;;
+
+section_computer_literature_genres = [*
+
+    genre_tech_docs
+        => nrel_main_idtf:
+            [Техническая документация] (* <- lang_ru;; *);
+            [Technical documentation] (* <- lang_en;; *);
+        <- genre;
+
+        <- rrel_key_sc_element: ...
+        (*
+            => nrel_main_idtf:
+                [Опр.(Техническая документация)] (* <- lang_ru;; *);
+                [Def.(Technical documentation)] (* <- lang_en;; *);;
+            <- definition;;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/genre_tech_docs.html" (* => nrel_format: format_html;; <- lang_ru;; *);;
+            *);;
+            <= nrel_using_constants: ...
+            (*
+                -> concept_computer_literature;;
+                -> genre_tech_docs;;
+            *);;
+        *);;
+*];;

@@ -1,0 +1,23 @@
+concept_computer_literature
+		<- sc_node_not_relation;
+		=> nrel_main_idtf: [Компьютерная литература] (* <- lang_ru;; *);
+		=> nrel_main_idtf: [Computer literature] (* <- lang_en;; *);
+
+		<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				=> nrel_main_idtf: [Опр.(компьютерная литература)] (* <-lang_ru;; *);;
+				=> nrel_main_idtf: [Def.(computer literature)] (* <-lang_en;; *);;
+				<= nrel_sc_text_translation:
+					...
+					(*
+						-> rrel_example: "file://content/computer_literature.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+			*);;
+
+
+

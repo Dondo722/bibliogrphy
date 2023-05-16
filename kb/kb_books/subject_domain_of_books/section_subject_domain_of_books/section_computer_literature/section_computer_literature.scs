@@ -1,0 +1,42 @@
+section_subject_domain_of_computer_literature
+	=> nrel_main_idtf: [Раздел. Компьютерная литература] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Computer literature] (* <- lang_en;; *);
+
+
+	<= nrel_section_decomposition:
+	{
+		section_subject_domain_of_computer_literature
+	};
+
+	-> rrel_key_sc_element:
+		concept_computer_literature;
+
+	<- non_atomic_section;;
+
+section_subject_domain_of_computer_literature = [*
+
+	subject_domain_of_computer_literature
+		=> nrel_main_idtf: [Предметная область компьютерной литературы] (* <- lang_ru;; *);
+		=> nrel_main_idtf: [Subject domain of computer literature] (* <- lang_en;; *);
+
+		-> rrel_maximum_studied_object_class:
+			concept_computer_literature;
+
+		-> rrel_not_maximum_studied_object_class:
+			concept_computer_literature;
+			writer;
+
+		-> rrel_explored_relation:
+			nrel_author;
+			nrel_subject;
+
+		=> nrel_private_subject_domain: {
+			subject_domain_of_computer_literature
+		};
+
+		<= nrel_private_subject_domain:
+			subject_domain_of_books;
+
+		<- subject_domain;;
+
+*];;

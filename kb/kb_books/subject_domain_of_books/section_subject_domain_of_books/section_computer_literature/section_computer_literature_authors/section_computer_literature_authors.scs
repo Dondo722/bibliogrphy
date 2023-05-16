@@ -1,0 +1,32 @@
+section_computer_literature_authors
+=> nrel_main_idtf:
+	[Раздел. Авторы компьютерной литературы.] (* <- lang_ru;; *);
+	[Section. Computer literature authors.] (* <- lang_en;; *);
+
+-> rrel_key_sc_element:
+	person_Hiroko_Nishimura;;
+
+section_computer_literature_authors = [*
+
+    person_Hiroko_Nishimura
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Хироко Нишимура] (* <- lang_ru;; *);
+		[Hiroko Nishimura] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+*];;
