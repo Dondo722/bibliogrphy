@@ -1,7 +1,7 @@
-computer_literature_aws_for_non_engineers
+computer_literature_improving_design_of_code
     => nrel_main_idtf:
-        ["AWS для гуманитариев"] (* <- lang_ru;; *);
-        ["AWS for non engineers"] (* <- lang_en;; *);
+        ["Рефакторинг: Улучшения дизайна существующего кода"] (* <- lang_ru;; *);
+        ["Refactoring: Improving the Design of Existing Code"] (* <- lang_en;; *);
 
     <- book;
     <- concept_computer_literature;
@@ -9,18 +9,18 @@ computer_literature_aws_for_non_engineers
     <- genre_tech_docs;
 
     => nrel_author:
-        person_Hiroko_Nishimura;
+        person_Martin_Fowler;
 
     <= nrel_original_language:
         lang_en;
     <- nrel_publication_date:
-        year_2020;
+        year_2021;
 
     <- rrel_key_sc_element:
             ...
             (*
                 => nrel_main_idtf:
-                    [Описание (AWS для гуманитариев)] (* <-lang_ru;; *);;
+                    [Описание (Рефакторинг: Улучшения дизайна существующего кода)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (*

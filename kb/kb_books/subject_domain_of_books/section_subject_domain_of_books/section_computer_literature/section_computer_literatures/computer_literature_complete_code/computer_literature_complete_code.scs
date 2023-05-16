@@ -1,7 +1,7 @@
-computer_literature_aws_for_non_engineers
+computer_literature_complete_code
     => nrel_main_idtf:
-        ["AWS для гуманитариев"] (* <- lang_ru;; *);
-        ["AWS for non engineers"] (* <- lang_en;; *);
+        ["Совершенный код"] (* <- lang_ru;; *);
+        ["Complete Code"] (* <- lang_en;; *);
 
     <- book;
     <- concept_computer_literature;
@@ -9,7 +9,7 @@ computer_literature_aws_for_non_engineers
     <- genre_tech_docs;
 
     => nrel_author:
-        person_Hiroko_Nishimura;
+        person_Steve_McConnell;
 
     <= nrel_original_language:
         lang_en;
@@ -20,7 +20,7 @@ computer_literature_aws_for_non_engineers
             ...
             (*
                 => nrel_main_idtf:
-                    [Описание (AWS для гуманитариев)] (* <-lang_ru;; *);;
+                    [Описание (Совершенный код)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (*

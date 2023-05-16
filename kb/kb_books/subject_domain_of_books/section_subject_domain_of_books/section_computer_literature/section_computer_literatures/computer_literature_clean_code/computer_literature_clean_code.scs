@@ -1,7 +1,7 @@
-computer_literature_aws_for_non_engineers
+computer_literature_clean_code
     => nrel_main_idtf:
-        ["AWS для гуманитариев"] (* <- lang_ru;; *);
-        ["AWS for non engineers"] (* <- lang_en;; *);
+        ["Чистый код"] (* <- lang_ru;; *);
+        ["Clean Code"] (* <- lang_en;; *);
 
     <- book;
     <- concept_computer_literature;
@@ -9,7 +9,7 @@ computer_literature_aws_for_non_engineers
     <- genre_tech_docs;
 
     => nrel_author:
-        person_Hiroko_Nishimura;
+        person_Robert_C_Martin;
 
     <= nrel_original_language:
         lang_en;
@@ -20,7 +20,7 @@ computer_literature_aws_for_non_engineers
             ...
             (*
                 => nrel_main_idtf:
-                    [Описание (AWS для гуманитариев)] (* <-lang_ru;; *);;
+                    [Описание (Чистый код)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (*
