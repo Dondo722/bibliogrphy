@@ -3,5 +3,7 @@ section_detective_genres
 	=> nrel_main_idtf: [Раздел. Жанры и поджанры детективных книг] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [Section. Book genres] (* <- lang_en;; *);;
 
+section_detective_genres
     -> rrel_key_sc_element:
+		genres;
         book_Murders_in_the_Rue_Morgue;;

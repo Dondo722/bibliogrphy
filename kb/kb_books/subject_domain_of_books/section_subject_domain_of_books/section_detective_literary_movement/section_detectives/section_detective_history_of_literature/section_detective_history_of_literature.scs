@@ -3,6 +3,8 @@ section_detective_history_of_literature
 	=> nrel_main_idtf: [Раздел. История детективной литературы] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [Setion. History of literature] (* <- lang_en;; *);;
 
+section_detective_history_of_literature
     -> rrel_key_sc_element:
+		history;
         book_Murders_in_the_Rue_Morgue;;
        

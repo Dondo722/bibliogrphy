@@ -3,5 +3,7 @@ section_detective_literary_events
 	=> nrel_main_idtf: [Раздел. Детективные литературные события] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [Section. Detective literary events] (* <- lang_en;; *);;
 
+section_detective_literary_events
     -> rrel_key_sc_element:
+		events;
         book_Murders_in_the_Rue_Morgue;;

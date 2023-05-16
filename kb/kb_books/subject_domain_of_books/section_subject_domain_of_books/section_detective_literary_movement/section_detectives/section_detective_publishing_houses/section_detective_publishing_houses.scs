@@ -3,5 +3,7 @@ section_detective_publishing_houses
 	=> nrel_main_idtf: [Раздел. Книжные издательства] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [Section. Publishing houses] (* <- lang_en;; *);;
 
+section_detective_publishing_houses
     -> rrel_key_sc_element:
+		publishing;
         book_Murders_in_the_Rue_Morgue;;

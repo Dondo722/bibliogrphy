@@ -3,5 +3,7 @@ section_detective_books
 	=> nrel_main_idtf: [Раздел. Детективные книги] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [Section. Book authors] (* <- lang_en;; *);;
 
+section_detective_books
     -> rrel_key_sc_element:
+		book;
         book_Murders_in_the_Rue_Morgue;;
