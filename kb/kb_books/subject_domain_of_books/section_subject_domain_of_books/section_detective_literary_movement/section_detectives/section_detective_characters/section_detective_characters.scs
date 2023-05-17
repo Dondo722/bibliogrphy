@@ -6,4 +6,26 @@ section_detective_characters
 section_detective_characters
     -> rrel_key_sc_element:
 		person;
-        book_Murders_in_the_Rue_Morgue;;
+		nrel_characters;
+        char_Crazy;
+		char_Elmo_Crumley;
+		char_Auguste_Dupin;
+        char_L_Espanaye;
+        char_Camille_L_Espanaye;
+        char_Nameless;
+		char_Hercule_Poirot;
+        char_Captain_Arthur_Hastings;
+        char_Magdala_Buckley;
+        char_Maggie_Buckley;
+		char_Isaac_Morris;
+        char_Anthony_James_Marston;
+        char_Mrs_Ethel_Rogers;
+        char_General_John_Gordon_MacArthur;
+        char_Thomas_Rogers;
+        char_Emily_Caroline_Brent;
+        char_Lawrence_John_Wargrave;
+        char_Dr_Edward_George_Armstrong;
+        char_William_Henry_Blore;
+        char_Philip_Lombard;
+        char_Vera_Elizabeth_Claythorne;
+        char_Mr_and_Mrs_A_N_Onime;;

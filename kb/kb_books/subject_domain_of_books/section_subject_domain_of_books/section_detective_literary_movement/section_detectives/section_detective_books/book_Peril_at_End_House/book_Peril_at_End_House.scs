@@ -118,7 +118,7 @@ char_Maggie_Buckley
 book_Peril_at_End_House=> nrel_plot:
         .book_Peril_at_End_House
     (*
-      => nrel_main_idtf: [Сюжет. Убийство на улице Морг] 
+      => nrel_main_idtf: [Сюжет. Загадка Эндхауза] 
                 (* <-lang_ru;; *);;
         -> key_sc_element: book_Peril_at_End_House;;
         -> .book_Peril_at_End_House_event_1

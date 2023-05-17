@@ -6,4 +6,12 @@ section_detective_genres
 section_detective_genres
     -> rrel_key_sc_element:
 		concept_genre;
-        book_Murders_in_the_Rue_Morgue;;
+        genre_detective;
+		genre_novel;
+		genre_noir;
+		concept_mystery;
+		genre_criminal_prose;
+		genre_drama;
+		//genre_psychological_thriller;
+		//genre_supernatural_fiction;
+		genre_horror;;

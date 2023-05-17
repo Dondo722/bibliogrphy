@@ -5,6 +5,5 @@ section_detective_history_of_literature
 
 section_detective_history_of_literature
     -> rrel_key_sc_element:
-		section_of_history_of_literature;
-        book_Murders_in_the_Rue_Morgue;;
+		section_of_history_of_literature;;
        

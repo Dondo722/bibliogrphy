@@ -6,4 +6,6 @@ section_detective_literary_events
 section_detective_literary_events
     -> rrel_key_sc_element:
 		nrel_event;
-        book_Murders_in_the_Rue_Morgue;;
+        event_crime;
+		event_murder;
+		event_attempted_murder;;

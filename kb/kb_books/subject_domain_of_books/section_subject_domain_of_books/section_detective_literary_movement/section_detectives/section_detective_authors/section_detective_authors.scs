@@ -6,4 +6,7 @@ section_detective_authors
 section_detective_authors	
     -> rrel_key_sc_element:
 		nrel_author;
-        book_Murders_in_the_Rue_Morgue;;
+        person_Agatha_Christie;
+		person_William_Wilkie_Collins;
+		person_Ray_Douglas_Bradbury;
+		person_Edgar_Allan_Poe;;

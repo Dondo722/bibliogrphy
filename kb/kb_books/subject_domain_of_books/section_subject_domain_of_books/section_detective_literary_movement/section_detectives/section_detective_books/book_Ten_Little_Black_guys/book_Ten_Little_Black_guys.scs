@@ -1,0 +1,284 @@
+book_Ten_Little_Black_guys
+    => nrel_main_idtf: 
+        ["Десять негритят"]
+            (* <- lang_ru;; *);
+        ["И никого не стало"]
+            (* <- lang_ru;; *);
+        ["Ten Little Black guys"]
+            (* <- lang_en;; *);
+        ["And Then There Were None"]
+            (* <- lang_en;; *);
+    =>nrel_systems_idtf:
+        [book_Ten_Little_Black_guys];
+<- genre_detective;
+<- genre_novel;
+<- genre_thriller;
+<- concept_mystery;
+<- genre_drama;
+<- genre_psychological_thriller;
+=> nrel_author:
+    person_Agatha_Christie;
+=> nrel_languages_of_work:
+    lang_en;
+=> nrel_publishing_house:
+    studio_Collins_Crime_Club;
+=> nrel_country_of_origin:
+    country_England;
+=> nrel_publication_date:
+    year_1939;;
+
+book_Ten_Little_Black_guys
+=> nrel_location:
+    .book_Ten_Little_Black_guys_location
+    (*
+        -> country_England;;
+    *);;
+
+book_Ten_Little_Black_guys
+<= nrel_characters:
+    .book_Ten_Little_Black_guys_characters
+    (*
+        -> rrel_main_character:
+            char_Isaac_Morris;
+            char_Anthony_James_Marston;
+            char_Mrs_Ethel_Rogers;
+            char_General_John_Gordon_MacArthur;
+            char_Thomas_Rogers;
+            char_Emily_Caroline_Brent;
+            char_Lawrence_John_Wargrave;
+            char_Dr_Edward_George_Armstrong;
+            char_William_Henry_Blore;
+            char_Philip_Lombard;
+            char_Vera_Elizabeth_Claythorne;
+            char_Mr_and_Mrs_A_N_Onime;;
+                  
+    *);;
+
+char_Isaac_Morris
+        => nrel_main_idtf: 
+            [Айзек Моррис] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Айзек Моррис)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Isaac_Morris.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Anthony_James_Marston
+        => nrel_main_idtf: 
+            [Энтони Джеймс Марстон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Энтони Джеймс Марстон)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Anthony_James_Marston.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Mrs_Ethel_Rogers
+        => nrel_main_idtf: 
+            [Этель Роджерс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Этель Роджерс)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Mrs_Ethel_Rogers.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);; 
+
+char_General_John_Gordon_MacArthur
+        => nrel_main_idtf: 
+            [Джон Гордон Макартур] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джон Гордон Макартур)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_General_John_Gordon_MacArthur.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Thomas_Rogers
+        => nrel_main_idtf: 
+            [Томас Роджерс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Томас Роджерс)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Thomas_Rogers.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Emily_Caroline_Brent
+        => nrel_main_idtf: 
+            [Эмили Каролина Брент] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Эмили Каролина Брент)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Emily_Caroline_Brent.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Lawrence_John_Wargrave
+        => nrel_main_idtf: 
+            [Лоуренс Джон Уоргрейв] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лоуренс Джон Уоргрейв)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Lawrence_John_Wargrave.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Dr_Edward_George_Armstrong
+        => nrel_main_idtf: 
+            [Эдуард Джордж Армстронг] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Эдуард Джордж Армстронг)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Dr_Edward_George_Armstrong.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_William_Henry_Blore
+        => nrel_main_idtf: 
+            [Уильям Генри Блор] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Уильям Генри Блор)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_William_Henry_Blore.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Philip_Lombard
+        => nrel_main_idtf: 
+            [Филипп Ломбард] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Филипп Ломбард)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Philip_Lombard.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Vera_Elizabeth_Claythorne
+        => nrel_main_idtf: 
+            [Вера Элизабет Клейторн] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Вера Элизабет Клейторн)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Vera_Elizabeth_Claythorne.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Mr_and_Mrs_A_N_Onime
+        => nrel_main_idtf: 
+            [мистер и миссис А. Н. Оним] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(мистер и миссис А. Н. Оним)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Mr_and_Mrs_A_N_Onime.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
