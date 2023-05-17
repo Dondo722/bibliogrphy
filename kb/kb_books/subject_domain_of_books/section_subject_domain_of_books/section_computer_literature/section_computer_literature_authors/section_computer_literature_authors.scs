@@ -365,4 +365,67 @@ section_computer_literature_authors = [*
             -> genre_computer_literature;;
         *);;
 
+    person_Mark_Lutz
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Марк Лутц] (* <- lang_ru;; *);
+        [Mark Lutz] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Joel_Spolsky
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Джоел Сполки] (* <- lang_ru;; *);
+        [Joel Spolsky] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Peter_Norvig
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Питер Норвиг] (* <- lang_ru;; *);
+        [Peter Norvig] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
 *];;
