@@ -493,7 +493,11 @@ genre_detective <- rrel_key_sc_element: Definition_genre_detective
 	<=nrel_sc_text_translation:
 		...
 		(*
-		-> rrel_example: "file://htmls//genre_detective.html";;	
+		-> rrel_example: "file://htmls//genre_detective.html"
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
 		*);;
 	<= nrel_using_constants:...
 		(*

@@ -5,5 +5,5 @@ section_detective_characters
 
 section_detective_characters
     -> rrel_key_sc_element:
-		characters;
+		person;
         book_Murders_in_the_Rue_Morgue;;

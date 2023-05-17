@@ -5,5 +5,5 @@ section_detective_authors
     
 section_detective_authors	
     -> rrel_key_sc_element:
-		authors;
+		nrel_author;
         book_Murders_in_the_Rue_Morgue;;

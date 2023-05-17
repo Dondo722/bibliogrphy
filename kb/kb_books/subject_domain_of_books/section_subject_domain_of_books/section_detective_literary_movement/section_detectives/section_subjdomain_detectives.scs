@@ -42,7 +42,7 @@ concept_art
     => nrel_main_idtf: [art] (* <- lang_en;; *);;
 
 // Subject domain
-section_subject_domain_of_detectives = [*
+subject_domain_of_detectives = [*
 
 	subject_domain_detective
 		<- sc_node_not_relation;
@@ -54,12 +54,16 @@ section_subject_domain_of_detectives = [*
 
 		<- rrel_not_maximum_studied_object_class:
 			concept_book;
+			genre_detective;
 			concept_detective;
 			concept_genre;
 
 		-> rrel_explored_relation:
 			nrel_author;
 			nrel_character;
+			nrel_genre;
+			nrel_publishing_house;
+			events;
 
 		=> nrel_private_subject_domain:
 			subject_domain_detective_authors;
@@ -125,11 +129,6 @@ concept_genre
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: [жанр] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [genre] (* <- lang_en;; *);;
-
-nrel_year_of_publishing
-	<- sc_node_norole_relation;
-	=> nrel_main_idtf: [год издания*] (* <- lang_ru;; *);
-	=> nrel_main_idtf: [year of publishing*] (* <- lang_en;; *);;
 
 nrel_country_of_origin
 	<- sc_node_norole_relation;

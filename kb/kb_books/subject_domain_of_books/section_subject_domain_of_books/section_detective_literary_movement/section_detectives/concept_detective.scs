@@ -1,4 +1,4 @@
-concept_ranobe
+concept_detective
     => nrel_main_idtf: [детектив] (* <- lang_ru;; *);
     => nrel_main_idtf: [detective] (* <- lang_en;; *);
 

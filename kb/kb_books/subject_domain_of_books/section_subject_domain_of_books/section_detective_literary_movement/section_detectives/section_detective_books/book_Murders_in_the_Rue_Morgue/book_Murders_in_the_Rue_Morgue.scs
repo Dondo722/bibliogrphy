@@ -1,7 +1,9 @@
 book_Murders_in_the_Rue_Morgue
- => nrel_main_idtf: 
+    => nrel_main_idtf: 
         ["Убийство на улице Морг"]
             (* <- lang_ru;; *);
+        ["Murders in the Rue Morgue"]
+            (* <- lang_en;; *);
     =>nrel_systems_idtf:
         [book_Murders_in_the_Rue_Morgue];
 <- genre_detective;
@@ -12,6 +14,10 @@ book_Murders_in_the_Rue_Morgue
     person_Edgar_Allan_Poe;
 => nrel_languages_of_work:
     lang_en;
+=> nrel_publishing_house:
+    studio_Grahams_Magazine;
+=> nrel_country_of_origin:
+    country_USA;
 => nrel_publication_date:
     year_1841;;
 
@@ -23,12 +29,8 @@ book_Murders_in_the_Rue_Morgue
         -> Paris;;
     *);;
 
-
-
-
-// ПЕРСОНАЖИ
 book_Murders_in_the_Rue_Morgue
-=> nrel_characters:
+<= nrel_characters:
     .book_Murders_in_the_Rue_Morgue_characters
     (*
         -> rrel_main_character:

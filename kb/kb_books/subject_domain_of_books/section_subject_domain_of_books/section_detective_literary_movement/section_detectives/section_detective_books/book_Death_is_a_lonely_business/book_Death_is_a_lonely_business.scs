@@ -1,0 +1,78 @@
+book_Death_is_a_lonely_business
+    => nrel_main_idtf: 
+        ["Смерть — дело одинокое"]
+            (* <- lang_ru;; *);
+        ["Death is a lonely business"]
+            (* <- lang_en;; *);
+    =>nrel_systems_idtf:
+        [book_Death_is_a_lonely_business];
+<- genre_detective;
+<- genre_novel;
+<- genre_noir;
+=> nrel_author:
+    person_Ray_Douglas_Bradbury;
+=> nrel_languages_of_work:
+    lang_en;
+=> nrel_publishing_house:
+    studio_Alfred_A_Knopf;
+=> nrel_country_of_origin:
+    country_USA;
+=> nrel_publication_date:
+    year_1985;;
+
+book_Death_is_a_lonely_business
+=> nrel_location:
+    .book_Death_is_a_lonely_business_location
+    (*
+        -> country_USA;;
+        -> California;;
+    *);;
+
+book_Death_is_a_lonely_business
+<= nrel_characters:
+    .book_Death_is_a_lonely_business_characters
+    (*
+        -> rrel_main_character:
+            char_Crazy;
+            char_Elmo_Crumley;;
+                  
+    *);;
+
+char_Crazy
+        => nrel_main_idtf: 
+            [Чокнутый] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Чокнутый)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Crazy.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Elmo_Crumley
+        => nrel_main_idtf: 
+            [Эльмо Крамли] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Эльмо Крамли)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Elmo_Crumley.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+

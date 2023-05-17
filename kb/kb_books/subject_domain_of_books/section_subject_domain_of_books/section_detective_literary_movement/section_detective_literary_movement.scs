@@ -1,6 +1,6 @@
 section_subject_domain_of_detective_literary_movement
 	=> nrel_main_idtf: [Раздел. Детективное литературное направление] (* <- lang_ru;; *);
-	=> nrel_main_idtf: [Section. detective literary movement] (* <- lang_en;; *);
+	=> nrel_main_idtf: [Section. Detective literary movement] (* <- lang_en;; *);
 
 
 	<= nrel_section_decomposition:
@@ -10,6 +10,7 @@ section_subject_domain_of_detective_literary_movement
 
 	-> rrel_key_sc_element:
 		concept_detective;
+		genre_detective;
 		concept_detective_literary_movement;
 
 	<- non_atomic_section;;		
@@ -32,7 +33,7 @@ section_subject_domain_of_detective_literary_movement = [*
 			nrel_character;
 
 		=> nrel_private_subject_domain: {
-			subject_domain_of_detectives
+			subject_domain_detective
 		};
 
 		<= nrel_private_subject_domain:
