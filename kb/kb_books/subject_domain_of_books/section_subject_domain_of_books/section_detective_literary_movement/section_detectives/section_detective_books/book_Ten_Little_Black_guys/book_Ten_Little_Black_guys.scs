@@ -10,6 +10,7 @@ book_Ten_Little_Black_guys
             (* <- lang_en;; *);
     =>nrel_systems_idtf:
         [book_Ten_Little_Black_guys];
+<- book;
 <- genre_detective;
 <- genre_novel;
 <- genre_thriller;

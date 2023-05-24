@@ -10,3 +10,46 @@ section_detective_authors
 		person_William_Wilkie_Collins;
 		person_Ray_Douglas_Bradbury;
 		person_Edgar_Allan_Poe;;
+
+person_William_Wilkie_Collins
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- essayist;
+    <- playwright;
+    
+    => nrel_main_idtf:
+        [Уильям Уилки Коллинз]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_08_01_1824
+            (*
+                => nrel_main_idtf:
+                [8 января 1824](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_England;
+    => nrel_date_of_death:
+            date_7_10_1849
+            (*
+                => nrel_main_idtf:
+                [7 октября 1849](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_England;
+        
+    <= nrel_genre_work:...
+    (*
+        -> detective;;
+	-> genre_narrative;;
+	-> genre_gotic;;
+	-> genre_horror;;
+                          
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+

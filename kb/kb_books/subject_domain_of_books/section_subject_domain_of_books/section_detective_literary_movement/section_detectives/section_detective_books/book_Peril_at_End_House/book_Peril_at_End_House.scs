@@ -6,6 +6,7 @@ book_Peril_at_End_House
             (* <- lang_en;; *);
     =>nrel_systems_idtf:
         [book_Peril_at_End_House];
+<- book;
 <- genre_detective;
 <- genre_novel;
 <- genre_criminal_prose;

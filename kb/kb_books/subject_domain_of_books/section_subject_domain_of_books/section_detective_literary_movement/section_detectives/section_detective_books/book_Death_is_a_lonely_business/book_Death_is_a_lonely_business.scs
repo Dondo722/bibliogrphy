@@ -6,6 +6,7 @@ book_Death_is_a_lonely_business
             (* <- lang_en;; *);
     =>nrel_systems_idtf:
         [book_Death_is_a_lonely_business];
+<- book;
 <- genre_detective;
 <- genre_novel;
 <- genre_noir;

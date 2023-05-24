@@ -6,6 +6,7 @@ book_the_Moonstone
             (* <- lang_en;; *);
     =>nrel_systems_idtf:
         [book_the_Moonstone];
+<- book;
 <- genre_detective;
 <- genre_novel;
 <- genre_criminal_prose;

@@ -5,5 +5,8 @@ section_detective_books
 
 section_detective_books
     -> rrel_key_sc_element:
-		concept_book;
-        book_Murders_in_the_Rue_Morgue;;
+		book;
+        book_Murders_in_the_Rue_Morgue;
+		book_Death_is_a_lonely_business;
+		book_Ten_Little_Black_guys;
+		book_the_Moonstone;;

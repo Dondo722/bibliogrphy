@@ -12,6 +12,6 @@ section_detective_genres
 		concept_mystery;
 		genre_criminal_prose;
 		genre_drama;
-		//genre_psychological_thriller;
-		//genre_supernatural_fiction;
+		genre_psychological_thriller;
+		genre_supernatural_fiction;
 		genre_horror;;

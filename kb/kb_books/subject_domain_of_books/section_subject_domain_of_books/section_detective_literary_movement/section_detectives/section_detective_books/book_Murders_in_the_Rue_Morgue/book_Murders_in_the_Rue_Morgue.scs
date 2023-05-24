@@ -6,6 +6,7 @@ book_Murders_in_the_Rue_Morgue
             (* <- lang_en;; *);
     =>nrel_systems_idtf:
         [book_Murders_in_the_Rue_Morgue];
+<- book;
 <- genre_detective;
 <- genre_novel;
 <- genre_criminal_prose;

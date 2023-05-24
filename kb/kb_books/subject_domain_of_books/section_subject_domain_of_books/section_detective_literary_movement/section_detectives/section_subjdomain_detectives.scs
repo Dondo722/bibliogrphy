@@ -63,7 +63,7 @@ subject_domain_of_detectives = [*
 			nrel_character;
 			nrel_genre;
 			nrel_publishing_house;
-			events;
+			nrel_event;
 
 		=> nrel_private_subject_domain:
 			subject_domain_detective_authors;
@@ -74,7 +74,7 @@ subject_domain_of_detectives = [*
 			subject_domain_detective_literary_events;
 
 		<= nrel_private_subject_domain:
-			subject_domain_of_books;
+			subject_domain_of_detective_literary_movement;
 
 		<- subject_domain;;
 
