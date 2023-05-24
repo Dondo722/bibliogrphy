@@ -1,0 +1,196 @@
+section_fantastic_authors	
+    -> rrel_key_sc_element:
+		nrel_author;
+        person_Mary_Shelley;
+		person_Aldous_Huxley;
+		person_Jonathan_Swift;
+		person_Wells;
+        person_George_Orwell;;
+
+
+person_Mary_Shelley
+    <- person;
+    <- female;
+    <- writer;
+    <- poet;
+    <- essayist;
+    <- playwright;
+    => nrel_main_idtf:
+        [Мэри Шелли]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_30_08_1797
+            (*
+                => nrel_main_idtf:
+                [30 августа 1797](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            city_London;
+            country_England;
+    => nrel_date_of_death:
+            date_01_02_1851
+            (*
+                => nrel_main_idtf:
+                [1 февраля 1851](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_death:
+            city_London;
+            country_England;
+        
+    <= nrel_genre_work:...
+        (*
+        -> detective;;
+        -> genre_narrative;;
+        -> genre_gotic;;
+        -> genre_horror;;
+        -> genre_fantastic;;
+        *);
+                        
+    => nrel_languages_of_work:...
+    (*
+        -> lang_en;;
+    *);;
+
+
+person_Aldous_Huxley
+    <- person;
+    <- male;
+    <- writer;
+    <- philosopher;
+    <- essayist;
+    => nrel_main_idtf:
+        [Альдоус Хаксли]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_26_07_1894
+            (*
+                => nrel_main_idtf:
+                [26 июля 1894](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            city_Godalming;
+            country_England;
+    => nrel_date_of_death:
+            date_22_11_1963
+            (*
+                => nrel_main_idtf:
+                [22 ноября 1963](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_death:
+            city_Los_Angeles;
+            country_USA;
+        
+    <= nrel_genre_work:...
+        (*
+            -> genre_fantastic;;
+        *);
+                        
+    => nrel_languages_of_work:...
+    (*
+        -> lang_en;;
+        -> lang_fr;;
+    *);;
+
+person_Jonathan_Swift
+    <- person;
+    <- male;
+    <- writer;
+    <- satirist;
+    <- essayist;
+    <- cleric;
+
+    => nrel_main_idtf:
+        [Джонатан Свифт]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_30_11_1667
+            (*
+                => nrel_main_idtf:
+                [30 ноября 1667](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            city_Dublin;
+            country_Ireland;
+    => nrel_date_of_death:
+            date_19_10_1745
+            (*
+                => nrel_main_idtf:
+                [19 октября 1745](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_death:
+            city_Dublin;
+            country_Ireland;
+        
+    <= nrel_genre_work:...
+        (*
+            ->genre_fantasic;;
+        *);;
+        
+person_Wells
+        <- person;
+        <- male;
+        <- writer;
+        <- novelist;
+        <- historian;
+        <- sociologist;
+        => nrel_main_idtf:
+        [Герберт Уэллс]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_21_09_1866
+            (*
+                => nrel_main_idtf:
+                [21 сентября 1866](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            city_Bromley;
+            country_England;
+    => nrel_date_of_death:
+            date_13_08_1946
+            (*
+                => nrel_main_idtf:
+                [13 августа 1946](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_death:
+            city_London;
+            country_England;
+        
+    <= nrel_genre_work:...
+        (*
+            -> genre_fantasic;;
+        *);;
+
+
+person_George_Orwell
+    <- person;
+    <- male;
+    <- writer;
+    <- novelist;
+    <- essayist;
+    <- journalist;
+    => nrel_main_idtf:
+        [Джордж Оруэлл]
+            (* <- lang_ru;; *); 
+    => nrel_date_of_birth:
+            date_25_06_1903
+            (*
+                => nrel_main_idtf:
+                [25 июня 1903](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            city_Motihari;
+            country_India;
+    => nrel_date_of_death:
+            date_21_01_1950
+            (*
+                => nrel_main_idtf:
+                [21 января 1950](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_death:
+            city_London;
+            country_England;
+        
+    <= nrel_genre_work:...
+        (*
+        -> genre_fantasic;;
+        *);;
