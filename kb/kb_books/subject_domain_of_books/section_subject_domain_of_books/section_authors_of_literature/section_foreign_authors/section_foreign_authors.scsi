@@ -249,6 +249,7 @@ person_George_Orwell
             -> concept_prose;;
             -> concept_critic;;
             -> concept_antiutopia;;
+            ->genre_fantasic;;
         *);;
 
 person_Jane_Austen
@@ -2301,44 +2302,6 @@ person_Emily_Jane_Bronte
         -> poetry;;
     *);
     <= nrel_languages_of_work:...
-    (*
-        ->lang_en;;
-    *);;
-
-person_Mary_Shelley
-    <- person;
-    <- female;
-    <- writer;
-    <- editor;
-    
-    => nrel_main_idtf:
-        [Мэри Шелли]
-            (* <- lang_ru;; *); 
-    => nrel_date_of_birth:
-            date_30_08_1797
-            (*
-                => nrel_main_idtf:
-                [30 августа 1797](* <- lang_ru;;*);;
-            *);
-    => nrel_place_of_birth:
-            country_England;
-    => nrel_date_of_death:
-            date_01_02_1851
-            (*
-                => nrel_main_idtf:
-                [1 февраля 1851](* <- lang_ru;;*);;
-            *);
-     => nrel_place_of_death:
-            country_England;
-        
-    <= nrel_genre_work:...
-    (*
-        -> genre_fantastic;;
-	    -> genre_narrative;;
-	    -> genre_horror;;
-    *);
-
-    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;

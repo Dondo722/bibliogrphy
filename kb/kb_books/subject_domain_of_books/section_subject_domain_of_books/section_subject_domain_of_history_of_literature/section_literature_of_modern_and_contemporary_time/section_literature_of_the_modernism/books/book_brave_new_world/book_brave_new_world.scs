@@ -39,7 +39,7 @@ char_John
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_John.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_John.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -58,7 +58,7 @@ char_Director
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Director.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Director.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -77,7 +77,7 @@ char_Linda
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Linda.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Linda.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -96,7 +96,7 @@ char_Mustafa_Mond
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Mustafa_Mond.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Mustafa_Mond.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -115,7 +115,7 @@ char_Lenina
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Lenina.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Lenina.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -134,7 +134,7 @@ char_Bernard
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Bernard.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Bernard.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;                                    
 
@@ -149,7 +149,7 @@ book_brave_new_world => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_brave_new_world_event_1.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_brave_new_world_event_1.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_acquaintance;;
                     <= nrel_participants:... 
@@ -167,7 +167,7 @@ book_brave_new_world => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_brave_new_world_event_2.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_brave_new_world_event_2.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_participants:... 
                     (*
@@ -186,7 +186,7 @@ book_brave_new_world => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_brave_new_world_event_3.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_brave_new_world_event_3.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_participants:... 
                     (*
@@ -207,7 +207,7 @@ book_brave_new_world => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_brave_new_world_event_4.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_brave_new_world_event_4.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_finality;;
                     <= nrel_participants:... 

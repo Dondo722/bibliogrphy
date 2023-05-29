@@ -47,7 +47,7 @@ char_Winston_Smith
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Winston_Smith.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Winston_Smith.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -65,7 +65,7 @@ char_Julia
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Julia.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Julia.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -84,7 +84,7 @@ char_OBrien
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_OBrien.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_OBrien.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -103,7 +103,7 @@ char_Mr_Charrington
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Mr_Charrington.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Mr_Charrington.html"(* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -122,7 +122,7 @@ char_Syme
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Syme.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Syme.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -137,7 +137,7 @@ book_1984 => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_1984_event_1.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_1984_event_1.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_acquaintance;;
                     <= nrel_participants:... 
@@ -156,7 +156,7 @@ book_1984 => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_1984_event_2.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_1984_event_2.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_love;;
                     <= nrel_participants:... 
@@ -175,7 +175,7 @@ book_1984 => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> "file://content/content_htmls/events/book_1984_event_3.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/events/book_1984_event_3.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_finality;;
                     <= nrel_participants:... 

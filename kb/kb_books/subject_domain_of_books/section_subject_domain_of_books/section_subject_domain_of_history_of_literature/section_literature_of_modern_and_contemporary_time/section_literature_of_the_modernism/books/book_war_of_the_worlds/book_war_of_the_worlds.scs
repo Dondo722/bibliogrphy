@@ -48,7 +48,7 @@ char_Hero
              <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Hero.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Hero.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -67,7 +67,7 @@ char_Ogilvy
              <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Ogilvy.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Ogilvy.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -86,7 +86,7 @@ char_Henderson
              <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Henderson.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Henderson.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -105,7 +105,7 @@ char_Stent
              <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Stent.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Stent.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -124,7 +124,7 @@ char_Heros_wife
              <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Heros_wife.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Heros_wife.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -143,7 +143,7 @@ char_Heros_brother
              <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Heros_brother.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Heros_brother.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -162,7 +162,7 @@ char_Mrs_and_Miss_Elphinstone
              <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Mrs_and_Miss_Elphinstone.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Mrs_and_Miss_Elphinstone.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -178,7 +178,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_1.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_1.html"(* => nrel_format: format_html;;*);;
                     *);;
                     <- event_acquaintance;;
                     <= nrel_main_participants: ... 
@@ -197,7 +197,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_2.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_2.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_acquaintance;;
                     <= nrel_main_participants: ... 
@@ -216,7 +216,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_3.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_3.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_acquaintance;;
                     <= nrel_main_participants: ... 
@@ -235,7 +235,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_4.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_4.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_arrival_of_guests;;
                     => nrel_plot_sequence:
@@ -249,7 +249,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_5.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_5.html" (* => nrel_format: format_html;;*);;
                     *);;
                     => nrel_plot_sequence:
                                 .book_war_of_the_worlds_event_6;;
@@ -262,7 +262,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_6.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_6.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -279,7 +279,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_7.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_7.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -296,7 +296,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_8.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_8.html" (* => nrel_format: format_html;;*);;
                     *);;
                     => nrel_plot_sequence:
                                 .book_war_of_the_worlds_event_9;;
@@ -309,7 +309,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_9.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_9.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_battle;;
                     <= nrel_main_participants: ... 
@@ -327,7 +327,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_10.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_10.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -344,7 +344,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_11.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_11.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -361,7 +361,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_12.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_12.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_battle;;
                     <= nrel_main_participants: ... 
@@ -379,7 +379,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_13.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_13.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_battle;;
                     <= nrel_main_participants: ... 
@@ -397,7 +397,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_14.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_14.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -414,7 +414,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_15.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_15.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_battle;;
                     => nrel_plot_sequence:
@@ -428,7 +428,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_16.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_16.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -446,7 +446,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_17.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_17.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -463,7 +463,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_18.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_18.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -480,7 +480,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_19.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_19.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -497,7 +497,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_20.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_20.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -515,7 +515,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_21.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_21.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -532,7 +532,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_22.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_22.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -549,7 +549,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_23.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_23.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -567,7 +567,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_24.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_24.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -585,7 +585,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_25.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_25.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -602,7 +602,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_26.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_26.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -621,7 +621,7 @@ book_war_of_the_worlds => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_27.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_27.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_finality;;                    
             *);;

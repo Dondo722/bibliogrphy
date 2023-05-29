@@ -42,7 +42,7 @@ char_Lemuel_Gulliver
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Lemuel_Gulliver.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Lemuel_Gulliver.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;   
 
@@ -61,7 +61,7 @@ char_King_of_Lilliput
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_King_of_Lilliput.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_King_of_Lilliput.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);; 
 
@@ -80,7 +80,7 @@ char_James_Bets
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_James_Bets.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_James_Bets.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -99,7 +99,7 @@ char_Skyresh_Bolgola
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Skyresh_Bolgola.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Skyresh_Bolgola.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -118,7 +118,7 @@ char_Raildresel
                 <= nrel_sc_text_translation: 
                     ...
                     (*
-                        -> "file://content/content_htmls/characters/char_Raildresel.html" (* <-lang_ru;; *);;
+                        -> "file://content/content_htmls/characters/char_Raildresel.html" (* => nrel_format: format_html;;*);;
                     *);;
             *);;
 
@@ -135,7 +135,7 @@ book_Gulliver_in_the_land_of_Midgets => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_1.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_1.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_acquaintance;;
                     <= nrel_main_participants: ... 
@@ -156,7 +156,7 @@ book_Gulliver_in_the_land_of_Midgets => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_2.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_2.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -174,7 +174,7 @@ book_Gulliver_in_the_land_of_Midgets => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_3.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_3.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_attempted_murder;;
                     <= nrel_main_participants: ... 
@@ -192,7 +192,7 @@ book_Gulliver_in_the_land_of_Midgets => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_4.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_4.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -212,7 +212,7 @@ book_Gulliver_in_the_land_of_Midgets => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_5.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_5.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <-event_battle;;
                     <= nrel_main_participants: ... 
@@ -233,7 +233,7 @@ book_Gulliver_in_the_land_of_Midgets => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_6.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_6.html"(* => nrel_format: format_html;;*);;
                     *);;
                     => nrel_plot_sequence:
                             .book_Gulliver_in_the_land_of_Midgets_event_7;;                    
@@ -246,7 +246,7 @@ book_Gulliver_in_the_land_of_Midgets => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_7.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_7.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
@@ -265,7 +265,7 @@ book_Gulliver_in_the_land_of_Midgets => nrel_plot:
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_8.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_8.html" (* => nrel_format: format_html;;*);;
                     *);;
                     <- event_finality;;
                     <= nrel_main_participants: ... 
