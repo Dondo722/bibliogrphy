@@ -1,7 +1,7 @@
 section_detective_books
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: [Раздел. Детективные книги] (* <- lang_ru;; *);
-	=> nrel_main_idtf: [Section. Book authors] (* <- lang_en;; *);;
+	=> nrel_main_idtf: [Section. Detective books] (* <- lang_en;; *);;
 
 section_detective_books
     -> rrel_key_sc_element:
@@ -9,4 +9,5 @@ section_detective_books
         book_Murders_in_the_Rue_Morgue;
 		book_Death_is_a_lonely_business;
 		book_Ten_Little_Black_guys;
+		book_Peril_at_End_House;
 		book_the_Moonstone;;

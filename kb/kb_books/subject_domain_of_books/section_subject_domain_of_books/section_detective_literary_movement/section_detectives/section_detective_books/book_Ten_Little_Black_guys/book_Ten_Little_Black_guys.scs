@@ -156,7 +156,7 @@ char_Emily_Caroline_Brent
         <- lit_person;
         <- main_character;
         <- person;
-        <- male;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -251,7 +251,7 @@ char_Vera_Elizabeth_Claythorne
         <- lit_person;
         <- main_character;
         <- person;
-        <- male;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -270,7 +270,6 @@ char_Mr_and_Mrs_A_N_Onime
         <- lit_person;
         <- main_character;
         <- person;
-        <- male;
         <- rrel_key_sc_element:
             ...
             (*
