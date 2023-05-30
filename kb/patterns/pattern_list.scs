@@ -1,0 +1,10 @@
+lw4_patterns
+    => nrel_main_idtf: [Шаблоны для поиска по БЗ] (* <- lang_ru;; *);
+    -> pattern1;
+    -> pattern2;
+    -> pattern3;;
+
+pattern1 => nrel_main_idtf: [Шаблон поиска года публикации всех книг в жанре детектив] (* <- lang_ru;; *);;
+pattern2 => nrel_main_idtf: [Шаблон поиска произведений, где есть персонаж Огюст Дюпен] (* <- lang_ru;; *);;
+pattern3 => nrel_main_idtf: [Шаблон поиска всех персонажей книги "Десять негритят"] (* <- lang_ru;; *);;
+
