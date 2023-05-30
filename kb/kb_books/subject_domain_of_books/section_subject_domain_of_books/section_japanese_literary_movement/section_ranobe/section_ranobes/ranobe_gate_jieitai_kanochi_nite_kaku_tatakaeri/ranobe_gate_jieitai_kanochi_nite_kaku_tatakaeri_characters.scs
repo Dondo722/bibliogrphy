@@ -3,7 +3,7 @@ char_Rory_Mercury
             [Рори Меркьюри] (* <-lang_ru;; *);
             [Rory Mercury] (* <- lang_en;; *);
 
-        <- feperson;
+        <- female;
         <- concept_apostle;
 
         <- rrel_key_sc_element:

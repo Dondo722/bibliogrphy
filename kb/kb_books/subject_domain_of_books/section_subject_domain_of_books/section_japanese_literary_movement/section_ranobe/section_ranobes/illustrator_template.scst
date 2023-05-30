@@ -1,0 +1,20 @@
+${SYS_IDTF}
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [${RUSSIAN_NAME}] (* <- lang_ru;; *);
+		[${ENGLISH_NAME}] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            ${GENRES}
+        *);;

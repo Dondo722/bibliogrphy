@@ -82,7 +82,7 @@ char_Yukino_Yukinoshita
             [Юкино Юкиношита] (* <-lang_ru;; *);
             [Yukino Yukinoshita] (* <- lang_en;; *);
         <- person;
-        <- male;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -110,7 +110,7 @@ char_Yui_Yuigahama
             [Юи Юигахама] (* <-lang_ru;; *);
             [Yui Yuigahama] (* <- lang_en;; *);
         <- person;
-        <- male;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -138,7 +138,7 @@ char_Iroha_Isshiki
             [Ироха Ишики] (* <-lang_ru;; *);
             [Iroha Isshiki] (* <- lang_en;; *);
         <- person;
-        <- male;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -166,7 +166,7 @@ char_Shizuka_Hiratsuka
             [Шизука Хирацука] (* <-lang_ru;; *);
             [Shizuka Hiratsuka] (* <- lang_en;; *);
         <- person;
-        <- male;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -222,7 +222,7 @@ char_Komachi_Hikigaya
             [Комачи Хикигая] (* <-lang_ru;; *);
             [Komachi Hikigaya] (* <- lang_en;; *);
         <- person;
-        <- male;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -250,7 +250,7 @@ char_Saki_Kawasaki
             [Саки Кавасаки] (* <-lang_ru;; *);
             [Saki Kawasaki] (* <- lang_en;; *);
         <- person;
-        <- male;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -278,7 +278,7 @@ char_Haruno_Yukinoshita
             [Харуно Юкиношита] (* <-lang_ru;; *);
             [Haruno Yukinoshita] (* <- lang_en;; *);
         <- person;
-        <- male;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*

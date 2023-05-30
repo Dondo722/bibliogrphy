@@ -94,7 +94,7 @@ char_Touka_Kirishima
             [Touka Kirishima] (* <- lang_en;; *);
 
         <- person;
-        <- male;
+        <- female;
 
         <- rrel_key_sc_element:
             ...
@@ -154,7 +154,7 @@ char_Chie_Hori
             [Chie Hori] (* <- lang_en;; *);
 
         <- person;
-        <- male;
+        <- female;
 
         <- rrel_key_sc_element:
             ...
@@ -327,4 +327,3 @@ char_Nico
                         -> "file://content/char_Nico.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
                     *);;
             *);;
-
