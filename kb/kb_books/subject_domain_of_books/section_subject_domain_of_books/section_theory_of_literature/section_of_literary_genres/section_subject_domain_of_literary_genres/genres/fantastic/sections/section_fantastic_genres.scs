@@ -10,6 +10,16 @@ section_fantastic_genres
 		genre_novel;
 		genre_noir;
 		concept_mystery;
-		genre_drama;
-		genre_supernatural_fiction;
-		genre_horror;;
+		genre_science_fantastic;
+		genre_social_fantastic;;
+
+
+genre_science_fantastic
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [научная Фантастика] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [science Fantastic] (* <- lang_en;; *);;
+
+genre_social_fantastic
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [социальная Фантастика] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [social Fantastic] (* <- lang_en;; *);;
