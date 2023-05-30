@@ -9,6 +9,7 @@ subject_domain_of_fantastic
             section_fantastic_books;
 			section_fantastic_authors;
 			section_fantastic_genres;
+			section_fantastic_books;
 			section_fantastic_history_of_literature
 		};
 
