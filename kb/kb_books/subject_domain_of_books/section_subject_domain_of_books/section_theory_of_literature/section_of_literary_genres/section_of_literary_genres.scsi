@@ -514,7 +514,7 @@ Definition_genre_adventure
         
     -> rrel_example: "file://htmls//genre_adventure.html";;
 
-genre_adventure <- rrel_key_sc_element: Definition_genre_adventure
+genre_adventure <- rrel_key_sc_element: Definition_genre_adventure;;
 
 sc_node_not_relation -> genre_detective;;
 genre -> genre_detective;;
