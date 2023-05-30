@@ -1,0 +1,227 @@
+ranobe_magical_girl_madoka_magica
+    => nrel_main_idtf:
+        ["Девочка-волшебница Мадока"] (* <- lang_ru;; *);
+        ["Magical Girl Madoka"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_seinen;
+    <- genre_drama;
+    <- genre_fantasy;
+
+    => nrel_author:
+        person_Hajime_Ninomae;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2011;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Девочка-волшебница Мадока)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_magical_girl_madoka_magica
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_magical_girl_madoka_magica_characters
+        (*
+            -> rrel_main_character:
+                char_Madoka_Kaname;;
+            -> char_Homura_Akemi;;
+            -> char_Kubei;;
+            -> char_Kyouko_Sakura;;
+            -> char_Mami_Tomoe;;
+            -> char_Sayaka_Miki;;
+        *);;
+
+char_Madoka_Kaname
+        => nrel_main_idtf: 
+            [Мадока Канамэ] (* <-lang_ru;; *);
+            [Madoka Kaname] (* <- lang_en;; *);
+
+        <- person;
+        <- magical_girl;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Мадока Канамэ)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Madoka_Kaname.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мадока Канамэ)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Madoka_Kaname.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Homura_Akemi
+        => nrel_main_idtf: 
+            [Хомура Акеми] (* <-lang_ru;; *);
+            [Homura Akemi] (* <- lang_en;; *);
+
+        <- person;
+        <- magical_girl;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Хомура Акеми)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Homura_Akemi.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хомура Акеми)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Homura_Akemi.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Kubei
+        => nrel_main_idtf: 
+            [Кубей] (* <-lang_ru;; *);
+            [Kubei] (* <- lang_en;; *);
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Кубей)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kubei.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кубей)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Kubei.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Kyouko_Sakura
+        => nrel_main_idtf: 
+            [Кёко Сакура] (* <-lang_ru;; *);
+            [Kyouko Sakura] (* <- lang_en;; *);
+
+        <- person;
+        <- magical_girl;
+        <- female;
+    
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Кёко Сакура)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kyouko_Sakura.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кёко Сакура)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Kyouko_Sakura.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Mami_Tomoe
+        => nrel_main_idtf: 
+            [Мами Томоэ] (* <-lang_ru;; *);
+            [Mami Tomoe] (* <- lang_en;; *);
+
+        <- person;
+        <- magical_girl;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Мами Томоэ)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Mami_Tomoe.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мами Томоэ)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Mami_Tomoe.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Sayaka_Miki
+        => nrel_main_idtf: 
+            [Саяка Мики] (* <-lang_ru;; *);
+            [Sayaka Miki] (* <- lang_en;; *);
+
+        <- person;
+        <- magical_girl;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Саяка Мики)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Sayaka_Miki.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Саяка Мики)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Sayaka_Miki.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

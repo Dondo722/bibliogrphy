@@ -1,0 +1,40 @@
+ranobe_boukyaku_tantei_series
+    => nrel_main_idtf:
+        ["Забывчивый детектив"] (* <- lang_ru;; *);
+        ["Boukyaku Tantei Series"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_mystery;
+
+    => nrel_author:
+        person_ISIN_NISIO;
+    => nrel_illustrator:
+        person_VOFAN;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2014;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Забывчивый детектив)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_boukyaku_tantei_series
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_boukyaku_tantei_series_characters
+        (*
+            -> rrel_main_character: char_Kyouko_Okitegami;;
+            -> rrel_main_character: char_Yakusuke_Kakushidate;;
+        *);;

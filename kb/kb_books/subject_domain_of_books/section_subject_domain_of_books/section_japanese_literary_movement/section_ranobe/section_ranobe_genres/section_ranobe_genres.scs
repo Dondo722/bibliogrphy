@@ -1,0 +1,126 @@
+section_ranobe_genres
+=> nrel_main_idtf:
+	[Раздел. Жанры ранобе.] (* <- lang_ru;; *);
+	[Section. Ranobe genres.] (* <- lang_en;; *);
+
+-> rrel_key_sc_element:
+	genre_psychological;
+    genre_shounen;
+    genre_seinen;
+    genre_isekai;;
+
+section_ranobe_genres = [*
+
+    genre_psychological
+        => nrel_main_idtf:
+            [психологическое] (* <- lang_ru;; *);
+            [psychological] (* <- lang_en;; *);
+        <- genre;
+
+        <- rrel_key_sc_element: ...
+        (*
+            => nrel_main_idtf:
+                [Опр.(психологическое)] (* <- lang_ru;; *);
+                [Def.(psychological)] (* <- lang_en;; *);;
+            <- definition;;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/genre_psychological.html" (* => nrel_format: format_html;; <- lang_ru;; *);;
+            *);;
+            <= nrel_using_constants: ...
+            (*
+                -> concept_ranobe;;
+                -> genre_psychological;;
+            *);;
+        *);;
+
+    genre_school
+        => nrel_main_idtf:
+            [школа (жанр)] (* <- lang_ru;; *);
+            [school (genre)] (* <- lang_en;; *);
+        <- genre;
+
+        <- rrel_key_sc_element: ...
+        (*
+            => nrel_main_idtf:
+                [Опр.(школа (жанр))] (* <- lang_ru;; *);
+                [Def.(school (genre))] (* <- lang_en;; *);;
+            <- definition;;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/genre_school.html" (* => nrel_format: format_html;; <- lang_ru;; *);;
+            *);;
+            <= nrel_using_constants: ...
+            (*
+                -> concept_ranobe;;
+                -> concept_school;;
+            *);;
+        *);;
+
+    genre_seinen
+        => nrel_main_idtf:
+            [сейнен] (* <- lang_ru;; *);
+            [seinen] (* <- lang_en;; *);
+        <- genre;
+
+        <- rrel_key_sc_element: ...
+        (*
+            => nrel_main_idtf:
+                [Опр.(сейнен)] (* <- lang_ru;; *);
+                [Def.(seinen)] (* <- lang_en;; *);;
+            <- definition;;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/genre_seinen.html" (* => nrel_format: format_html;; <- lang_ru;; *);;
+            *);;
+            <= nrel_using_constants: ...
+            (*
+                -> concept_ranobe;;
+            *);;
+        *);;
+
+    genre_shounen
+        => nrel_main_idtf:
+            [сёнэн] (* <- lang_ru;; *);
+            [shounen] (* <- lang_en;; *);
+        <- genre;
+
+        <- rrel_key_sc_element: ...
+        (*
+            => nrel_main_idtf:
+                [Опр.(сёнэн)] (* <- lang_ru;; *);
+                [Def.(shounen)] (* <- lang_en;; *);;
+            <- definition;;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/genre_shounen.html" (* => nrel_format: format_html;; <- lang_ru;; *);;
+            *);;
+            <= nrel_using_constants: ...
+            (*
+                -> concept_ranobe;;
+            *);;
+        *);;
+
+    genre_isekai
+        => nrel_main_idtf:
+            [исекай] (* <- lang_ru;; *);
+            [isekai] (* <- lang_en;; *);
+        <- genre;
+
+        <- rrel_key_sc_element: ...
+        (*
+            => nrel_main_idtf:
+                [Опр.(исекай)] (* <- lang_ru;; *);
+                [Def.(isekai)] (* <- lang_en;; *);;
+            <- definition;;
+            <= nrel_sc_text_translation: ...
+            (*
+                -> "file://content/genre_isekai.html" (* => nrel_format: format_html;; <- lang_ru;; *);;
+            *);;
+            <= nrel_using_constants: ...
+            (*
+                -> concept_ranobe;;
+            *);;
+        *);;
+
+*];;

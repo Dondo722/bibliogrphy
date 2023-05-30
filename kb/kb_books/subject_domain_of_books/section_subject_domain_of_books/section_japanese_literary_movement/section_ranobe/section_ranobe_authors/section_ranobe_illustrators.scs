@@ -1,0 +1,342 @@
+section_ranobe_illustrators
+=> nrel_main_idtf:
+	[Раздел. Иллюстраторы ранобе.] (* <- lang_ru;; *);
+	[Section. Ranobe illustrators.] (* <- lang_en;; *);
+
+-> rrel_key_sc_element:
+	person_Shunsaku_Tomose;
+    person_Tsukasa_Kiryuu;
+    person_Ponkan8;
+    person_Kazuhiro_Hara;
+    person_Shinobu_Shinotsuki;
+    person_Mitz_Vah;
+    person_Keiji_Mizoguchi;
+    person_so_bin;
+    person_Sui_Ishida;
+    person_Seira_Minami;
+    person_Daisuke_Izuka;
+    person_VOFAN;
+    person_Eight_Shimotsuki;;
+
+section_ranobe_illustrators = [*
+
+    person_Eight_Shimotsuki
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Эйто Симоцуки] (* <- lang_ru;; *);
+		[Eight Shimotsuki] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_comedy;;
+            -> genre_ecchi;;
+            -> genre_school;;
+        *);;
+
+    person_VOFAN
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [] (* <- lang_ru;; *);
+		[VOFAN] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_mystery;;
+        *);;
+
+    person_Daisuke_Izuka
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Дайсукэ Идзука] (* <- lang_ru;; *);
+		[Daisuke Izuka] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_adventure;;
+            -> genre_fantasy;;
+            -> genre_military;;
+        *);;
+
+    person_Noboru_Kannatsuki
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Нобору Каннацуки] (* <- lang_ru;; *);
+		[Noboru Kannatsuki] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_fantasy;;
+        *);;
+
+    person_Seira_Minami
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Сэйра Минами] (* <- lang_ru;; *);
+		[Seira Minami] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+        *);;
+
+	person_Shunsaku_Tomose
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Шунсаку Томосэ] (* <- lang_ru;; *);
+		[Shunsaku Tomose] (* <- lang_en;; *);
+            
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_thriller;;
+            -> genre_psychological;;
+			-> concept_ranobe;;
+        *);;
+
+    person_Tsukasa_Kiryuu
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Цукаса Кирю] (* <- lang_ru;; *);
+        [Tsukasa Kiryuu] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_adventure;;
+            -> genre_comedy;;
+            -> genre_fantasy;;
+			-> concept_ranobe;;
+        *);;
+
+    person_Ponkan8
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Ponkan8] (* <- lang_ru;; *);
+        [Ponkan8] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_romance;;
+            -> genre_comedy;;
+            -> genre_school;;
+			-> concept_ranobe;;
+        *);;
+
+    person_so_bin
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [so-bin] (* <- lang_ru;; *);
+        [so-bin] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+            -> genre_comedy;;
+            -> genre_military;;
+        *);;
+
+    person_Keiji_Mizoguchi
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Кэйдзи Мидзогути] (* <- lang_ru;; *);
+		[Keiji Mizoguchi] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_comedy;;
+            -> genre_romance;;
+            -> genre_school;;
+        *);;
+
+    person_Mitz_Vah
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Миц Ва] (* <- lang_ru;; *);
+		[Mitz Vah] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+        *);;
+
+    person_Shinobu_Shinotsuki
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Синобу Синоцуки] (* <- lang_ru;; *);
+		[Shinobu Shinotsuki] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_military;;
+        *);;
+
+    person_Kazuhiro_Hara
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Кадзухиро Хара] (* <- lang_ru;; *);
+		[Kazuhiro Hara] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_adventure;;
+            -> genre_fantasy;;
+            -> genre_scifi;;
+        *);;
+
+    person_Sui_Ishida
+    <- person;
+    <- illustrator;
+
+    => nrel_main_idtf:
+        [Суи Исида] (* <- lang_ru;; *);
+		[Sui Ishida] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_fantasy;;
+            -> genre_horror;;
+            -> genre_supernatural;;
+            -> genre_psychological;;
+        *);;
+
+*];;

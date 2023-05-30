@@ -1,0 +1,46 @@
+ranobe_tate_no_yuusha_no_nariagari
+    => nrel_main_idtf:
+        ["Восхождение героя щита"] (* <- lang_ru;; *);
+        ["Tate no Yuusha no Nariagari"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_fantasy;
+
+    => nrel_author:
+        person_Yusagi_Aneko;
+    => nrel_illustrator:
+        person_Seira_Minami;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2013;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Восхождение героя щита)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_tate_no_yuusha_no_nariagari
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_tate_no_yuusha_no_nariagari_characters
+        (*
+            -> rrel_main_character: char_Raphtalia;;
+            -> rrel_main_character: char_Naofumi_Iwatani;;
+            -> rrel_main_character: char_Filo;;
+            -> char_Wyndia;;
+            -> char_Welst;;
+            -> char_Village_Doctors_Assistant;;
+            -> char_Village_Doctor;;
+            -> char_Village_Chief;;
+        *);;

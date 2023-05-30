@@ -1,0 +1,366 @@
+section_ranobe_authors
+=> nrel_main_idtf:
+	[Раздел. Авторы ранобе.] (* <- lang_ru;; *);
+	[Section. Ranobe authors.] (* <- lang_en;; *);
+
+-> rrel_key_sc_element:
+	person_Shogo_Kinugasa;
+    person_Okina_Baba;
+    person_Wataru_Watari;
+    person_Fuse;
+    person_Carlo_Zen;
+    person_Mamare_Touno;
+    person_Hajime_Kamoshida;
+    person_Hajime_Ninomae;
+    person_Shin_Towada;
+    person_Yusagi_Aneko;
+    person_Kumo_Kagyuu;
+    person_Takumi_Yanai;
+    person_ISIN_NISIO;
+    person_Hirotaka_Akagi;;
+
+section_ranobe_authors = [*
+
+    person_Hirotaka_Akagi
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Хиротака Акаги] (* <- lang_ru;; *);
+		[Hirotaka Akagi] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_comedy;;
+            -> genre_ecchi;;
+            -> genre_school;;
+        *);;
+
+    person_ISIN_NISIO
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Исин Нисио] (* <- lang_ru;; *);
+		[ISIN NISIO] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_mystery;;
+        *);;
+
+    person_Takumi_Yanai
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Такуми Янай] (* <- lang_ru;; *);
+		[Takumi Yanai] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_adventure;;
+            -> genre_fantasy;;
+            -> genre_military;;
+        *);;
+
+    person_Kumo_Kagyuu
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Кумо Кагю] (* <- lang_ru;; *);
+		[Kumo Kagyuu] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_fantasy;;
+        *);;
+
+    person_Yusagi_Aneko
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Юсаги Анэко] (* <- lang_ru;; *);
+		[Yusagi Aneko] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+        *);;
+
+	person_Shogo_Kinugasa
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Сёго Кинугаса] (* <- lang_ru;; *);
+		[Shogo Kinugasa] (* <- lang_en;; *);
+            
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_thriller;;
+            -> genre_psychological;;
+			-> concept_ranobe;;
+        *);;
+
+    person_Okina_Baba
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Окина Баба] (* <- lang_ru;; *);
+        [Okina Baba] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_adventure;;
+            -> genre_comedy;;
+            -> genre_fantasy;;
+			-> concept_ranobe;;
+        *);;
+
+    person_Wataru_Watari
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Ватару Ватари] (* <- lang_ru;; *);
+        [Wataru Watari] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_romance;;
+            -> genre_comedy;;
+            -> genre_school;;
+			-> concept_ranobe;;
+        *);;
+
+    person_Kugane_Maruyama
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Куганэ Маруяма] (* <- lang_ru;; *);
+        [Kugane Maruyama] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+            -> genre_comedy;;
+            -> genre_military;;
+        *);;
+
+    person_Hajime_Ninomae
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Хаджиме Ниномаэ] (* <- lang_ru;; *);
+        [Hajime Ninomae] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_seinen;;
+            -> genre_drama;;
+            -> genre_fantasy;;
+        *);;
+
+    person_Hajime_Kamoshida
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Хадзимэ Камосида] (* <- lang_ru;; *);
+		[Hajime Kamoshida] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_comedy;;
+            -> genre_romance;;
+            -> genre_school;;
+        *);;
+
+    person_Fuse
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Fuse] (* <- lang_ru;; *);
+		[Fuse] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_fantasy;;
+        *);;
+
+    person_Carlo_Zen
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Карло Дзен] (* <- lang_ru;; *);
+		[Carlo Zen] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_military;;
+        *);;
+
+    person_Mamare_Touno
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Мамарэ Тоно] (* <- lang_ru;; *);
+		[Mamare Touno] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_adventure;;
+            -> genre_fantasy;;
+            -> genre_scifi;;
+        *);;
+
+    person_Shin_Towada
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Син Товада] (* <- lang_ru;; *);
+		[Shin Towada] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_jp;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_action;;
+            -> genre_fantasy;;
+            -> genre_horror;;
+            -> genre_supernatural;;
+            -> genre_psychological;;
+        *);;
+
+*];;

@@ -1,0 +1,44 @@
+ranobe_tensei_shitara_slime_datta_ken
+    => nrel_main_idtf:
+        ["О моём перерождении в слизь"] (* <- lang_ru;; *);
+        ["Tensei shitara Slime Datta Ken"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_fantasy;
+
+    => nrel_author:
+        person_Fuse;
+    => nrel_illustrator:
+        person_Mitz_Vah;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2014;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (О моём перерождении в слизь)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_tensei_shitara_slime_datta_ken
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_tensei_shitara_slime_datta_ken_characters
+        (*
+            -> rrel_main_character: char_Rimuru_Tempest;;
+            -> char_Zonda;;
+            -> char_Yamza;;
+            -> char_Violet;;
+            -> char_Veyron;;
+            -> char_Vesta;;
+        *);;
