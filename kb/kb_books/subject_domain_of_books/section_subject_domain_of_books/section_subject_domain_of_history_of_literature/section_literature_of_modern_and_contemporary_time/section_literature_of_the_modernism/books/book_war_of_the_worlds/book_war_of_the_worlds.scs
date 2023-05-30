@@ -1,0 +1,629 @@
+book_war_of_the_worlds
+=> nrel_main_idtf: 
+        ["Война миров"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_fantastic;
+=> nrel_author: 
+    person_Wells;
+=> nrel_languages_of_work:
+    lang_en;
+=> nrel_publication_date:
+    year_1897;;
+
+book_war_of_the_worlds
+=> nrel_location:
+    .book_war_of_the_worlds_location
+    (*
+        -> London;;
+        -> country_England;;
+    *);;
+
+book_war_of_the_worlds
+<= nrel_characters:
+    .book_war_of_the_worlds_characters
+    (*
+        -> rrel_main_character:
+            char_Hero;;
+        -> char_Ogilvy;
+           char_Henderson;
+           char_Stent;
+           char_Heros_wife;
+           char_Heros_brother;
+           char_Mrs_and_Miss_Elphinstone;;
+    *);;
+
+char_Hero
+        => nrel_main_idtf: 
+            [Герой] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Герой)] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Hero.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Ogilvy
+        => nrel_main_idtf: 
+            [Оджилви] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Оджилви)] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ogilvy.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Henderson
+        => nrel_main_idtf: 
+            [Гендерсон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гендерсон)] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Henderson.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Stent
+        => nrel_main_idtf: 
+            [Стэнт ] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Стэнт )] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Stent.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Heros_wife
+        => nrel_main_idtf: 
+            [Жена героя] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Жена героя)] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Heros_wife.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Heros_brother
+        => nrel_main_idtf: 
+            [Брат героя] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Брат героя)] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Heros_brother.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Mrs_and_Miss_Elphinstone
+        => nrel_main_idtf: 
+            [Миссис и мисс Элфинстон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Миссис и мисс Элфинстон)] (* <-lang_ru;; *);;
+             <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mrs_and_Miss_Elphinstone.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+book_war_of_the_worlds => nrel_plot:
+        .book_war_of_the_worlds_plot 
+    (*
+      => nrel_main_idtf: [Сюжет. "Война миров"] 
+                (* <-lang_ru;; *);;
+        -> .book_war_of_the_worlds_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Накануне войны] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_1.html"(* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                        -> char_Ogilvy;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_2;;                  
+            *);;
+
+        -> .book_war_of_the_worlds_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Падающая звезда] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_2.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Henderson;;
+                        -> char_Ogilvy;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_3;;                  
+            *);;
+
+          -> .book_war_of_the_worlds_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. На Хорселлской пустоши] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_3.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                        -> char_Ogilvy;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_4;;                  
+            *);;
+
+        -> .book_war_of_the_worlds_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Цилиндр открывается] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_4.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_5;;                  
+            *);;
+
+        -> .book_war_of_the_worlds_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Тепловой луч] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_5.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_6;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Тепловой луч на Чобхемской дороге] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_6.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_7;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Как я добрался до дому] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_7.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_8;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. В пятницу вечером] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_8.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_9;;
+            *);;
+
+         -> .book_war_of_the_worlds_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Сражение начинается] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_9.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_battle;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_10;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_10
+            (*
+                => nrel_main_idtf: [Событие №10. Гроза] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_10.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_11;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_11
+            (*
+                => nrel_main_idtf: [Событие №11.  У окна] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_11.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_12;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_12
+            (*
+                => nrel_main_idtf: [Событие №12. Разрушение Уэйбриджа и Шеппертона] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_12.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_battle;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_13;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_13
+            (*
+                => nrel_main_idtf: [Событие №13. Встреча со священником] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_13.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_battle;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_14;;
+            *);;
+
+         -> .book_war_of_the_worlds_event_14
+            (*
+                => nrel_main_idtf: [Событие №14. В Лондоне] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_14.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Heros_brother;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_15;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_15
+            (*
+                => nrel_main_idtf: [Событие №15. Что случилось в Сэррее] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_15.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_battle;;
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_16;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_16
+            (*
+                => nrel_main_idtf: [Событие №16. Уход из Лондона] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_16.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Heros_brother;;
+                        ->char_Mrs_and_Miss_Elphinstone;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_17;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_17
+            (*
+                => nrel_main_idtf: [Событие №17. «Сын грома»] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_17.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Heros_brother;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_18;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_18
+            (*
+                => nrel_main_idtf: [Событие №18. Под пятой] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_18.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_19;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_19
+            (*
+                => nrel_main_idtf: [Событие №19. Что мы видели из развалин дома] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_19.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_20;;
+            *);;
+
+         -> .book_war_of_the_worlds_event_20
+            (*
+                => nrel_main_idtf: [Событие №20. Дни заточения] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_20.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_21;;
+            *);;
+
+
+        -> .book_war_of_the_worlds_event_21
+            (*
+                => nrel_main_idtf: [Событие №21. Смерть священника] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_21.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_22;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_22
+            (*
+                => nrel_main_idtf: [Событие №22. Тишина] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_22.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_23;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_23
+            (*
+                => nrel_main_idtf: [Событие №23. Что сделали марсиане за две недели] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_23.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_24;;
+            *);;
+
+
+        -> .book_war_of_the_worlds_event_24
+            (*
+                => nrel_main_idtf: [Событие №24. Человек на вершине Путни-хилла] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_24.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_25;;
+            *);;
+
+
+        -> .book_war_of_the_worlds_event_25
+            (*
+                => nrel_main_idtf: [Событие №25. Мертвый Лондон] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_25.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_26;;
+            *);;
+        
+        -> .book_war_of_the_worlds_event_26
+            (*
+                => nrel_main_idtf: [Событие №26. На обломках прошлого] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_26.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hero;;
+                        -> char_Heros_brother;;
+                        -> char_Heros_wife;;
+                    *);;    
+                    => nrel_plot_sequence:
+                                .book_war_of_the_worlds_event_27;;
+            *);;
+
+        -> .book_war_of_the_worlds_event_27
+            (*
+                => nrel_main_idtf: [Эпилог] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_war_of_the_worlds_event_27.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_finality;;                    
+            *);;
+
+    *);;
