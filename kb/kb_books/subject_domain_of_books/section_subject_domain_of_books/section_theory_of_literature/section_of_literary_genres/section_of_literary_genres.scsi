@@ -477,7 +477,6 @@ genre_thriller <- rrel_key_sc_element: Definition_genre_thriller
 		*);;
 	*);;
 
-
     sc_node_not_relation -> genre_adventure;;
 genre -> genre_adventure;;
 
@@ -486,19 +485,144 @@ genre_adventure => nrel_main_idtf:
 
 Definition_genre_adventure
     => nrel_main_idtf:
-        [Опр.(приключения)]  (* <- lang_ru;; *);;
+        [Опр.(приключения)]  (* <- lang_ru;; *);
+        
+    -> rrel_example: "file://htmls//genre_adventure.html";;
 
 genre_adventure <- rrel_key_sc_element: Definition_genre_adventure
+
+sc_node_not_relation -> genre_detective;;
+genre -> genre_detective;;
+
+genre_detective => nrel_main_idtf:
+        [детектив](*<-lang_ru;;*);;
+
+Definition_genre_detective
+    => nrel_main_idtf:
+        [Опр.(детектив)]  (* <- lang_ru;; *);;
+
+genre_detective <- rrel_key_sc_element: Definition_genre_detective
 	(*
 	<-definition;;
 	<=nrel_sc_text_translation:
 		...
 		(*
-		-> rrel_example: "file://htmls//genre_adventure.html";;	
+		-> rrel_example: "file://htmls//genre_detective.html"
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
 		*);;
 	<= nrel_using_constants:...
 		(*
 		-> genre_of_literature;;
-        -> event;;
+		*);;
+	*);;
+
+sc_node_not_relation -> genre_religion;;
+genre -> genre_religion;;
+
+genre_religion => nrel_main_idtf:
+        [религия](*<-lang_ru;;*);;
+
+Definition_genre_religion
+    => nrel_main_idtf:
+        [Опр.(религия)]  (* <- lang_ru;; *);;
+
+genre_religion <- rrel_key_sc_element: Definition_genre_religion
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_religion.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;
+
+genre_novel => nrel_main_idtf:
+        [роман](*<-lang_ru;;*);;
+
+Definition_genre_novel
+    => nrel_main_idtf:
+        [Опр.(роман)]  (* <- lang_ru;; *);;
+
+genre_novel <- rrel_key_sc_element: Definition_genre_novel
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_novel.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;
+
+genre_psychological_thriller => nrel_main_idtf:
+        [психологический триллер](*<-lang_ru;;*);;
+
+Definition_genre_psychological_thriller
+    => nrel_main_idtf:
+        [Опр.(психологический триллер)]  (* <- lang_ru;; *);;
+
+genre_psychological_thriller <- rrel_key_sc_element: Definition_genre_psychological_thriller
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_psychological_thriller.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;
+
+genre_supernatural_fiction => nrel_main_idtf:
+        [сверхъестественная фантастика](*<-lang_ru;;*);;
+
+Definition_genre_supernatural_fiction
+    => nrel_main_idtf:
+        [Опр.(сверхъестественная фантастика)]  (* <- lang_ru;; *);;
+
+genre_supernatural_fiction <- rrel_key_sc_element: Definition_genre_supernatural_fiction
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//genre_supernatural_fiction.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;
+
+genre_noir => nrel_main_idtf:
+        [нуар](*<-lang_ru;;*);;
+
+Definition_genre_noir
+    => nrel_main_idtf:
+        [Опр.(нуар)]  (* <- lang_ru;; *);;
+
+genre_noir <- rrel_key_sc_element: Definition_genre_noir
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*	
+		-> rrel_example: "file://htmls//genre_noir.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
 		*);;
 	*);;

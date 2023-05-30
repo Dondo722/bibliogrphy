@@ -1,0 +1,9 @@
+section_detective_history_of_literature
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. История детективной литературы] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Setion. History of literature] (* <- lang_en;; *);;
+
+section_detective_history_of_literature
+    -> rrel_key_sc_element:
+		section_of_history_of_literature;;
+       

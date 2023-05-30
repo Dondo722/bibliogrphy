@@ -1,0 +1,33 @@
+concept_detective
+    => nrel_main_idtf: [детектив] (* <- lang_ru;; *);
+    => nrel_main_idtf: [detective] (* <- lang_en;; *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- sc_definition;;
+        <- sc_explanation;;
+        => nrel_main_idtf: [Опр.(Детектив)] (* <- lang_ru;; *);;
+        => nrel_main_idtf: [Def.(Detective)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: "file://content/detective.html"
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
+        *);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- statement;;
+        <- sc_common_type_statement;;
+        => nrel_main_idtf: [Утв.(Детектив)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: "file://content/detective_stat.html" (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
+        *);;
+    *);;

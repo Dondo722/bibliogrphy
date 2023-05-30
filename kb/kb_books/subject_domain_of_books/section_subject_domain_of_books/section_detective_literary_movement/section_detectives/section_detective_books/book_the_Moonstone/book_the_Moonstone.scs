@@ -1,0 +1,33 @@
+book_the_Moonstone
+    => nrel_main_idtf: 
+        ["Лунный камень"]
+            (* <- lang_ru;; *);
+        ["the Moonstone"]
+            (* <- lang_en;; *);
+    =>nrel_systems_idtf:
+        [book_the_Moonstone];
+<- book;
+<- genre_detective;
+<- genre_novel;
+<- genre_criminal_prose;
+<- genre_horror;
+<- genre_supernatural_fiction;
+<- concept_mystery;
+=> nrel_author:
+    person_William_Wilkie_Collins;
+=> nrel_languages_of_work:
+    lang_en;
+=> nrel_publishing_house:
+    studio_William_Tinsley;
+=> nrel_country_of_origin:
+    country_England;
+=> nrel_publication_date:
+    year_1866;;
+
+book_the_Moonstone
+=> nrel_location:
+    .book_the_Moonstone_location
+    (*
+        -> country_England;;
+        -> country_India;;
+    *);;
