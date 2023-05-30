@@ -1,12 +1,12 @@
-section_fantastic_genres
+section_adventure_genres
 	<- sc_node_not_relation;
-	=> nrel_main_idtf: [Раздел. Жанры и поджанры фантастики] (* <- lang_ru;; *);
-	=> nrel_main_idtf: [Section. Book genres] (* <- lang_en;; *);;
+	=> nrel_main_idtf: [Раздел. Жанры и поджанры приключений] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Adventure genres] (* <- lang_en;; *);;
 
-section_fantastic_genres
+section_adventure_genres
     -> rrel_key_sc_element:
 		concept_genre;
-        genre_fantastic;
+        genre_adventure;
 		genre_novel;
 		genre_noir;
 		concept_mystery;
