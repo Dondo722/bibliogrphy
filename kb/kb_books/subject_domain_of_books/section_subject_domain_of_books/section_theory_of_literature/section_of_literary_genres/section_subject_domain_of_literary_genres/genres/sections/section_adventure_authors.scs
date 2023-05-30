@@ -1,0 +1,219 @@
+section_adventure_authors	
+    -> rrel_key_sc_element:
+		nrel_author;
+        person_Mary_Shelley;
+		person_Aldous_Huxley;
+		person_Jonathan_Swift;
+		person_Wells;
+        person_George_Orwell;;
+
+
+person_Arthur_Conan_Doyle
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Артур Конан Дойл]
+            (* <- lang_ru;; *);
+  
+
+    => nrel_date_of_birth:
+        date_22_05_1859
+            (*
+                => nrel_main_idtf:
+                    [22 мая 1859 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britain;
+
+    => nrel_date_of_death:
+        date_07_07_1930
+            (*
+                => nrel_main_idtf:
+                    [7 июля 1930 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_detective;;
+            -> concept_fantasy;;
+            -> concept_science_fiction;;
+            -> concept_historical_novel;;
+        *);;
+
+        person_Daniel_Defoe
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Даниэль Дэфо]
+            (* <- lang_ru;; *);
+  
+
+    => nrel_date_of_birth:
+        date_23_03_1660
+            (*
+                => nrel_main_idtf:
+                    [23 марта 1660 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britain;
+
+    => nrel_date_of_death:
+        date_24_04_1731
+            (*
+                => nrel_main_idtf:
+                    [24 апреля 1731 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_adventure;;
+            -> cocncept_novel;;
+        *);;
+
+person_Jack_London
+    <- person;
+    <- male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Джек Лондон]
+            (* <- lang_ru;; *);
+  
+
+    => nrel_date_of_birth:
+        date_12_01_1876
+            (*
+                => nrel_main_idtf:
+                    [12 января 1876 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_22_11_1916
+            (*
+                => nrel_main_idtf:
+                    [22 ноября 1916 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_adventure;;
+            -> cocncept_novel;;
+        *);;
+        
+person_Mark_Twain
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- journalist;
+    <- publicist;
+
+    => nrel_main_idtf:
+            [Марк Твен] (* <- lang_ru;;*);
+    => nrel_idtf:
+            [Сэмюэл Лэнгхорн Клеменс] (* <- lang_ru;;*);     
+    => nrel_idtf:
+            [сьер Луи де Конт] (* <- lang_ru;;*);        
+    => nrel_idtf:
+            [Томас Джефферсон Снодграсс] (* <- lang_ru;;*);                           
+    => nrel_date_of_birth:
+            date_30_11_1835
+            (*
+                => nrel_main_idtf:
+                [30 ноября 1835](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_USA;
+    => nrel_date_of_death:
+            date_21_04_1910
+            (*
+                => nrel_main_idtf:
+                [21 апреля 1910](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_USA;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> journalism;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+    
+    person_Jules_Verne
+    <- person;
+    <- male;
+    <- writer;
+    <- playwright;
+
+    => nrel_main_idtf:
+            [Жюль Верн] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_8_11_1828
+            (*
+                => nrel_main_idtf:
+                [8 февраля 1828](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_24_03_1905
+            (*
+                => nrel_main_idtf:
+                [24 марта 1905](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_France;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_science_fiction;;
+
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);;        

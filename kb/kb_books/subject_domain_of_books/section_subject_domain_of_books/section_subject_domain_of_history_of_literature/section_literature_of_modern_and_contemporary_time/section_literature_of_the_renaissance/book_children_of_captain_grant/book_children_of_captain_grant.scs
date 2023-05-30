@@ -1,0 +1,217 @@
+book_children_of_captain_grant
+    => nrel_main_idtf:
+        ["Дети капитана Гранта"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_adventure;
+
+    => nrel_author:
+        person_Jules_Verne;
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1867;;
+
+book_children_of_captain_grant
+    <= nrel_characters:
+        .book_children_of_captain_grant_characters
+        (*
+            -> rrel_main_character:
+                    char_Captain_Grant;
+                    char_Mary;
+                    char_Robert;;
+            -> char_Captain_McClinton;;
+        *);;    
+
+char_Captain_Grant
+        => nrel_main_idtf: 
+            [Капитан Грант] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Капитан Грант)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Captain_Grant.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Mary
+        => nrel_main_idtf: 
+            [Мэри] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мэри)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mary.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Robert
+        => nrel_main_idtf: 
+            [Роберт] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Роберт)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Robert.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+        
+
+char_Captain_McClinton
+        => nrel_main_idtf: 
+            [Капитан Мак-Клинтон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Капитан Мак-Клинтон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Captain_McClinton.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+book_children_of_captain_grant => nrel_plot:.book_children_of_captain_grant_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Дети капитана Гранта"] (* <-lang_ru;; *);;
+        -> .book_children_of_captain_grant_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Отправление на экспедицию] (* => nrel_format: format_html;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_children_of_captain_grant_event_1.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Captain_Grant;
+                           char_Captain_McClinton;
+                           char_Mary;
+                           char_Robert;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_children_of_captain_grant_event_2;;      
+            *);;
+
+        -> .book_children_of_captain_grant_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Потерянные на острове] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_children_of_captain_grant_event_2.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_adventure;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Captain_Grant;
+                           char_Mary;
+                           char_Robert;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_children_of_captain_grant_3;;      
+            *);;    
+
+        -> .book_children_of_captain_grant_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Поиски капитана Гранта] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_children_of_captain_grant_event_3.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <-event_island;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Captain_Grant;
+                           char_Mary;;
+                            
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_children_of_captain_grant_event_4;;      
+            *);;
+
+        -> .book_children_of_captain_grant_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. На новых берегах] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_children_of_captain_grant_event_4.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_survival;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Captain_Grant;
+                           char_Mary;
+                           char_Robert;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_children_of_captain_grant_event_5;;      
+            *);;  
+
+        -> .book_children_of_captain_grant_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Побег из Ван-Диемена] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_children_of_captain_grant_event_5.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_construction;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Captain_Grant;
+                           char_Mary;
+                           char_Robert;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_children_of_captain_grant_event_6;;            
+            *);; 
+
+            -> .book_children_of_captain_grant_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Возвращение домой] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_children_of_captain_grant_event_6.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_Friday;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Captain_Grant;
+                           char_Mary;
+                           char_Robert;; 
+                    *);;               
+            *);;
+
+            
+    *);;

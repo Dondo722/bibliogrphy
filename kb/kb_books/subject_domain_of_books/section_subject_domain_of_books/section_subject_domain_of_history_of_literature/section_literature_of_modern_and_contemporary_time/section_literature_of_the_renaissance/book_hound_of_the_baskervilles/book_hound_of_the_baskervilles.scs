@@ -1,0 +1,283 @@
+book_hound_of_the_baskervilles
+    => nrel_main_idtf:
+        ["Собака Баскервилей"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_adventure;
+
+    => nrel_author:
+        person_Arthur_Conan_Doyle;
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1902;;
+
+book_hound_of_the_baskervilles
+    <= nrel_characters:
+        .book_hound_of_the_baskervilles_characters
+        (*
+            -> rrel_main_character:
+                    char_Sherlock_Holmes;
+                    char_Dr_Watson;;
+            -> char_Sir_Charles_Baskerville;
+               char_Sir_Henry_Baskerville;;
+        *);;    
+
+char_Sherlock_Holmes
+        => nrel_main_idtf: 
+            [Шерлок Холмс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Шерлок Холмс)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sherlock_Holmes.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_char_Dr_Watson
+        => nrel_main_idtf: 
+            [Докток Ватсон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Докток Ватсон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Dr_Watson.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+
+char_Sir_Charles_Baskerville
+        => nrel_main_idtf: 
+            [Сэр Чарльз Баскервилль] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сэр Чарльз Баскервилль)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sir_Charles_Baskerville.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Sir_Henry_Baskerville
+        => nrel_main_idtf: 
+            [Сэр Генри Баскервилль] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сэр Генри Баскервилль)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sir_Henry_Baskerville.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+
+
+book_hound_of_the_baskervilles => nrel_plot:.book_hound_of_the_baskervilles_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Собака Баскервилей"] (* <-lang_ru;; *);;
+        -> .book_hound_of_the_baskervilles_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Предыстория] (* => nrel_format: format_html;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_1.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hound_of_the_baskervilles;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_hound_of_the_baskervilles_event_2;;      
+            *);;
+
+        -> .book_hound_of_the_baskervilles_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Мистер Шерлок Холмс] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_2.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_adventure;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hound_of_the_baskervilles;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_hound_of_the_baskervilles_3;;      
+            *);;    
+
+        -> .book_hound_of_the_baskervilles_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Шерлок Холмс на делах] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_3.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <-event_island;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hound_of_the_baskervilles;;
+                            
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_hound_of_the_baskervilles_event_4;;      
+            *);;
+
+        -> .book_hound_of_the_baskervilles_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Прибытие на имение Баскервиллей] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_4.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_survival;;
+                    <= nrel_participants:... 
+                    (*
+                        ->char_hound_of_the_baskervilles;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_hound_of_the_baskervilles_event_5;;      
+            *);;  
+
+        -> .book_hound_of_the_baskervilles_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Появление первых улик] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_5.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_construction;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hound_of_the_baskervilles;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_hound_of_the_baskervilles_event_6;;            
+            *);; 
+
+            -> .book_hound_of_the_baskervilles_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Собака Баскервиллей] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_6.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_Friday;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hound_of_the_baskervilles;
+                           char_Friday;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_hound_of_the_baskervilles_event_7;;      
+            *);;
+
+            -> .book_hound_of_the_baskervilles_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Расследование Холмса] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_7.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_captain;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hound_of_the_baskervilles;
+                           char_Friday;
+                           char_Captain;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_hound_of_the_baskervilles_event_8;;      
+            *);;
+
+            -> .book_hound_of_the_baskervilles_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Окончание расследования] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_8.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_captain;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hound_of_the_baskervilles;
+                           char_Friday;
+                           char_Captain;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_hound_of_the_baskervilles_event_9;;      
+            *);;
+
+            -> .book_hound_of_the_baskervilles_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Разрешение] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_9.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_captain;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hound_of_the_baskervilles;
+                           char_Friday;
+                           char_Captain;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_hound_of_the_baskervilles_event_10;;      
+            *);;
+
+            -> .book_hound_of_the_baskervilles_event_10
+            (*
+                => nrel_main_idtf: [Событие №10. Эпилог] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_hound_of_the_baskervilles_event_8.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_hound_of_the_baskervilles;
+                           char_Friday;
+                           char_Captain;; 
+                    *);;               
+            *);;
+    *);;
