@@ -19,7 +19,43 @@ genre_science_fantastic
     => nrel_main_idtf: [научная Фантастика] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [science Fantastic] (* <- lang_en;; *);;
 
+Definition_genre_science_fantastic
+    => nrel_main_idtf:
+        [Опр.(научная Фантастика)]  (* <- lang_ru;; *);;
+
+genre_science_fantastic <- rrel_key_sc_element: Definition_genre_science_fantastic
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*	
+		-> rrel_example: "file://htmls//genre_science_fantastic.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;
+
 genre_social_fantastic
 	<-sc_node_not_relation;
     => nrel_main_idtf: [социальная Фантастика] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [social Fantastic] (* <- lang_en;; *);;
+
+Definition_genre_social_fantastic
+    => nrel_main_idtf:
+        [Опр.(социальная Фантастика)]  (* <- lang_ru;; *);;
+
+genre_social_fantastic <- rrel_key_sc_element: Definition_genre_social_fantastic
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*	
+		-> rrel_example: "file://htmls//genre_social_fantastic.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> genre_of_literature;;
+		*);;
+	*);;

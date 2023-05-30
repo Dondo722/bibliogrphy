@@ -59,7 +59,7 @@ subject_domain_of_adventure = [*
 
 	subject_domain_of_adventure
 		<- sc_node_not_relation;
-		=> nrel_main_idtf: [Предметная область Приключений] (* <- lang_ru;; *);
+		=> nrel_main_idtf: [Раздел. Предметная область Приключений] (* <- lang_ru;; *);
     	=> nrel_main_idtf: [Subject domain of adventure] (* <- lang_en;; *);
 
 		-> rrel_maximum_studied_object_class:
@@ -88,16 +88,16 @@ subject_domain_of_adventure = [*
 
 subject_domain_adventure_authors
 	<- sc_node_not_relation;
-	=> nrel_main_idtf: [Предметная область авторов приключений] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Раздел. Предметная область авторов приключений] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [Subject domain of adventure authors] (* <- lang_en;; *);;
 
 subject_domain_adventure_genres
 	<- sc_node_not_relation;
-	=> nrel_main_idtf: [Предметная область жанров приключения] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Раздел. Предметная область жанров приключения] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [Subject domain of adventure genres] (* <- lang_en;; *);;
 
 subject_domain_adventure_history_of_literature
 	<- sc_node_not_relation;
-	=> nrel_main_idtf: [Предметная область истории приключенческой литературы] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [раздел. Предметная область истории приключенческой литературы] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [Subject domain of history of adventure] (* <- lang_en;; *);;
 
