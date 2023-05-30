@@ -207,12 +207,12 @@ genre_miniature
 genre_speculative_fiction
 <- genre;
 => nrel_main_idtf:
-            [фантастика] (* <- lang_ru;; *);;
+            [спекулятивная фантастика] (* <- lang_ru;; *);;
 
 genre_speculative_fiction
     <- rrel_key_sc_element:...
     (*
-        => nrel_main_idtf:[Опр.(фантастика)] (* <- lang_ru;;*);;
+        => nrel_main_idtf:[Опр.(спекулятивная фантастика)] (* <- lang_ru;;*);;
         <- definition;;
         <= nrel_sc_text_translation:...
         (*
