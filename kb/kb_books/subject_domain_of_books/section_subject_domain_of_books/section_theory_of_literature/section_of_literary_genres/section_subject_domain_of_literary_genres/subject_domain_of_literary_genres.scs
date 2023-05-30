@@ -1,0 +1,103 @@
+// Section
+
+subject_domain_of_literary_genres
+	=> nrel_main_idtf: [Раздел. Предметная область литературных жанров] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of literary genres] (* <- lang_en;; *);
+
+	<= nrel_section_decomposition:
+		{
+            section_fantastic;
+			section_adventure
+		};
+
+	-> rrel_key_sc_element:
+        concept_literature;
+		concept_genre;
+
+	<- non_atomic_section;;
+
+// Sections
+
+
+section_fantastic
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Фантастика] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Fantastic] (* <- lang_en;; *);;
+
+section_adventure
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Приключения] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Adventure] (* <- lang_en;; *);;
+
+
+concept_literature
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Литература] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Literature] (* <- lang_en;; *);;
+
+concept_literature
+	 <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Литература)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_literature.html"(*
+				=> nrel_format: format_html;;
+			*);;
+        *);;
+    *);;
+
+concept_genre
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Жанр] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Genre] (* <- lang_en;; *);;
+
+concept_genre
+	 <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(Жанр)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/concept_genre.html" (*
+				=> nrel_format: format_html;;
+			*);;
+        *);;
+         <= nrel_using_constants:...
+        (*
+			->concept_iterature;;
+		*);;
+    *);;
+
+// Subject domain
+subject_domain_of_literary_genres = [*
+
+	subject_domain_of_literary_genres
+		<- sc_node_not_relation;
+		=> nrel_main_idtf: [Предметная область литературных жанров] (* <- lang_ru;; *);
+    	=> nrel_main_idtf: [Subject domain of literary genres] (* <- lang_en;; *);
+
+		-> rrel_maximum_studied_object_class:
+			concept_literature;
+
+		<- rrel_not_maximum_studied_object_class:
+			concept_genre;
+
+		=> nrel_private_subject_domain:
+			subject_domain_of_fantastic;
+			subject_domain_of_adventure;
+			
+		<= nrel_private_subject_domain:
+			subject_domain_of_literature;
+
+		<- subject_domain;;
+
+*];;
+
+subject_domain_of_literature
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область литературы] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of literature] (* <- lang_en;; *);;

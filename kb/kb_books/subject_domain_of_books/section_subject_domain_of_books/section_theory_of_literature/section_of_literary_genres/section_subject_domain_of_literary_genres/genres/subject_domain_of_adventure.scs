@@ -1,0 +1,57 @@
+// Section
+
+subject_domain_of_adventure
+	=> nrel_main_idtf: [Раздел. Предметная область Приключений] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of adventure] (* <- lang_en;; *);
+
+	<= nrel_section_decomposition:
+		{
+            section_historical_adventure;
+			section_fantasy_adventure;
+            section_science_fiction_adventure
+        };
+
+	-> rrel_key_sc_element:
+        concept_literature;
+		concept_genre;
+
+	<- non_atomic_section;;
+
+// Sections
+
+
+section_historical_adventure
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Исторические приключения] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Historical adventure] (* <- lang_en;; *);;
+
+section_fantasy_adventure
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Фентези приключения] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Fantasy adventure] (* <- lang_en;; *);;
+
+section_science_fiction_adventure
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Научно-фантастические приключения] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Science-fiction adventure] (* <- lang_en;; *);;    
+
+// Subject domain
+subject_domain_of_adventure = [*
+
+	subject_domain_of_fantastic
+		<- sc_node_not_relation;
+		=> nrel_main_idtf: [Предметная область Приключений] (* <- lang_ru;; *);
+    	=> nrel_main_idtf: [Subject domain of adventure] (* <- lang_en;; *);
+
+		-> rrel_maximum_studied_object_class:
+			concept_literature;
+
+		<- rrel_not_maximum_studied_object_class:
+			concept_genre;
+
+		<= nrel_private_subject_domain:
+			subject_domain_of_literature;
+
+		<- subject_domain;;
+
+*];;

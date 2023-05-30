@@ -477,6 +477,20 @@ genre_thriller <- rrel_key_sc_element: Definition_genre_thriller
 		*);;
 	*);;
 
+    sc_node_not_relation -> genre_adventure;;
+genre -> genre_adventure;;
+
+genre_adventure => nrel_main_idtf:
+        [Приключения](*<-lang_ru;;*);;
+
+Definition_genre_adventure
+    => nrel_main_idtf:
+        [Опр.(приключения)]  (* <- lang_ru;; *);
+        
+    -> rrel_example: "file://htmls//genre_adventure.html";;
+
+genre_adventure <- rrel_key_sc_element: Definition_genre_adventure
+
 sc_node_not_relation -> genre_detective;;
 genre -> genre_detective;;
 
@@ -604,7 +618,7 @@ genre_noir <- rrel_key_sc_element: Definition_genre_noir
 	<-definition;;
 	<=nrel_sc_text_translation:
 		...
-		(*
+		(*	
 		-> rrel_example: "file://htmls//genre_noir.html";;	
 		*);;
 	<= nrel_using_constants:...

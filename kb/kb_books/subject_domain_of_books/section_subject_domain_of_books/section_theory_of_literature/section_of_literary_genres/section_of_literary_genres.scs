@@ -25,6 +25,7 @@ section_of_literary_genres
 		genre_science_fiction;
 		genre_military;
 		genre_criminal_prose;
+		genre_adventure;
 		genre_religion;
 		genre_novel;
 		genre_noir;
