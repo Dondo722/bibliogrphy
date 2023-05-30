@@ -1,0 +1,398 @@
+book_anna_karenina 
+    => nrel_main_idtf:
+        ["Анна Каренина"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_fantastic;
+    => nrel_author:
+        person_Lev_Tolstoy;
+    <= nrel_original_language:
+        lang_ru;
+    => nrel_publication_date:
+        year_1873;;
+
+
+book_anna_karenina
+    <= nrel_characters:
+        .book_anna_karenina_characters
+        (*
+            -> rrel_main_character:
+            		char_Vronsky;
+                    char_Alexey_Karenin;
+                    char_Anna_Karenina;
+                    char_Stepan_Oblonsky;
+                    char_Daria_Oblonskaya;
+                    char_Konstantin_Levin;
+                    char_Ekaterina_Shcherbatskaya;;
+            -> char_Sergey_Koznyshev;
+               char_Betsy_Tverskaya;
+               char_Seryozha;;
+        *);;
+
+char_Seryozha
+        => nrel_main_idtf: 
+            [Сережа] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- background_character;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сережа)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Seryozha.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Betsy_Tverskaya
+        => nrel_main_idtf: 
+            [Бетси Тверская] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- background_character;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Бетси Тверская)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Betsy_Tverskaya.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+
+char_Sergey_Koznyshev
+        => nrel_main_idtf: 
+            [Сергей Иванович Кознышев] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- background_character;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сергей Иванович Кознышев)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sergey_Koznyshev.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Ekaterina_Shcherbatskaya
+        => nrel_main_idtf: 
+            [Екатерина Щербацкая (Кити)] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Екатерина Щербацкая (Кити))] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ekaterina_Shcherbatskaya.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+
+char_Konstantin_Levin
+        => nrel_main_idtf: 
+            [Константин Дмитриевич Левин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Константин Дмитриевич Левин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Konstantin_Levin.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Vronsky
+        => nrel_main_idtf: 
+            [Алексей Кириллович Вронский] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Алексей Кириллович Вронский)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Vronsky.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Alexey_Karenin
+        => nrel_main_idtf: 
+            [Алексей Александрович Каренин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Алексей Александрович Каренин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Alexey_Karenin.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Anna_Karenina
+        => nrel_main_idtf: 
+            [Анна Аркадьевна Каренина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Анна Аркадьевна Каренина)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Anna_Karenina.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Stepan_Oblonsky
+        => nrel_main_idtf: 
+            [Степан Аркадьевич Облонский] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Степан Аркадьевич Облонский)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Stepan_Oblonsky.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Daria_Oblonskaya
+        => nrel_main_idtf: 
+            [Дарья Облонская (Долли)] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дарья Облонская (Долли))] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Daria_Oblonskaya.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+                          
+
+
+book_anna_karenina => nrel_plot: 
+    .book_anna_karenina_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Анна Каренина"] (* <-lang_ru;; *);;
+        -> .book_anna_karenina_1
+            (*
+                => nrel_main_idtf: [Событие №1.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_anna_karenina_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Anna_Karenina;
+                            char_Alexey_Karenin;
+                            char_Ekaterina_Shcherbatskaya;
+                            char_Konstantin_Levin;
+                            char_Daria_Oblonskaya;
+                            char_Stepan_Oblonsky;
+                            char_Vronsky;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_anna_karenina_2;;      
+            *);;
+
+        -> .book_anna_karenina_2
+            (*
+                => nrel_main_idtf: [Событие №2.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_anna_karenina_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Anna_Karenina;
+                            char_Alexey_Karenin;
+                            char_Vronsky;
+                            char_Ekaterina_Shcherbatskaya;
+                            char_Konstantin_Levin;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_anna_karenina_3;;      
+            *);;
+
+        -> .book_anna_karenina_3
+            (*
+                => nrel_main_idtf: [Событие №3.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_anna_karenina_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Anna_Karenina;
+                            char_Alexey_Karenin;
+                            char_Ekaterina_Shcherbatskaya;
+                            char_Konstantin_Levin;
+                            char_Daria_Oblonskaya;
+                            char_Seryozha;
+                            char_Vronsky;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_anna_karenina_4;;      
+            *);;    
+
+        -> .book_anna_karenina_4
+            (*
+                => nrel_main_idtf: [Событие №4.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_anna_karenina_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Anna_Karenina;
+                            char_Alexey_Karenin;
+                            char_Ekaterina_Shcherbatskaya;
+                            char_Konstantin_Levin;
+                            char_Vronsky;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_anna_karenina_5;;      
+            *);;
+
+        -> .book_anna_karenina_5
+            (*
+                => nrel_main_idtf: [Событие №5.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_anna_karenina_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Anna_Karenina;
+                            char_Alexey_Karenin;
+                            char_Ekaterina_Shcherbatskaya;
+                            char_Konstantin_Levin;
+                            char_Vronsky;
+                            char_Sergey_Koznyshev;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_anna_karenina_6;;      
+            *);;  
+
+
+        -> .book_anna_karenina_6
+            (*
+                => nrel_main_idtf: [Событие №6.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_anna_karenina_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Anna_Karenina;
+                            char_Alexey_Karenin;
+                            char_Ekaterina_Shcherbatskaya;
+                            char_Konstantin_Levin;
+                            char_Vronsky;
+                            char_Sergey_Koznyshev;
+                            char_Daria_Oblonskaya;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_anna_karenina_7;;      
+            *);; 
+
+
+        -> .book_anna_karenina_7
+            (*
+                => nrel_main_idtf: [Событие №7.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_anna_karenina_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Anna_Karenina;
+                            char_Alexey_Karenin;
+                            char_Ekaterina_Shcherbatskaya;
+                            char_Konstantin_Levin;
+                            char_Vronsky;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_anna_karenina_8;;      
+            *);; 
+
+
+        -> .book_anna_karenina_8
+            (*
+                => nrel_main_idtf: [Событие №8.] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_anna_karenina_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Anna_Karenina;
+                            char_Alexey_Karenin;
+                            char_Ekaterina_Shcherbatskaya;
+                            char_Konstantin_Levin;
+                            char_Vronsky;;
+                    *);;    
+            *);;  
+    *);;

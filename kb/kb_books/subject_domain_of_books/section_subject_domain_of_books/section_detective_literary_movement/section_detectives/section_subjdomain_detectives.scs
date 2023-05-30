@@ -1,0 +1,151 @@
+section_subject_domain_of_detectives
+	=> nrel_main_idtf: [Раздел. Предметная область детективов] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of detectives] (* <- lang_en;; *);
+
+	<= nrel_section_decomposition:
+		{
+			section_detective_books;
+			section_detective_authors;
+			section_detective_genres;
+			section_detective_characters;
+			section_detective_history_of_literature;
+			section_detective_publishing_houses;
+			section_detective_literary_events
+		};
+
+	-> rrel_key_sc_element:
+		concept_book;
+		concept_age_limit;
+		concept_journals;
+		concept_genre;
+		concept_art;
+
+	<- non_atomic_section;;
+
+
+
+// Key sc elements
+
+concept_age_limit
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [возрастное ограничение] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [age limit] (* <- lang_en;; *);;
+
+concept_journals
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [журналы] (* <- lang_ru;; *);
+    => nrel_main_idtf: [journals] (* <- lang_en;; *);;
+
+concept_art
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [искусство] (* <- lang_ru;; *);
+    => nrel_main_idtf: [art] (* <- lang_en;; *);;
+
+// Subject domain
+subject_domain_of_detectives = [*
+
+	subject_domain_detective
+		<- sc_node_not_relation;
+		=> nrel_main_idtf: [Предметная область детективов] (* <- lang_ru;; *);
+    	=> nrel_main_idtf: [Subject domain of detective] (* <- lang_en;; *);
+
+		-> rrel_maximum_studied_object_class:
+			concept_literary_industry;
+
+		<- rrel_not_maximum_studied_object_class:
+			concept_book;
+			genre_detective;
+			concept_detective;
+			concept_genre;
+
+		-> rrel_explored_relation:
+			nrel_author;
+			nrel_character;
+			nrel_genre;
+			nrel_publishing_house;
+			nrel_event;
+
+		=> nrel_private_subject_domain:
+			subject_domain_detective_authors;
+			subject_domain_detective_genres;
+			subject_domain_detective_characters;
+			subject_domain_detective_history_of_literature;
+			subject_domain_detective_publishing_houses;
+			subject_domain_detective_literary_events;
+
+		<= nrel_private_subject_domain:
+			subject_domain_of_detective_literary_movement;
+
+		<- subject_domain;;
+
+*];;
+
+subject_domain_detective_authors
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область авторов детективных книг] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of book authors] (* <- lang_en;; *);;
+
+subject_domain_detective_genres
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область книжных жанров] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of book genres] (* <- lang_en;; *);;
+
+subject_domain_detective_history_of_literature
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область истории литературы] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of history of literature] (* <- lang_en;; *);;
+
+subject_domain_detective_characters
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область персонажей детективных книг] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of book characters] (* <- lang_en;; *);;
+
+subject_domain_detective_publishing_houses
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область книжных издательств] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of publishing houses] (* <- lang_en;; *);;
+
+subject_domain_detective_literary_events
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область книжных событий] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of literary events] (* <- lang_en;; *);;
+
+concept_literary_industry
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Книжная индустрия] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [anime industry] (* <- lang_en;; *);;
+
+concept_book
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [книга] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [book] (* <- lang_en;; *);;
+
+concept_journal
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [журнал] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [journal] (* <- lang_en;; *);;
+
+concept_genre
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [жанр] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [genre] (* <- lang_en;; *);;
+
+nrel_country_of_origin
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [страна производства*] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [country of origin*] (* <- lang_en;; *);;
+
+nrel_author
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [автор*] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [author*] (* <- lang_en;; *);;
+
+nrel_publishing_house
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [издательство*] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [publishing house*] (* <- lang_en;; *);;
+
+nrel_genre
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [жанр*] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [genre*] (* <- lang_en;; *);;	

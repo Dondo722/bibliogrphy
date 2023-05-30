@@ -1,0 +1,13 @@
+section_adventure_books
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Книги жанра приключения] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Adventure books] (* <- lang_en;; *);;
+
+section_adventure_books
+    -> rrel_key_sc_element:
+		book;
+                book_white_fang;
+		book_robinson_crusoe;
+		book_children_of_captain_grant;
+		book_hound_of_the_baskervilles;
+                book_adventures_of_tom_sawyer;;

@@ -1,0 +1,103 @@
+// Section
+
+subject_domain_of_adventure
+	=> nrel_main_idtf: [Раздел. Предметная область Приключений] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of adventure] (* <- lang_en;; *);
+
+	<= nrel_section_decomposition:
+		{
+            section_adventure_books;
+			section_adventure_authors;
+			section_adventure_genres;
+			section_adventure_books;
+			section_adventure_history_of_literature
+        };
+
+	-> rrel_key_sc_element:
+		concept_book;
+        concept_literature;
+		concept_genre;
+
+	<- non_atomic_section;;
+
+// Sections
+
+
+section_adventure_books
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Приключенческие книги] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Adventure books] (* <- lang_en;; *);;
+
+section_adventure_authors
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Приключенческие авторы] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Adventure authors] (* <- lang_en;; *);;
+
+section_adventure_genres
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Приключенческие жанры] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Adventure genres] (* <- lang_en;; *);;    
+
+section_adventure_history_of_literature	
+        <-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Истроия приключенческой литературы] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. History of adventure literature] (* <- lang_en;; *);;
+
+concept_book
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [книга] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [book] (* <- lang_en;; *);;
+
+genre_adventure
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [приключения] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [adventure] (* <- lang_en;; *);;
+	
+// Subject domain
+
+subject_domain_of_adventure = [*
+
+	subject_domain_of_adventure
+		<- sc_node_not_relation;
+		=> nrel_main_idtf: [Предметная область Приключений] (* <- lang_ru;; *);
+    	=> nrel_main_idtf: [Subject domain of adventure] (* <- lang_en;; *);
+
+		-> rrel_maximum_studied_object_class:
+			concept_literature;
+
+		<- rrel_not_maximum_studied_object_class:
+			concept_genre;
+			genre_adventure;
+			concept_book;
+
+		-> rrel_explored_relation:
+			nrel_author;
+			nrel_genre_work;
+			
+		=> nrel_private_subject_domain:
+			subject_domain_adventure_authors;
+			subject_domain_adventure_genres;
+			subject_domain_adventure_history_of_literature;
+			
+		<= nrel_private_subject_domain:
+			subject_domain_of_literature;
+
+		<- subject_domain;;
+
+*];;
+
+subject_domain_adventure_authors
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область авторов приключений] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of adventure authors] (* <- lang_en;; *);;
+
+subject_domain_adventure_genres
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область жанров приключения] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of adventure genres] (* <- lang_en;; *);;
+
+subject_domain_adventure_history_of_literature
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область истории приключенческой литературы] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of history of adventure] (* <- lang_en;; *);;
+

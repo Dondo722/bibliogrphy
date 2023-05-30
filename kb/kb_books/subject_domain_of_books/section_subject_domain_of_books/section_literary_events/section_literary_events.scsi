@@ -629,6 +629,36 @@ event_comparison
 				*);;
 		*);;
 
+event_crime
+	<- literary_event;
+	=> nrel_age_limit: [2];
+	=> nrel_main_idtf:
+		[преступление] 
+			(* <-lang_ru;; *);	
+	=> nrel_idtf:
+		[нарушение закона] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(преступление)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_crime.html" 
+					(*
+                		<- lang_ru;;
+                		=> nrel_format: format_html;;
+            		*);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
 
 event_duel
 	<- literary_event;

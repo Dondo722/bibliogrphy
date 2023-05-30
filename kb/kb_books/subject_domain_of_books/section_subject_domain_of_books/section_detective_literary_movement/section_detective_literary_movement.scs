@@ -1,0 +1,44 @@
+section_subject_domain_of_detective_literary_movement
+	=> nrel_main_idtf: [Раздел. Детективное литературное направление] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Detective literary movement] (* <- lang_en;; *);
+
+
+	<= nrel_section_decomposition:
+	{
+		section_subject_domain_of_detectives
+	};
+
+	-> rrel_key_sc_element:
+		concept_detective;
+		genre_detective;
+		concept_detective_literary_movement;
+
+	<- non_atomic_section;;		
+
+section_subject_domain_of_detective_literary_movement = [*
+
+	subject_domain_of_detective_literary_movement
+		=> nrel_main_idtf: [Предметная область детективного литературного направления] (* <- lang_ru;; *);
+		=> nrel_main_idtf: [Subject domain of detective literature movement] (* <- lang_en;; *);
+
+		-> rrel_maximum_studied_object_class:
+			concept_detective_literary_movement;
+
+		-> rrel_not_maximum_studied_object_class:
+			concept_detective;
+			writer;
+
+		-> rrel_explored_relation:
+			nrel_author;
+			nrel_character;
+
+		=> nrel_private_subject_domain: {
+			subject_domain_detective
+		};
+
+		<= nrel_private_subject_domain:
+			subject_domain_of_books;
+
+		<- subject_domain;;
+
+*];;

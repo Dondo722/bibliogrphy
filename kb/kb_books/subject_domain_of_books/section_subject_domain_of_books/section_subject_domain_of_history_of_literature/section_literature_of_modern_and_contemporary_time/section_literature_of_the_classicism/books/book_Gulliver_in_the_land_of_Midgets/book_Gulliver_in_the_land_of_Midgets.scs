@@ -1,0 +1,279 @@
+book_Gulliver_in_the_land_of_Midgets
+=> nrel_main_idtf: 
+        ["Гуливер в стране лилипутов"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_fantastic;
+=> nrel_author:
+    person_Jonathan_Swift;
+=> nrel_languages_of_work:
+    lang_en;
+=> nrel_publication_date:
+    year_1726;;
+
+
+book_Gulliver_in_the_land_of_Midgets
+<= nrel_characters:
+    .book_Gulliver_in_the_land_of_Midgets_characters
+    (*
+        -> rrel_main_character:
+            char_Lemuel_Gulliver;
+            char_King_of_Lilliput;;
+        -> char_Skyresh_Bolgolam_and_Flimnap;
+           char_James_Bets;
+           char_Skyresh_Bolgola;
+           char_Raildresel;;
+        *);;
+
+
+
+char_Lemuel_Gulliver
+        => nrel_main_idtf: 
+            [Лемюэль Гулливер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лемюэль Гулливер)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Lemuel_Gulliver.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;   
+
+char_King_of_Lilliput
+        => nrel_main_idtf: 
+            [Король Лилипутии] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Король Лилипутии)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_King_of_Lilliput.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);; 
+
+char_James_Bets
+    => nrel_main_idtf: 
+            [Джемс Бетс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джемс Бетс)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_James_Bets.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Skyresh_Bolgola
+    => nrel_main_idtf: 
+            [Скайреш Болгола] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Скайреш Болгола)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Skyresh_Bolgola.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Raildresel
+    => nrel_main_idtf: 
+            [Рельдресель] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Рельдресель)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Raildresel.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+
+book_Gulliver_in_the_land_of_Midgets => nrel_plot: 
+    .book_Gulliver_in_the_land_of_Midgets_plot
+    (*
+      => nrel_main_idtf: [Сюжет. "Гуливер в стране лилипутов"] 
+                (* <-lang_ru;; *);;
+        -> .book_Gulliver_in_the_land_of_Midgets_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Юность Гулливера. Прибытие в Лилипутию] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_1.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Lemuel_Gulliver;
+                           char_James_Bets;
+                           char_King_of_Lilliput;;
+                    *);;         
+                    => nrel_plot_sequence:
+                            .book_Gulliver_in_the_land_of_Midgets_event_2;;
+
+            *);;
+
+        -> .book_Gulliver_in_the_land_of_Midgets_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Знакомство с лилипутским императором и учёными] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_2.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Lemuel_Gulliver;
+                           char_King_of_Lilliput;;
+                    *);;                  
+                    => nrel_plot_sequence:
+                            .book_Gulliver_in_the_land_of_Midgets_event_3;;    
+            *);;
+
+        -> .book_Gulliver_in_the_land_of_Midgets_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Гулливер развлекает императорский двор] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_3.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_attempted_murder;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Lemuel_Gulliver;;
+                    *);;        
+                    => nrel_plot_sequence:
+                            .book_Gulliver_in_the_land_of_Midgets_event_4;;
+            *);;
+
+        -> .book_Gulliver_in_the_land_of_Midgets_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Враги и друзья Гулливера. Политика Лилипутии] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_4.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Lemuel_Gulliver;
+                           char_Raildresel;
+                           char_Skyresh_Bolgola;
+                           char_King_of_Lilliput;;                        
+                    *);;  
+                    => nrel_plot_sequence:
+                            .book_Gulliver_in_the_land_of_Midgets_event_5;;                    
+            *);;
+
+        -> .book_Gulliver_in_the_land_of_Midgets_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Гулливер участвует в войне лилипутов] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_5.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <-event_battle;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Lemuel_Gulliver;
+                           char_Raildresel;
+                           char_Skyresh_Bolgola;
+                           char_King_of_Lilliput;;                        
+                    *);;  
+                    => nrel_plot_sequence:
+                            .book_Gulliver_in_the_land_of_Midgets_event_6;;                    
+            *);;
+
+        -> .book_Gulliver_in_the_land_of_Midgets_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Образ жизни лилипутов] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_6.html"(* => nrel_format: format_html;;*);;
+                    *);;
+                    => nrel_plot_sequence:
+                            .book_Gulliver_in_the_land_of_Midgets_event_7;;                    
+            *);;
+
+        -> .book_Gulliver_in_the_land_of_Midgets_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Гулливера обвиняют в государ­ственной измене] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_7.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Lemuel_Gulliver;
+                           char_Raildresel;
+                           char_Skyresh_Bolgola;;                        
+                    *);;  
+                    => nrel_plot_sequence:
+                            .book_Gulliver_in_the_land_of_Midgets_event_8;;                    
+            *);;
+
+        -> .book_Gulliver_in_the_land_of_Midgets_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Побег из Лилипутии] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_Gulliver_in_the_land_of_Midgets_event_8.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_Lemuel_Gulliver;;
+                    *);;                      
+            *);;
+
+    *);;
+
+

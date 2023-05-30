@@ -1,0 +1,14 @@
+section_fantastic_books
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Книги жанра фантастики] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Fantastic books] (* <- lang_en;; *);;
+
+section_fantastic_books
+    -> rrel_key_sc_element:
+		book;
+        book_1984;
+		book_anna_karenina;
+		book_brave_new_world;
+		book_frankenstein;
+		book_Gulliver_in_the_land_of_Midgets;
+        book_war_of_the_worlds;;

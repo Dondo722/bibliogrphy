@@ -1,0 +1,265 @@
+book_robinson_crusoe
+    => nrel_main_idtf:
+        ["Робинзон Крузо"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_adventure;
+
+    => nrel_author:
+        person_Daniel_Defoe;
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1719;;
+
+book_robinson_crusoe
+    <= nrel_characters:
+        .book_robinson_crusoe_characters
+        (*
+            -> rrel_main_character:
+                    char_Robinson_Crusoe;
+                    char_Friday;
+                    char_Captain;;
+            -> char_Ksury;
+               char_Hispanic;;
+        *);;    
+
+char_Robinson_Crusoe
+        => nrel_main_idtf: 
+            [Робинзон Крузо] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Робинзон Крузо)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Robinson_Crusoe.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Friday
+        => nrel_main_idtf: 
+            [Пятница] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Пятница)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Friday.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+        
+char_Captain
+        => nrel_main_idtf: 
+            [Капитан] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Капитан)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Captain.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;   
+
+
+
+char_Ksury
+        => nrel_main_idtf: 
+            [Ксури] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ксури)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Ksury.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Hispanic
+        => nrel_main_idtf: 
+            [Испанец] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Испанец)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Hispanic.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+
+
+book_robinson_crusoe => nrel_plot:.book_robinson_crusoe_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Робинзон Крузо"] (* <-lang_ru;; *);;
+        -> .book_robinson_crusoe_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Побег юного Робинзона из родительского дома] (* => nrel_format: format_html;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_robinson_crusoe_event_1.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robinson_Crusoe;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_robinson_crusoe_event_2;;      
+            *);;
+
+        -> .book_robinson_crusoe_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Первые неудачи] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_robinson_crusoe_event_2.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_adventure;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robinson_Crusoe;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_robinson_crusoe_event_3;;      
+            *);;    
+
+        -> .book_robinson_crusoe_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Робинзон и безлюдный остров] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_robinson_crusoe_event_3.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <-event_island;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robinson_Crusoe;;
+                            
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_robinson_crusoe_event_4;;      
+            *);;
+
+        -> .book_robinson_crusoe_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Строительство жилья] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_robinson_crusoe_event_4.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_survival;;
+                    <= nrel_participants:... 
+                    (*
+                        ->char_Robinson_Crusoe;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_robinson_crusoe_event_5;;      
+            *);;  
+
+        -> .book_robinson_crusoe_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Робинзон мастерит лодку] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_robinson_crusoe_event_5.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_construction;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robinson_Crusoe;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_robinson_crusoe_event_6;;            
+            *);; 
+
+            -> .book_robinson_crusoe_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Спасение дикаря Пятницы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_robinson_crusoe_event_6.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_Friday;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robinson_Crusoe;
+                           char_Friday;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_robinson_crusoe_event_7;;      
+            *);;
+
+            -> .book_robinson_crusoe_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Встреча с капитаном британского судна] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_robinson_crusoe_event_7.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_captain;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robinson_Crusoe;
+                           char_Friday;
+                           char_Captain;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_robinson_crusoe_event_8;;      
+            *);;
+
+            -> .book_robinson_crusoe_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Возвращение на родину] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_robinson_crusoe_event_8.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robinson_Crusoe;
+                           char_Friday;
+                           char_Captain;; 
+                    *);;               
+            *);;
+    *);;

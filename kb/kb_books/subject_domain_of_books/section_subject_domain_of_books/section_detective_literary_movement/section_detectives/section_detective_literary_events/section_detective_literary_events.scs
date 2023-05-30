@@ -1,0 +1,11 @@
+section_detective_literary_events
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Детективные литературные события] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Detective literary events] (* <- lang_en;; *);;
+
+section_detective_literary_events
+    -> rrel_key_sc_element:
+		nrel_event;
+        event_crime;
+		event_murder;
+		event_attempted_murder;;
