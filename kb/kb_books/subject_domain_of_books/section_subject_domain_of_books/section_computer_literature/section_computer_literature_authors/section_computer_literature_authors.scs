@@ -1,0 +1,431 @@
+section_computer_literature_authors
+=> nrel_main_idtf:
+	[Раздел. Авторы компьютерной литературы.] (* <- lang_ru;; *);
+	[Section. Computer literature authors.] (* <- lang_en;; *);
+
+-> rrel_key_sc_element:
+	person_Hiroko_Nishimura;;
+
+section_computer_literature_authors = [*
+
+    person_Hiroko_Nishimura
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Хироко Нишимура] (* <- lang_ru;; *);
+		[Hiroko Nishimura] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_Japan;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Andrew_Hunt
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Эндрю Хант] (* <- lang_ru;; *);
+        [Andrew Hunt] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Martin_Fowler
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Мартин Фаулер] (* <- lang_ru;; *);
+        [Martin Fowler] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Eric_Evans
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Эрик Эванс] (* <- lang_ru;; *);
+        [Eric Evans] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Robert_C_Martin
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Роберт С. Мартин] (* <- lang_ru;; *);
+        [Robert C. Martin] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Steve_McConnell
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Стив Макконнелл] (* <- lang_ru;; *);
+        [Steve McConnell] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Kent_Beck
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Кент Бек] (* <- lang_ru;; *);
+        [Kent Beck] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Donald_Knuth
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Дональд Кнут] (* <- lang_ru;; *);
+        [Donald Knuth] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Douglas_Crockford
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Дуглас Крокфорд] (* <- lang_ru;; *);
+        [Douglas Crockford] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Grady_Booch
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Греди Буч] (* <- lang_ru;; *);
+        [Grady Booch] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Bruce_Eckel
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Брук Ескел] (* <- lang_ru;; *);
+		[Bruce Eckel] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_John_Resig
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Джон Ресиг] (* <- lang_ru;; *);
+        [John Resig] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_David_Flanagan
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Дэвид Фланаган] (* <- lang_ru;; *);
+        [David Flanagan] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Richard_Helm
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Ричард Хелм] (* <- lang_ru;; *);
+        [Richard Helm] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Scott_Meyers
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Скот Мейер] (* <- lang_ru;; *);
+        [Scott Meyers] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Bjarne_Stroustrup
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Бьярн Страуструп] (* <- lang_ru;; *);
+        [Bjarne Stroustrup] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Jon_Bentley
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Джон Бентли] (* <- lang_ru;; *);
+        [Jon Bentley] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Mark_Lutz
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Марк Лутц] (* <- lang_ru;; *);
+        [Mark Lutz] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Joel_Spolsky
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Джоел Сполки] (* <- lang_ru;; *);
+        [Joel Spolsky] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+    person_Peter_Norvig
+    <- person;
+    <- writer;
+
+    => nrel_main_idtf:
+        [Питер Норвиг] (* <- lang_ru;; *);
+        [Peter Norvig] (* <- lang_en;; *);
+
+    => nrel_place_of_birth:
+        country_United_States;
+
+    => nrel_languages_of_work:...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_computer_literature;;
+        *);;
+
+*];;

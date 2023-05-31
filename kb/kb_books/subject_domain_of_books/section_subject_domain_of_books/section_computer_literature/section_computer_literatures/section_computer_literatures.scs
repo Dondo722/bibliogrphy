@@ -1,0 +1,7 @@
+section_computer_literatures
+    => nrel_main_idtf:
+        [Раздел. Компьютерная литература] (* <- lang_ru;; *);
+        [Section. Computer literature] (* <- lang_en;; *);
+
+    -> rrel_key_sc_element:
+        computer_literature_aws_for_non_engineers;;

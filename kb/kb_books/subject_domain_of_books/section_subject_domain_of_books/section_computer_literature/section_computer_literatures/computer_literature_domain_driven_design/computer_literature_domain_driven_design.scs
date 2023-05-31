@@ -1,0 +1,29 @@
+computer_literature_domain_driven_design
+    => nrel_main_idtf:
+        ["Проектирование сложных программных систем"] (* <- lang_ru;; *);
+        ["Domain Driven Design"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_computer_literature;
+
+    <- genre_tech_docs;
+
+    => nrel_author:
+        person_Eric_Evans;
+
+    <= nrel_original_language:
+        lang_en;
+    <- nrel_publication_date:
+        year_2019;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Проектирование сложных программных систем)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

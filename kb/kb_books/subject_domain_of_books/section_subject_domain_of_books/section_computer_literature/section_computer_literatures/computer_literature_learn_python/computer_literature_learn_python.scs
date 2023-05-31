@@ -1,0 +1,29 @@
+computer_literature_learn_python
+    => nrel_main_idtf:
+        ["Изучаем Python"] (* <- lang_ru;; *);
+        ["Learning Python"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_computer_literature;
+
+    <- genre_tech_docs;
+
+    => nrel_author:
+        person_Mark_Lutz;
+
+    <= nrel_original_language:
+        lang_en;
+    <- nrel_publication_date:
+        year_2010;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Изучаем Python)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

@@ -1,0 +1,29 @@
+computer_literature_thinking_java
+    => nrel_main_idtf:
+        ["Философия Java"] (* <- lang_ru;; *);
+        ["Thinking in Java"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_computer_literature;
+
+    <- genre_tech_docs;
+
+    => nrel_author:
+        person_Bruce_Eckel;
+
+    <= nrel_original_language:
+        lang_en;
+    <- nrel_publication_date:
+        year_1998;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Философия Java)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

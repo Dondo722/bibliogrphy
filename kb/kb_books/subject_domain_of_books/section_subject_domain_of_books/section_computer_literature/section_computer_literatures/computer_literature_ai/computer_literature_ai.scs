@@ -1,0 +1,29 @@
+computer_literature_ai
+    => nrel_main_idtf:
+        ["Искусственный интеллект. Современный подход"] (* <- lang_ru;; *);
+        ["Artificial Intelligence: A Modern Approach"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_computer_literature;
+
+    <- genre_tech_docs;
+
+    => nrel_author:
+        person_Peter_Norvig;
+
+    <= nrel_original_language:
+        lang_en;
+    <- nrel_publication_date:
+        year_2027;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Искусственный интеллект. Современный подход)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

@@ -1,0 +1,29 @@
+computer_literature_clean_code
+    => nrel_main_idtf:
+        ["Чистый код"] (* <- lang_ru;; *);
+        ["Clean Code"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_computer_literature;
+
+    <- genre_tech_docs;
+
+    => nrel_author:
+        person_Robert_C_Martin;
+
+    <= nrel_original_language:
+        lang_en;
+    <- nrel_publication_date:
+        year_2020;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Чистый код)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

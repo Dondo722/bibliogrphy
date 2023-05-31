@@ -1,0 +1,29 @@
+computer_literature_improving_design_of_code
+    => nrel_main_idtf:
+        ["Рефакторинг: Улучшения дизайна существующего кода"] (* <- lang_ru;; *);
+        ["Refactoring: Improving the Design of Existing Code"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_computer_literature;
+
+    <- genre_tech_docs;
+
+    => nrel_author:
+        person_Martin_Fowler;
+
+    <= nrel_original_language:
+        lang_en;
+    <- nrel_publication_date:
+        year_2021;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Рефакторинг: Улучшения дизайна существующего кода)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

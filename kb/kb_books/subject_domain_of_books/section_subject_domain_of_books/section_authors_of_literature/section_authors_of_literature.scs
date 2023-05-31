@@ -33,6 +33,11 @@ section_of_authors_of_literature
 				section_ranobe_illustrators;;
 		*);
 		section_ranobe_illustrators
+    (*
+			=> nrel_section_base_order:
+				section_computer_literature_authors;;
+		*);
+    section_computer_literature_authors
 	};;
 
 section_of_authors_of_literature =  [*^"file://section_authors_of_literature.scsi"*];;

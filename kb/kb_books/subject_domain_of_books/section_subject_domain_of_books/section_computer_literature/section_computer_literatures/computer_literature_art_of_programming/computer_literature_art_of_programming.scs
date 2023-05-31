@@ -1,0 +1,29 @@
+computer_literature_art_of_programming
+    => nrel_main_idtf:
+        ["Искусство программирования"] (* <- lang_ru;; *);
+        ["The Art of Computer Programming"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_computer_literature;
+
+    <- genre_tech_docs;
+
+    => nrel_author:
+        person_Donald_Knuth;
+
+    <= nrel_original_language:
+        lang_en;
+    <- nrel_publication_date:
+        year_2020;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Искусство программирования)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
