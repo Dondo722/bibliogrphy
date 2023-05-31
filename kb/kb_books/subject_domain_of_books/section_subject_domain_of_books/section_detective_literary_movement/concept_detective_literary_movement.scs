@@ -1,0 +1,29 @@
+concept_detective_literary_movement
+		<- sc_node_not_relation;
+		=> nrel_main_idtf: [Детективное литературное направление] (* <- lang_ru;; *);
+		=> nrel_main_idtf: [Detective literary movement] (* <- lang_en;; *);
+
+		-> genre_detective;
+
+		<- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				=> nrel_main_idtf: [Опр.(детективное литературное направление)] (* <-lang_ru;; *);;
+				=> nrel_main_idtf: [Def.(Detective literary movement)] (* <-lang_en;; *);;
+				<= nrel_sc_text_translation:
+					...
+					(*
+						-> rrel_example: "file://content/detective_literary_movement.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+				<= using_constants:
+					...
+					(*
+						-> literary_movement;;
+						-> concept_detective;;
+						-> genre_detective;;
+					*);;
+			*);;

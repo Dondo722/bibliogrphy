@@ -1,0 +1,1 @@
+ui_external_languages -> scp_debugger_view;; scp_debugger_view => nrel_main_idtf: [Отладчик SCP] (* <- lang_ru;;*);; format_scp_debugger => nrel_main_idtf: [Формат SCP отладчика] (* <- lang_ru;; *);;

@@ -1,0 +1,302 @@
+ranobe_oregairu
+    => nrel_main_idtf:
+        ["Как и ожидалось, моя школьная романтическая жизнь не удалась"] (* <- lang_ru;; *);
+        ["My Youth Romantic Comedy Is Wrong, As I Expected"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_romance;
+    <- genre_comedy;
+    <- genre_school;
+
+    => nrel_author:
+        person_Wataru_Watari;
+    => nrel_illustrator:
+        person_Ponkan8;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2011;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Как и ожидалось, моя школьная романтическая жизнь не удалась)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_oregairu
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_oregairu_characters
+        (*
+            -> rrel_main_character:
+                char_Hachiman_Hikigaya;;
+            -> char_Yukino_Yukinoshita;;
+            -> char_Yui_Yuigahama;;
+            -> char_Iroha_Isshiki;;
+            -> char_Shizuka_Hiratsuka;;
+            -> char_Saika_Totsuka;;
+            -> char_Komachi_Hikigaya;;
+            -> char_Saki_Kawasaki;;
+            -> char_Haruno_Yukinoshita;;
+        *);;
+
+char_Hachiman_Hikigaya
+        => nrel_main_idtf: 
+            [Хачиман Хикигая] (* <-lang_ru;; *);
+            [Hachiman Hikigaya] (* <- lang_en;; *);
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Хачиман Хикигая)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Hachiman_Hikigaya.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хачиман Хикигая)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Hachiman_Hikigaya.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Yukino_Yukinoshita
+        => nrel_main_idtf: 
+            [Юкино Юкиношита] (* <-lang_ru;; *);
+            [Yukino Yukinoshita] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Юкино Юкиношита)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Yukino_Yukinoshita.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Юкино Юкиношита)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Yukino_Yukinoshita.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Yui_Yuigahama
+        => nrel_main_idtf: 
+            [Юи Юигахама] (* <-lang_ru;; *);
+            [Yui Yuigahama] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Юи Юигахама)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Yui_Yuigahama.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Юи Юигахама)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Yui_Yuigahama.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Iroha_Isshiki
+        => nrel_main_idtf: 
+            [Ироха Ишики] (* <-lang_ru;; *);
+            [Iroha Isshiki] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Ироха Ишики)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Iroha_Isshiki.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ироха Ишики)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Iroha_Isshiki.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Shizuka_Hiratsuka
+        => nrel_main_idtf: 
+            [Шизука Хирацука] (* <-lang_ru;; *);
+            [Shizuka Hiratsuka] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Шизука Хирацука)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Shizuka_Hiratsuka.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Шизука Хирацука)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Shizuka_Hiratsuka.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Saika_Totsuka
+        => nrel_main_idtf: 
+            [Сайка Тоцука] (* <-lang_ru;; *);
+            [Saika Totsuka] (* <- lang_en;; *);
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Сайка Тоцука)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Saika_Totsuka.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сайка Тоцука)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Saika_Totsuka.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Komachi_Hikigaya
+        => nrel_main_idtf: 
+            [Комачи Хикигая] (* <-lang_ru;; *);
+            [Komachi Hikigaya] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Комачи Хикигая)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Komachi_Hikigaya.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Комачи Хикигая)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Komachi_Hikigaya.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Saki_Kawasaki
+        => nrel_main_idtf: 
+            [Саки Кавасаки] (* <-lang_ru;; *);
+            [Saki Kawasaki] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Саки Кавасаки)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Saki_Kawasaki.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Саки Кавасаки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Saki_Kawasaki.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Haruno_Yukinoshita
+        => nrel_main_idtf: 
+            [Харуно Юкиношита] (* <-lang_ru;; *);
+            [Haruno Yukinoshita] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Харуно Юкиношита)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Haruno_Yukinoshita.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Харуно Юкиношита)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Haruno_Yukinoshita.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

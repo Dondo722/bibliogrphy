@@ -1,0 +1,237 @@
+book_frankenstein
+    => nrel_main_idtf:
+        ["Франкенштейн"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_fantastic;
+
+    => nrel_author:
+        person_Mary_Shelley;
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1818;;
+
+book_frankenstein
+    <= nrel_characters:
+        .book_frankenstein_characters
+        (*
+            -> rrel_main_character:
+                    char_Victor_Frankenstein;
+                    char_Creature;
+                    char_capitan_Robert_Walton;
+                    char_Elizabeth_Lavenca;;
+            -> char_Justine_Moritz;
+               char_Genry_Klerval;;
+        *);;    
+
+char_Victor_Frankenstein
+        => nrel_main_idtf: 
+            [Виктор Франкенштейн] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Виктор Франкенштейн)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Victor_Frankenstein.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Creature
+        => nrel_main_idtf: 
+            [Существо] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Существо)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Creature.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+        
+char_capitan_Robert_Walton
+        => nrel_main_idtf: 
+            [капитан Роберт Уолтон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(капитан Роберт Уолтон)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_capitan_Robert_Walton.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;   
+
+
+
+char_Justine_Moritz
+        => nrel_main_idtf: 
+            [Жюстин Мориц] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Жюстин Мориц)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Justine_Moritz.html" (*=> nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+char_Elizabeth_Lavenca
+        => nrel_main_idtf: 
+            [Элизабет Лавеница] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Анна Фриессе)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Elizabeth_Lavenca.html" (* => nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+
+char_Genry_Klerval
+        => nrel_main_idtf: 
+            [Генри Клервал] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Генри Клервал)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Genry_Klerval.html" (*=> nrel_format: format_html;;*);;
+                    *);;
+            *);;
+
+book_frankenstein => nrel_plot:.book_frankenstein_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Франкенштейн"] (* <-lang_ru;; *);;
+        -> .book_frankenstein_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Вводное повествование капитана Уолтона] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_frankenstein_event_1.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Victor_Frankenstein;
+                           char_capitan_Robert_Walton;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_frankenstein_event_2;;      
+            *);;
+
+        -> .book_frankenstein_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Рассказ Виктора Франкенштейна] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_frankenstein_event_2.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Victor_Frankenstein;
+                           char_Justine_Moritz;
+                           char_Creature;
+                           char_Genry_Klerval;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_frankenstein_event_3;;      
+            *);;    
+
+        -> .book_frankenstein_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Повествование Существа] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_frankenstein_event_3.html" (*=> nrel_format: format_html;;*);;
+                    *);;
+                    <-event_dialog;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Creature;
+                           char_Victor_Frankenstein;
+                           char_Justine_Moritz;;
+                            
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_frankenstein_event_4;;      
+            *);;
+
+        -> .book_frankenstein_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Повествование Виктора Франкенштейна возобновляется] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_frankenstein_event_4.html" (*=> nrel_format: format_html;;*);;
+                    *);; 
+                    <-event_duel;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Creature;
+                           char_Victor_Frankenstein;
+                           char_Genry_Klerval;
+                           char_Elizabeth_Lavenca;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_frankenstein_event_5;;      
+            *);;  
+
+        -> .book_frankenstein_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Заключение капитана Уолтона] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_frankenstein_event_5.html" (* => nrel_format: format_html;;*);;
+                    *);;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_capitan_Robert_Walton;
+                           char_Creature;
+                           char_Victor_Frankenstein;;
+                    *);;              
+            *);; 
+    *);;

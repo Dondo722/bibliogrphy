@@ -1,0 +1,240 @@
+char_Erich_von_Lergen
+        => nrel_main_idtf:
+            [Эрих фон Реруген] (* <-lang_ru;; *);
+            [Erich von Lergen] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Эрих фон Реруген)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Erich_von_Lergen.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Эрих фон Реруген)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Erich_von_Lergen.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Viktoriya_Ivanovna_Serebryakova
+        => nrel_main_idtf:
+            [Виктория Ивановна Серебрякова] (* <-lang_ru;; *);
+            [Viktoriya Ivanovna Serebryakova] (* <- lang_en;; *);
+
+        <- person;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Виктория Ивановна Серебрякова)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Viktoriya_Ivanovna_Serebryakova.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Виктория Ивановна Серебрякова)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Viktoriya_Ivanovna_Serebryakova.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Tanya_Degurechaff
+        => nrel_main_idtf:
+            [Таня Дегуршафф] (* <-lang_ru;; *);
+            [Tanya Degurechaff] (* <- lang_en;; *);
+
+        <- person;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Таня Дегуршафф)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Tanya_Degurechaff.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Таня Дегуршафф)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Tanya_Degurechaff.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Hans_von_Zettour
+        => nrel_main_idtf:
+            [Ганс фон Цеттур] (* <-lang_ru;; *);
+            [Hans von Zettour] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Ганс фон Цеттур)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Hans_von_Zettour.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Ганс фон Цеттур)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Hans_von_Zettour.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Kurst_von_Walhorf
+        => nrel_main_idtf:
+            [Курст фон Вальхорф] (* <-lang_ru;; *);
+            [Kurst von Walhorf] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Курст фон Вальхорф)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kurst_von_Walhorf.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Курст фон Вальхорф)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Kurst_von_Walhorf.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Harald_von_Vist
+        => nrel_main_idtf:
+            [Гаральд фон Вист] (* <-lang_ru;; *);
+            [Harald von Vist] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Гаральд фон Вист)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Harald_von_Vist.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гаральд фон Вист)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Harald_von_Vist.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Maximilian_Johann_von_Ugar
+        => nrel_main_idtf:
+            [Максимилиан Йохан фон Угар] (* <-lang_ru;; *);
+            [Maximilian Johann von Ugar] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Максимилиан Йохан фон Угар)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Maximilian_Johann_von_Ugar.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Максимилиан Йохан фон Угар)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Maximilian_Johann_von_Ugar.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Adelheid_von_Schugel
+        => nrel_main_idtf:
+            [Адельхайд фон Шугель] (* <-lang_ru;; *);
+            [Adelheid von Schugel] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Адельхайд фон Шугель)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Adelheid_von_Schugel.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Адельхайд фон Шугель)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Adelheid_von_Schugel.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+

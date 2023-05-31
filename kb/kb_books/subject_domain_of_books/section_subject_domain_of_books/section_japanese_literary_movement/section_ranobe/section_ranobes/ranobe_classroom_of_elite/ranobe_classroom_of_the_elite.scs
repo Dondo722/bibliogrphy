@@ -1,0 +1,327 @@
+ranobe_classroom_of_the_elite 
+    => nrel_main_idtf:
+        ["Класс превосходства"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- concept_ranobe;
+    <- genre_psychological;
+    <- genre_thriller;  
+    <- genre_school;
+    => nrel_author:
+        person_Shogo_Kinugasa;
+    => nrel_illustrator:
+        person_Shunsaku_Tomose;
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2015;
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Класс превосходства)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_classroom_of_the_elite
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_classroom_of_the_elite_characters
+        (*
+            -> rrel_main_character:
+                    char_Kiyotaka_Ayanokouji;;
+            -> char_Suzuna_Horikita;
+               char_Kei_Karuizawa;
+               char_Arisu_Sakayanagi;
+               char_Honami_Ichinose;
+               char_Airi_Sakura;
+               char_Kakeru_Ryuuen;
+               char_Sae_Chabashira;
+               char_Kikyou_Kushida;
+               char_Rokusuke_Kouenji;;
+        *);;
+
+char_Kiyotaka_Ayanokouji
+        => nrel_main_idtf: 
+            [Киётака Аянокоджи] (* <-lang_ru;; *);
+            [Kiyotaka Ayanokouji] (* <- lang_en;; *);
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Киётака Аянокоджи)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kiyotaka_Ayanokouji.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Киётака Аянокоджи)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Kiyotaka_Ayanokouji.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Suzuna_Horikita
+        => nrel_main_idtf: 
+            [Сузуна Хорикита] (* <-lang_ru;; *);
+            [Suzuna Horikita] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Сузуна Хорикита)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Suzuna_Horikita.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сузуна Хорикита)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Suzuna_Horikita.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Kei_Karuizawa
+        => nrel_main_idtf: 
+            [Кей Каруизава] (* <-lang_ru;; *);
+            [Kei Karuizawa] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Кей Каруизава)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kei_Karuizawa.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кей Каруизава)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Kei_Karuizawa.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Arisu_Sakayanagi
+        => nrel_main_idtf: 
+            [Арису Сакаянаги] (* <-lang_ru;; *);
+            [Arisu Sakayanagi] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Арису Сакаянаги)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Arisu_Sakayanagi.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Арису Сакаянаги)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Arisu_Sakayanagi.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;  
+
+char_Honami_Ichinose
+    => nrel_main_idtf: 
+            [Хонами Ичиносе] (* <-lang_ru;; *);
+            [Honami Ichinose] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Хонами Ичиносе)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Honami_Ichinose.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хонами Ичиносе)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Honami_Ichinose.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Airi_Sakura
+    => nrel_main_idtf: 
+            [Айри Сакура] (* <-lang_ru;; *);
+            [Airi Sakura] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Айри Сакура)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Airi_Sakura.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Айри Сакура)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Airi_Sakura.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Kakeru_Ryuuen
+    => nrel_main_idtf: 
+            [Какеру Рюэн] (* <-lang_ru;; *);
+            [Kakeru Ryuuen] (* <- lang_en;; *);
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Какеру Рюэн)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kakeru_Ryuuen.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Какеру Рюен)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Kakeru_Ryuuen.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Sae_Chabashira
+    => nrel_main_idtf: 
+            [Саэ Чабашира] (* <-lang_ru;; *);
+            [Sae Chabashira] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Саэ Чабашира)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Sae_Chabashira.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Саэ Чабашира)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Sae_Chabashira.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+
+char_Kikyou_Kushida
+    => nrel_main_idtf: 
+            [Кикё Кушида] (* <-lang_ru;; *);
+            [Kikyou Kushida] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Кикё Кушида)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kikyou_Kushida.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кёко Кушида)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Kikyou_Kushida.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Rokusuke_Kouenji
+    => nrel_main_idtf: 
+            [Рокусуке Коэнджи] (* <-lang_ru;; *);
+            [Rokusuke Kouenji] (* <- lang_en;; *);
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Рокусуке Коэнджи)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Rokusuke_Kouenji.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Рокусуке Коэнджи)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/char_Rokusuke_Kouenji.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

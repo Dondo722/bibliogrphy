@@ -1,0 +1,50 @@
+ranobe_log_horizon
+    => nrel_main_idtf:
+        ["Покорение горизонта"] (* <- lang_ru;; *);
+        ["Log Horizon"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_action;
+    <- genre_adventure;
+    <- genre_fantasy;
+    <- genre_scifi;
+
+    => nrel_author:
+        person_Mamare_Touno;
+    => nrel_illustrator:
+        person_Kazuhiro_Hara;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2010;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Покорение горизонта)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_log_horizon
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_log_horizon_characters
+        (*
+            -> rrel_main_character: char_Shiroe;;
+            -> rrel_main_character: char_Nyanta;;
+            -> rrel_main_character: char_Naotsugu;;
+            -> rrel_main_character: char_Akatsuki;;
+            -> char_Touya;;
+            -> char_Tetora;;
+            -> char_Misa_Takayama;;
+            -> char_Shouryuu;;
+            -> char_Soujirou_Seta;;
+        *);;

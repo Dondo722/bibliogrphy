@@ -1,16 +1,8 @@
-# OSTIS Web Platform
+# OSTIS Bibliography
 
-<img src="https://github.com/ostis-ai/ostis-web-platform/actions/workflows/main.yml/badge.svg?branch=develop"> [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<img src="https://github.com/ostis-apps/ostis-bibliography/actions/workflows/main.yml/badge.svg?branch=develop"> [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository is a web-oriented software platform of the [OSTIS Project](https://github.com/ostis-ai/ostis-project) and is intended to be a solid framework to help you deploy existing and create new OSTIS systems.
-
-OSTIS Web platform contains:
-
-1. [Knowledge base with top-level ontologies](https://github.com/ostis-ai/ims.ostis.kb) to help you develop a broad variety of information models
-2. [Knowledge processing machine](https://github.com/ostis-ai/sc-machine) with semantic network storage and agent-based knowledge processing
-3. [Web-oriented semantic interface](https://github.com/ostis-ai/sc-web) for users to interact with the intelligent system.
-
-To learn more about the platform, check out our [documentation](https://github.com/ostis-ai/ostis-web-platform/blob/develop/docs/main.pdf).
+OSTIS Bibliography is an open-source knowledge base that serves as an intellectual reference system for bibliography on Open Semantic Technology for Intelligent Systems. The project aims to create a comprehensive and reliable resource for researchers, developers, and enthusiasts interested in the field.
 
 ## Installation
 
@@ -57,7 +49,7 @@ To learn more about the platform, check out our [documentation](https://github.c
   ### Build process
 
   ```sh
-  git clone https://github.com/ostis-ai/ostis-web-platform
+  git clone https://github.com/ostis-apps/ostis-bibliography
   git submodule update --init --recursive
   cd scripts
   ./prepare.sh no_build_sc_machine no_build_sc_web # download all submodules without compilation.
@@ -92,54 +84,26 @@ To learn more about the platform, check out our [documentation](https://github.c
 
   ```sh
   # Build knowledge base
-  cd ostis-web-platform/scripts/
+  cd scripts/
   ./build_kb.sh
   # Launch knowledge processing machine
-  cd ostis-web-platform/scripts/
+  cd scripts/
   ./run_sc_server.sh
   # *in another terminal*
   # Launch semantic web interface at localhost:8000
-  cd ostis-web-platform/scripts/
+  cd scripts/
   ./run_scweb.sh
   ```
 
-## Documentation
-
-We document all information about the project development and its components' implementation in sources of its knowledge base
-to provide opportunity to use it in information processing and knowledge generation.
-
-You can access the current version of the documentation in [docs/main.pdf](docs/main.pdf) file of this project.
-
-Documentation is written with
-the help of LaTeX tools in SCn-code representation. To build documentation manually, you'll need a LaTeX distribution installed on your computer. Alternatively, we provide a Docker image to build the documentation in case you can't / don't want to install LaTeX on your PC.
-
-### Download scn-tex-plugin and documentation for subprojects
-
-```sh
-# feel free to skip this step if the platform is already installed natively
-cd ostis-web-platform/scripts
-./prepare.sh no_build_sc_machine no_build_sc_web
-```
-
-- ### Build steps (using LaTeX)
-
-  ```sh
-  cd ostis-web-platform/docs
-  TEXINPUTS=./scn: latexmk -pdf -bibtex main.tex
-  ```
-
-- ### Build steps (using Docker)
-
-  ```sh
-  cd ostis-web-platform
-  docker run -v ${PWD}:/workdir --rm -it ostis/scn-latex-plugin:latest "docs/main.tex"
-  ```
-
-  After the compilation, the `main.pdf` file should appear at `ostis-web-platform/docs/`. You can find more information about [scn-latex-plugin here](https://github.com/ostis-ai/scn-latex-plugin).
-
 ## Feedback
 
-Contributions, bug reports and feature requests are welcome! Feel free to check our [issues page](https://github.com/ostis-ai/ostis-web-platform/issues) and file a new issue (or comment in existing ones).
+Contributions, bug reports and feature requests are welcome! Feel free to check our [issues page](https://github.com/ostis-apps/ostis-bibliography/issues) and file a new issue (or comment in existing ones).
+
+## Contributing
+
+- Ensure any install or build dependencies are removed before the end of the layer when doing a build.
+- Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
+- You may merge the Pull Request in once you have the sign-off of one other developer, or if you do not have permission to do that, you may request the reviewer to merge it for you.
 
 ## License
 

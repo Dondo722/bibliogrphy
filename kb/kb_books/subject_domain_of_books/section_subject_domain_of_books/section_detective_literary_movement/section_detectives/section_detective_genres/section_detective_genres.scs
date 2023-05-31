@@ -1,0 +1,17 @@
+section_detective_genres
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Жанры и поджанры детективных книг] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Book genres] (* <- lang_en;; *);;
+
+section_detective_genres
+    -> rrel_key_sc_element:
+		concept_genre;
+        genre_detective;
+		genre_novel;
+		genre_noir;
+		concept_mystery;
+		genre_criminal_prose;
+		genre_drama;
+		genre_psychological_thriller;
+		genre_supernatural_fiction;
+		genre_horror;;

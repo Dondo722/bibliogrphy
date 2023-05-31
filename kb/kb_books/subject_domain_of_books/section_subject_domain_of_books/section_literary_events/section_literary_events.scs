@@ -149,4 +149,5 @@ section_literary_events
 		event_epileptic_seizure;
 		event_walk;
 		event_present;
+		event_crime;
 		event_request;;

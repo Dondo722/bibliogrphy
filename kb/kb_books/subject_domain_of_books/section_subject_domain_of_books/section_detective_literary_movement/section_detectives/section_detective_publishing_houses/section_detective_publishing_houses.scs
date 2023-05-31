@@ -1,0 +1,15 @@
+section_detective_publishing_houses
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Книжные издательства] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Publishing houses] (* <- lang_en;; *);;
+
+section_detective_publishing_houses
+    -> rrel_key_sc_element:
+		nrel_publishing_house;
+		nrel_publisher;
+		studio_Alfred_A_Knopf;
+		studio_Collins_Crime_Club;
+		studio_Dodd_Mead_and_Co;
+		studio_Grahams_Magazine;
+		studio_William_Tinsley;;
+       

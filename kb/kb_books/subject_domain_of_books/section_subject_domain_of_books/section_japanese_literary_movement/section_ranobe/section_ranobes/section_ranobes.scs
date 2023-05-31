@@ -1,0 +1,21 @@
+section_ranobes
+    => nrel_main_idtf:
+        [Раздел. Ранобе] (* <- lang_ru;; *);
+        [Section. Ranobes] (* <- lang_en;; *);
+
+    -> rrel_key_sc_element:
+        ranobe_classroom_of_the_elite;
+        ranobe_kumo_desu_ga_nani_ka;
+        ranobe_oregairu;
+        ranobe_overlord;
+        ranobe_magical_girl_madoka_magica;
+        ranobe_seishun_buta_yarou_series;
+        ranobe_tensei_shitara_slime_datta_ken;
+        ranobe_youjo_senki;
+        ranobe_log_horizon;
+        ranobe_tokyo_ghoul;
+        ranobe_tate_no_yuusha_no_nariagari;
+        ranobe_goblin_slayer;
+        ranobe_gate_jieitai_kanochi_nite_kaku_tatakaeri;
+        ranobe_boukyaku_tantei_series;
+        ranobe_shimoneta_to_iu_gainen_ga_sonzai_shinai_taikutsu_na_sekai;;

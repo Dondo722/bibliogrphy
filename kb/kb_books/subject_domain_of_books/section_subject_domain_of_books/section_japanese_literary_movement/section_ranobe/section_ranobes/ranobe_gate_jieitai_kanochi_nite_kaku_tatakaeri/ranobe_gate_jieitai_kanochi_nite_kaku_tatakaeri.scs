@@ -1,0 +1,49 @@
+ranobe_gate_jieitai_kanochi_nite_kaku_tatakaeri
+    => nrel_main_idtf:
+        ["Врата: Там бьются наши воины"] (* <- lang_ru;; *);
+        ["Gate: Jieitai Kanochi nite, Kaku Tatakaeri"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_action;
+    <- genre_adventure;
+    <- genre_fantasy;
+    <- genre_military;
+
+    => nrel_author:
+        person_Takumi_Yanai;
+    => nrel_illustrator:
+        person_Daisuke_Izuka;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2010;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Врата: Там бьются наши воины)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_gate_jieitai_kanochi_nite_kaku_tatakaeri
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_gate_jieitai_kanochi_nite_kaku_tatakaeri_characters
+        (*
+            -> rrel_main_character: char_Rory_Mercury;;
+            -> rrel_main_character: char_Tuka_Luna_Marceau;;
+            -> rrel_main_character: char_Lelei_la_Lalena;;
+            -> rrel_main_character: char_Youji_Itami;;
+            -> rrel_main_character: char_Pina_Co_Lada;;
+            -> char_Zeganov;;
+            -> char_Akira_Yanagida;;
+            -> char_Hamilton_Uno_Ror;;
+        *);;

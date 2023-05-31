@@ -1,0 +1,33 @@
+concept_ranobe
+    => nrel_main_idtf: [ранобе] (* <- lang_ru;; *);
+    => nrel_main_idtf: [ranobe] (* <- lang_en;; *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- sc_definition;;
+        <- sc_explanation;;
+        => nrel_main_idtf: [Опр.(Ранобе)] (* <- lang_ru;; *);;
+        => nrel_main_idtf: [Def.(Ranobe)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: "file://content/ranobe.html"
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
+        *);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- statement;;
+        <- sc_common_type_statement;;
+        => nrel_main_idtf: [Утв.(Ранобе)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: "file://content/ranobe_stat.html" (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
+        *);;
+    *);;

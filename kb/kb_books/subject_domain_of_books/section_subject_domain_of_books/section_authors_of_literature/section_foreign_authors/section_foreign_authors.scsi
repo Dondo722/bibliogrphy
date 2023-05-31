@@ -249,6 +249,7 @@ person_George_Orwell
             -> concept_prose;;
             -> concept_critic;;
             -> concept_antiutopia;;
+            ->genre_fantasic;;
         *);;
 
 person_Jane_Austen
@@ -2304,6 +2305,5 @@ person_Emily_Jane_Bronte
     (*
         ->lang_en;;
     *);;
-
 
 

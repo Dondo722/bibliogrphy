@@ -1,0 +1,47 @@
+ranobe_seishun_buta_yarou_series
+    => nrel_main_idtf:
+        ["Этот глупый свин"] (* <- lang_ru;; *);
+        ["Seishun Buta Yarou Series"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_comedy;
+    <- genre_romance;
+    <- genre_school;
+
+    => nrel_author:
+        person_Hajime_Kamoshida;
+    => nrel_illustrator:
+        person_Keiji_Mizoguchi;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2014;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Этот глупый свин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_seishun_buta_yarou_series
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_seishun_buta_yarou_series_characters
+        (*
+            -> rrel_main_character: char_Mai_Sakurajima;;
+            -> rrel_main_character: char_Sakuta_Azusagawa;;
+            -> char_Nodoka_Toyohama;;
+            -> char_Store_Manager;;
+            -> char_Shoukos_Mother;;
+            -> char_Shoukos_Father;;
+            -> char_Sakutas_Mother;;
+        *);;

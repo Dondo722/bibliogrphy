@@ -1,0 +1,329 @@
+char_Shuu_Tsukiyama
+        => nrel_main_idtf:
+            [Шу Цукияма] (* <-lang_ru;; *);
+            [Shuu Tsukiyama] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Шу Цукияма)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Shuu_Tsukiyama.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Шу Цукияма)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Shuu_Tsukiyama.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Hideyoshi_Nagachika
+        => nrel_main_idtf:
+            [Хидэёши Нагачика] (* <-lang_ru;; *);
+            [Hideyoshi Nagachika] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Хидэёши Нагачика)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Hideyoshi_Nagachika.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Хидэёши Нагачика)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Hideyoshi_Nagachika.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Ayato_Kirishima
+        => nrel_main_idtf:
+            [Аято Киришима] (* <-lang_ru;; *);
+            [Ayato Kirishima] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Аято Киришима)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Ayato_Kirishima.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Аято Киришима)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Ayato_Kirishima.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Touka_Kirishima
+        => nrel_main_idtf:
+            [Тока Киришима] (* <-lang_ru;; *);
+            [Touka Kirishima] (* <- lang_en;; *);
+
+        <- person;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Тока Киришима)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Touka_Kirishima.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Тока Киришима)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Touka_Kirishima.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Ken_Kaneki
+        => nrel_main_idtf:
+            [Кэн Канэки] (* <-lang_ru;; *);
+            [Ken Kaneki] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Кэн Канэки)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Ken_Kaneki.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кэн Канэки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Ken_Kaneki.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Chie_Hori
+        => nrel_main_idtf:
+            [Чиэ Хори] (* <-lang_ru;; *);
+            [Chie Hori] (* <- lang_en;; *);
+
+        <- person;
+        <- female;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Чиэ Хори)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Chie_Hori.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Чиэ Хори)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Chie_Hori.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Kazuo_Yoshida
+        => nrel_main_idtf:
+            [Казуо Йошида] (* <-lang_ru;; *);
+            [Kazuo Yoshida] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Казуо Йошида)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Kazuo_Yoshida.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Казуо Йошида)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Kazuo_Yoshida.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Tatara
+        => nrel_main_idtf:
+            [Татара] (* <-lang_ru;; *);
+            [Tatara] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Татара)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Tatara.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Татара)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Tatara.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Yukinori_Shinohara
+        => nrel_main_idtf:
+            [Юкинори Шинохара] (* <-lang_ru;; *);
+            [Yukinori Shinohara] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Юкинори Шинохара)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Yukinori_Shinohara.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Юкинори Шинохара)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Yukinori_Shinohara.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Nurse
+        => nrel_main_idtf:
+            [Медсестра] (* <-lang_ru;; *);
+            [Nurse] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Медсестра)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Nurse.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Медсестра)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Nurse.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Nico
+        => nrel_main_idtf:
+            [Нико] (* <-lang_ru;; *);
+            [Nico] (* <- lang_en;; *);
+
+        <- person;
+        <- male;
+
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Изображение персонажа(Нико)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://images/char_Nico.jpg" (* => nrel_format: format_jpg;; *);;
+                    *);;
+            *);
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Нико)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/char_Nico.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

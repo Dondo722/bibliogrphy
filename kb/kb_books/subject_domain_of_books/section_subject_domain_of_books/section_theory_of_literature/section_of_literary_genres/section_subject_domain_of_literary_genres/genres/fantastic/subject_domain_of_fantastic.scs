@@ -1,0 +1,99 @@
+// Section
+
+subject_domain_of_fantastic
+	=> nrel_main_idtf: [Раздел. Предметная область Фантастики] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of fantastic] (* <- lang_en;; *);
+
+	<= nrel_section_decomposition:
+		{
+            section_fantastic_books;
+			section_fantastic_authors;
+			section_fantastic_genres;
+			section_fantastic_history_of_literature
+		};
+
+	-> rrel_key_sc_element:
+		concept_book;
+        concept_literature;
+		concept_genre;
+	
+
+	<- non_atomic_section;;
+
+section_fantastic_books
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Книги фантастики] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Fantastic books] (* <- lang_en;; *);;
+
+section_fantastic_authors
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Авторы фантастики] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Fantastic authors] (* <- lang_en;; *);;
+
+section_fantastic_genres
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. Жанры фантастики] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Fantastic genres] (* <- lang_en;; *);;
+			
+section_fantastic_history_of_literature
+	<-sc_node_not_relation;
+    => nrel_main_idtf: [Раздел. История фантастики] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. History of fantastic] (* <- lang_en;; *);;
+
+concept_book
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [книга] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [book] (* <- lang_en;; *);;
+
+genre_fantastic
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [фантастика] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [fantastic] (* <- lang_en;; *);;
+
+
+// Subject domain
+subject_domain_of_fantastic = [*
+
+	subject_domain_of_fantastic
+		<- sc_node_not_relation;
+		=> nrel_main_idtf: [Раздел. Предметная область Фантастики] (* <- lang_ru;; *);
+    	=> nrel_main_idtf: [Subject domain of fantastic] (* <- lang_en;; *);
+
+		-> rrel_maximum_studied_object_class:
+			concept_literature;
+
+		<- rrel_not_maximum_studied_object_class:
+			concept_genre;
+			genre_fantastic;
+			concept_book;
+
+		-> rrel_explored_relation:
+			nrel_author;
+			nrel_genre_work;
+			
+		=> nrel_private_subject_domain:
+			subject_domain_fantastic_authors;
+			subject_domain_fantastic_genres;
+			subject_domain_fantastic_history_of_literature;
+			
+		<= nrel_private_subject_domain:
+			subject_domain_of_literature;
+
+		<- subject_domain;;
+
+*];;
+
+subject_domain_fantastic_authors
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Предметная область авторов фантастики] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of fantastic authors] (* <- lang_en;; *);;
+
+subject_domain_fantastic_genres
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Предметная область жанров фантастики] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of fantastic genres] (* <- lang_en;; *);;
+
+subject_domain_fantastic_history_of_literature
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Предметная область истории фантастической литературы] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of history of fantastic] (* <- lang_en;; *);;

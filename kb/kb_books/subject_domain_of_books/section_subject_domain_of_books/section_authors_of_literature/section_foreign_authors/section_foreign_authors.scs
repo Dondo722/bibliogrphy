@@ -61,6 +61,7 @@ section_foreign_authors
 	person_Voltaire;
 	person_Virginia_Woolf;
 	person_Hans_Christian_Andersen;
-	person_Joseph_Rudyard_Kipling;;
+	person_Joseph_Rudyard_Kipling;
+	person_Mary_Shelley;;
 
 section_foreign_authors = [*^"file://section_foreign_authors.scsi"*];;

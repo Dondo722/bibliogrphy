@@ -1,0 +1,297 @@
+book_white_fang
+    => nrel_main_idtf:
+        ["Белый Клык"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_adventure;
+
+    => nrel_author:
+        person_Jack_London;
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1906;;
+
+book_white_fang
+    <= nrel_characters:
+        .book_white_fang_characters
+        (*
+            -> rrel_main_character:
+                    char_White_fang;
+                    char_Kitsey;
+                    char_Kitsun;
+                    char_Gray;
+                    char_Lip_Lip;;
+        *);;    
+
+char_White_fang
+        => nrel_main_idtf: 
+            [Белый Клык] (* <-lang_ru;; *);
+        <- lit_person;
+        <- wolf;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Белый Клык)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_White_fang.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Kitsey
+        => nrel_main_idtf: 
+            [Кицей] (* <-lang_ru;; *);
+        <- lit_person;
+        <- wolf;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кицей)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Kitsey.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+        
+char_Kitsun
+        => nrel_main_idtf: 
+            [Кицун] (* <-lang_ru;; *);
+        <- lit_person;
+        <- wolf;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кицун)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Kitsun.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;   
+
+
+
+char_Gray
+        => nrel_main_idtf: 
+            [Грей] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Грей)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Gray.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Lip_Lip
+        => nrel_main_idtf: 
+            [Лип-Лип] (* <-lang_ru;; *);
+        <- lit_person;
+        <- wolf;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Лип-Лип)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Lip_Lip.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+
+
+book_white_fang => nrel_plot:.book_white_fang_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Белый Клык"] (* <-lang_ru;; *);;
+        -> .book_white_fang_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Образование стаи] (* => nrel_format: format_html;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_1.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Kitsey;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_white_fang_event_2;;      
+            *);;
+
+        -> .book_white_fang_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Дикий волк] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_2.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_adventure;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_White_fang;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_white_fang_event_3;;      
+            *);;    
+
+        -> .book_white_fang_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Первый контакт с людьми] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_3.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <-event_island;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_White_fang;;
+                            
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_white_fang_event_4;;      
+            *);;
+
+        -> .book_white_fang_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Встреча с Грей] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_4.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_survival;;
+                    <= nrel_participants:... 
+                    (*
+                        ->char_White_fang;
+                          char_Gray;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_white_fang_event_5;;      
+            *);;  
+
+        -> .book_white_fang_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Жизнь в лагере] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_5.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_construction;;
+                    <= nrel_participants:... 
+                    (*
+                        ->char_White_fang;
+                          char_Gray;; 
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_white_fang_event_6;;            
+            *);; 
+
+            -> .book_white_fang_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Соперничество] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_6.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_Friday;;
+                    <= nrel_participants:... 
+                    (*
+                        ->char_White_fang;
+                          char_Lip_Lip;
+                          char_Gray;;  
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_white_fang_event_7;;      
+            *);;
+
+            -> .book_white_fang_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Белый клык становится диким] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_7.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_captain;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_White_fang;
+                           char_Gray;
+                           char_Kitsey;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_white_fang_event_8;;      
+            *);;
+
+            -> .book_white_fang_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Любовь] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_8.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_White_fang;
+                           char_Kitsun;; 
+                    *);;               
+            *);;
+
+            -> .book_white_fang_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Битва за территорию] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_9.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_White_fang;
+                           char_Kitsun;; 
+                    *);;               
+            *);;
+
+            -> .book_white_fang_event_10
+            (*
+                => nrel_main_idtf: [Событие №10. Смерть Белого клыка] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_white_fang_event_10.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_White_fang;
+                           char_Kitsun;; 
+                    *);;               
+            *);;
+    *);;

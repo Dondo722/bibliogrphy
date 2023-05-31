@@ -1,0 +1,204 @@
+book_adventures_of_tom_sawyer
+    => nrel_main_idtf:
+        ["Приключения Тома Сойера"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_adventure;
+
+    => nrel_author:
+        person_Mark_Twain;
+    <= nrel_original_language:
+    	lang_en;
+    => nrel_publication_date:
+        year_1876;;
+
+book_adventures_of_tom_sawyer
+    <= nrel_characters:
+        .book_adventures_of_tom_sawyer_characters
+        (*
+            -> rrel_main_character:
+                    char_Tom_Sawyer;
+                    char_Huckleberry_Finn;
+                    char_Becky_Thatcher;;
+        *);;    
+
+char_Tom_Sawyer
+        => nrel_main_idtf: 
+            [Том Сойер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Том Сойер)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Tom_Sawyer.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Huckleberry_Finn
+        => nrel_main_idtf: 
+            [Гекльберри Финн] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гекльберри Финн)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Huckleberry_Finn.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+        
+char_Becky_Thatcher
+        => nrel_main_idtf: 
+            [Бекки Тэтчер] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Бекки Тэтчер)] (* <-lang_ru;; *);;
+                <= sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Becky_Thatcher.html" (* => nrel_format: format_html;; *);;
+                    *);;
+            *);;   
+
+
+book_adventures_of_tom_sawyer => nrel_plot:.book_adventures_of_tom_sawyer_events
+    (*
+        => nrel_main_idtf: [Сюжет. "Приключения Тома Сойера"] (* <-lang_ru;; *);;
+        -> .book_adventures_of_tom_sawyer_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Канун Дня независимости] (* => nrel_format: format_html;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_adventures_of_tom_sawyer_event_1.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_adventures_of_tom_sawyer;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_adventures_of_tom_sawyer_event_2;;      
+            *);;
+
+        -> .book_adventures_of_tom_sawyer_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Тайная крепость] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_adventures_of_tom_sawyer_event_2.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_adventure;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_adventures_of_tom_sawyer;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_adventures_of_tom_sawyer_3;;      
+            *);;    
+
+        -> .book_adventures_of_tom_sawyer_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Зловещие преступники] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_adventures_of_tom_sawyer_event_3.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <-event_island;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_adventures_of_tom_sawyer;;
+                            
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_adventures_of_tom_sawyer_event_4;;      
+            *);;
+
+        -> .book_adventures_of_tom_sawyer_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Поиски свидетеля] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_adventures_of_tom_sawyer_event_4.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_survival;;
+                    <= nrel_participants:... 
+                    (*
+                        ->char_adventures_of_tom_sawyer;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_adventures_of_tom_sawyer_event_5;;      
+            *);;  
+
+        -> .book_adventures_of_tom_sawyer_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Герои города] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_adventures_of_tom_sawyer_event_5.html" (* => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_construction;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_adventures_of_tom_sawyer;;
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_adventures_of_tom_sawyer_event_6;;            
+            *);; 
+
+            -> .book_adventures_of_tom_sawyer_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Новые приключения] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_adventures_of_tom_sawyer_event_6.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_Friday;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_adventures_of_tom_sawyer;
+                           char_Friday;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_adventures_of_tom_sawyer_event_7;;      
+            *);;
+
+
+            -> .book_adventures_of_tom_sawyer_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Брак Тома и Бекки] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_adventures_of_tom_sawyer_event_7.html" (* => nrel_format: format_html;; *);;
+                    *);; 
+                    <-event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_adventures_of_tom_sawyer;
+                           char_Friday;
+                           char_Captain;; 
+                    *);;               
+            *);;
+    *);;

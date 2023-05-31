@@ -1,0 +1,208 @@
+book_Peril_at_End_House
+    => nrel_main_idtf: 
+        ["Загадка Эндхауза"]
+            (* <- lang_ru;; *);
+        ["Peril at End House"]
+            (* <- lang_en;; *);
+    =>nrel_systems_idtf:
+        [book_Peril_at_End_House];
+<- book;
+<- genre_detective;
+<- genre_novel;
+<- genre_criminal_prose;
+=> nrel_author:
+    person_Agatha_Christie;
+=> nrel_languages_of_work:
+    lang_en;
+=> nrel_publishing_house:
+    studio_Dodd_Mead_and_Co;
+=> nrel_country_of_origin:
+    country_England;
+=> nrel_publication_date:
+    year_1932;;
+
+book_Peril_at_End_House
+=> nrel_location:
+    .book_Peril_at_End_House_location
+    (*
+        -> Endhouse;;
+    *);;
+
+book_Peril_at_End_House
+<= nrel_characters:
+    .book_Peril_at_End_House_characters
+    (*
+        -> rrel_main_character:
+            char_Hercule_Poirot;
+            char_Captain_Arthur_Hastings;
+            char_Magdala_Buckley;
+            char_Maggie_Buckley;;
+                  
+    *);;
+
+char_Hercule_Poirot
+        => nrel_main_idtf: 
+            [Эркюль Пуаро] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Эркюль Пуаро)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Hercule_Poirot.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Captain_Arthur_Hastings
+        => nrel_main_idtf: 
+            [Капитан Артур Гастингс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Капитан Артур Гастингс)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Captain_Arthur_Hastings.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Magdala_Buckley
+        => nrel_main_idtf: 
+            [Магдала «Ник» Бакли] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Магдала «Ник» Бакли)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Magdala_Buckley.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);; 
+
+char_Maggie_Buckley
+        => nrel_main_idtf: 
+            [Мэгги Бакли] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мэгги Бакли)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/concept_htmls/characters/char_Maggie_Buckley.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+book_Peril_at_End_House=> nrel_plot:
+        .book_Peril_at_End_House
+    (*
+      => nrel_main_idtf: [Сюжет. Загадка Эндхауза] 
+                (* <-lang_ru;; *);;
+        -> key_sc_element: book_Peril_at_End_House;;
+        -> .book_Peril_at_End_House_event_1
+            (*
+                => nrel_main_idtf: [Событие №1] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/concept_htmls/events/book_Peril_at_End_House_event_1.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_attempted_murder;;
+                     <= nrel_main_participants: ... 
+                    (*
+                        ->  
+                            char_Hercule_Poirot;
+                            char_Captain_Arthur_Hastings;
+                            char_Magdala_Buckley;;
+                    *);; 
+                     => nrel_plot_sequence:
+                                .book_Peril_at_End_House_event_2;;                      
+            *);;
+        -> .book_Peril_at_End_House_event_2
+            (*
+                => nrel_main_idtf: [Событие №2] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/concept_htmls/events/book_Peril_at_End_House_event_2.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_meeting;;
+                    <- event_attempted_murder;;
+                     <= nrel_main_participants: ... 
+                    (*
+                        ->  
+                            char_Hercule_Poirot;
+                            char_Captain_Arthur_Hastings;
+                            char_Maggie_Buckley;
+                            char_Magdala_Buckley;;
+                    *);; 
+                     => nrel_plot_sequence:
+                                .book_Peril_at_End_House_event_3;;                      
+            *);;
+        -> .book_Peril_at_End_House_event_3
+            (*
+                => nrel_main_idtf: [Событие №3] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/concept_htmls/events/book_Peril_at_End_House_event_3.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+                    <- event_death;;
+                    <- event_attempted_murder;;
+                    <- event_crime;;
+                     <= nrel_main_participants: ... 
+                    (*
+                        ->  
+                            char_Hercule_Poirot;
+                            char_Maggie_Buckley;
+                            char_Magdala_Buckley;;
+                    *);; 
+                     => nrel_plot_sequence:
+                                .book_Peril_at_End_House_event_4;;                      
+            *);;
+        -> .book_Peril_at_End_House_event_4
+                     (*
+                => nrel_main_idtf: [Событие №4] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/concept_htmls/events/book_Peril_at_End_House_event_4.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+                     <= nrel_main_participants: ... 
+                    (*
+                        -> char_Hercule_Poirot;;
+                        -> char_Magdala_Buckley;;
+                    *);; 
+                    <- event_finality;;   
+            *);;
+
+    *);;
+

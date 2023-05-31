@@ -1,0 +1,46 @@
+ranobe_goblin_slayer
+    => nrel_main_idtf:
+        ["Убийца гоблинов"] (* <- lang_ru;; *);
+        ["Goblin Slayer"] (* <- lang_en;; *);
+
+    <- book;
+    <- concept_ranobe;
+
+    <- genre_action;
+    <- genre_fantasy;
+
+    => nrel_author:
+        person_Kumo_Kagyuu;
+    => nrel_illustrator:
+        person_Noboru_Kannatsuki;
+
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2016;
+
+    <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание (Убийца гоблинов)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> "file://content/description.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+ranobe_goblin_slayer
+    <= nrel_sc_text_translation: ... (* -> "file://images/cover.jpg" (* => nrel_format: format_jpg;; <- lang_ru;; *);; *);
+    <= nrel_characters:
+        .ranobe_goblin_slayer_characters
+        (*
+            -> rrel_main_character: char_Onna_Shinkan;;
+            -> rrel_main_character: char_Goblin_Slayer;;
+            -> char_Yaritsukai;;
+            -> char_Warrior;;
+            -> char_Ushikai_Musume;;
+            -> char_Uketsukejou;;
+            -> char_Tsurugi_no_Otome;;
+        *);;
